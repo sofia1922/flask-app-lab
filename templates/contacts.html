@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="resume-wrapper p-4 bg-white rounded-4 shadow-sm">
+
+  <h2 class="text-primary mb-4">📬 Зв’язатися зі мною</h2>
+
+  {% if message %}
+    <div class="alert alert-success">{{ message }}</div>
+  {% endif %}
+
+  <form method="post" class="p-4 rounded-4 shadow-sm bg-light">
+    <div class="mb-3">
+      <label class="form-label">Ім’я</label>
+      <input class="form-control" name="name" placeholder="Ваше ім’я" required>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Email</label>
+      <input class="form-control" type="email" name="email" placeholder="example@mail.com" required>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Повідомлення</label>
+      <textarea class="form-control" name="text" rows="5" placeholder="Ваше повідомлення..." required></textarea>
+    </div>
+
+    <button class="btn btn-outline-primary" type="submit">Відправити</button>
+  </form>
+
+  <hr class="my-4">
+
+  <h5 class="fw-semibold text-secondary">Контакти:</h5>
+  <ul class="list-unstyled">
+    <li>📧 Email: sofia_fedorko@gmail.com</li>
+    <li>📱 Телефон: +380 50 223 29 53X</li>
+    <li>🌍 GitHub: <a href="https://github.com/sofia1922" target="_blank">github.com/sofia1922</a></li>
+  </ul>
+
+</div>
+{% endblock %}

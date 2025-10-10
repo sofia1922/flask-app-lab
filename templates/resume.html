@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="resume-wrapper p-4 bg-white rounded-4 shadow-sm">
+
+  <div class="row align-items-center mb-4">
+    <div class="col-md-4 text-center">
+      <img src="{{ url_for('static', filename='images/photo.jpg') }}" alt="Фото" class="img-fluid rounded-circle shadow-sm mb-3" style="width: 180px; height: 180px; object-fit: cover;">
+      <h2 class="fw-bold text-primary">Софія Федорко</h2>
+      <p class="text-muted">Junior Front-end Developer</p>
+    </div>
+
+    <div class="col-md-8">
+      <div class="bg-light p-3 rounded-4">
+        <h5 class="fw-semibold text-secondary mb-2">Про мене</h5>
+        <p class="mb-0">
+          Я студентка-програмістка, яка цікавиться веб-розробкою та створенням зручних сучасних інтерфейсів.
+          Люблю, коли код чистий, логічний і має естетику 💻✨
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <section>
+    <h3 class="section-title">🎓 Освіта</h3>
+    <ul class="list-unstyled ms-3">
+      <li><strong>Університет:</strong> КНУВС</li>
+      <li><strong>Спеціальність:</strong> Інженерія програмного забезпечення</li>
+      <li><strong>Роки навчання:</strong> 2023 — теперішній час</li>
+    </ul>
+  </section>
+
+  <section class="mt-4">
+    <h3 class="section-title">💻 Навички</h3>
+    <div class="row">
+      <div class="col-md-6">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Python / Flask</li>
+          <li class="list-group-item">HTML5 / CSS3 / Bootstrap</li>
+          <li class="list-group-item">Git / GitHub</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">SQL</li>
+          <li class="list-group-item">Основи JS</li>
+          <li class="list-group-item">Командна робота</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="mt-4">
+    <a href="https://github.com/sofia1922" target="_blank" class="btn btn-outline-primary btn-sm">GitHub</a>
+  </section>
+
+</div>
+{% endblock %}
