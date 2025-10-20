@@ -1,22 +1,19 @@
-from flask import Flask, render_template, request, redirect, url_for
+from flask import Blueprint, render_template, request, redirect, url_for
 
-app = Flask(__name__)
+main_bp = Blueprint('main', __name__)
 
-@app.route('/')
+@main_bp.route('/')
 def home():
-    return redirect(url_for('resume'))
+    return redirect(url_for('main.resume'))
 
-@app.route('/resume')
+@main_bp.route('/resume')
 def resume():
     return render_template('resume.html', title='Резюме')
 
-@app.route('/contacts', methods=['GET', 'POST'])
+@main_bp.route('/contacts', methods=['GET', 'POST'])
 def contacts():
     message = None
     if request.method == 'POST':
         name = request.form.get('name')
         message = f"Дякую, {name}! Я отримала твоє повідомлення 💌"
     return render_template('contacts.html', title='Контакти', message=message)
-
-if __name__ == '__main__':
-    app.run(debug=True)

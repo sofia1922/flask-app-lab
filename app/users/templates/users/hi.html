@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %}Greeting Page{% endblock %}
+
+{% block content %}
+<div class="hi-container p-4 bg-white rounded-4 shadow-sm">
+  <aside class="hi-side">
+    <ul class="list-group">
+      <li class="list-group-item">
+        <a href="{{ url_for('users.greetings', name=name, age=age) }}">
+          Greet {{ name }}{% if age %} ({{ age }}){% endif %}
+        </a>
+      </li>
+      <li class="list-group-item">
+        <a href="{{ url_for('users.admin') }}">Admin (redirect)</a>
+      </li>
+      <li class="list-group-item">
+        <a href="{{ url_for('main.resume') }}">Повернутися до резюме</a>
+      </li>
+    </ul>
+  </aside>
+
+  <section class="hi-main">
+    <h1>Hello, {{ name }}!</h1>
+
+    {% if age %}
+      <p class="age-provided">Age: {{ age }}</p>
+    {% else %}
+      <p class="age-missing">Age: Not provided</p>
+    {% endif %}
+  </section>
+</div>
+{% endblock %}
