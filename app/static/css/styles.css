@@ -130,3 +130,14 @@ footer {
     border-bottom: 2px solid #f3e6ff;
   }
 }
+
+.products-container {
+  max-width: 700px;
+  margin: 40px auto;
+}
+
+.products-container h1 {
+  color: #a076f9;
+  border-left: 5px solid #fdb6c4;
+  padding-left: 10px;
+}
