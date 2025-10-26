@@ -7,12 +7,14 @@ def create_app():
         template_folder='templates'
     )
 
+    app.secret_key = 'my_super_secret_key_123'
+
     from .main_views import main_bp
     from .users.views import users_bp
     from .products.views import products_bp
 
-    app.register_blueprint(main_bp)                 
-    app.register_blueprint(users_bp, url_prefix='/users')   
+    app.register_blueprint(main_bp)
+    app.register_blueprint(users_bp, url_prefix='/users')
     app.register_blueprint(products_bp, url_prefix='/products')
 
     return app

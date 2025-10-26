@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container mt-4 p-4 bg-white rounded-4 shadow-sm">
+  <h2 class="text-primary">Привіт, {{ username }}!</h2>
+  <p>Ви успішно увійшли в систему 💜</p>
+
+  <a href="{{ url_for('users.logout') }}" class="btn btn-outline-danger mt-2">Вийти</a>
+
+  <hr class="my-4">
+
+  <h4>Робота з кукі 🍪</h4>
+  <form method="POST" class="mb-3">
+    <div class="row g-2">
+      <div class="col-md-4">
+        <input type="text" name="key" class="form-control" placeholder="Ключ" required>
+      </div>
+      <div class="col-md-4">
+        <input type="text" name="value" class="form-control" placeholder="Значення" required>
+      </div>
+      <div class="col-md-4">
+        <input type="number" name="expires" class="form-control" placeholder="Термін дії (сек)">
+      </div>
+    </div>
+    <button type="submit" name="add_cookie" class="btn btn-outline-primary mt-3">Додати</button>
+  </form>
+
+  <form method="POST" class="mb-3">
+    <div class="row g-2">
+      <div class="col-md-6">
+        <input type="text" name="key" class="form-control" placeholder="Ключ для видалення" required>
+      </div>
+    </div>
+    <button type="submit" name="delete_cookie" class="btn btn-outline-danger mt-2">Видалити</button>
+  </form>
+
+  <form method="POST" class="mb-4">
+    <button type="submit" name="delete_all" class="btn btn-warning">Очистити всі</button>
+  </form>
+
+  <div class="d-flex justify-content-end gap-2">
+  <a href="{{ url_for('users.set_theme', theme='light') }}" class="btn btn-outline-danger btn-sm">Світла</a>
+  <a href="{{ url_for('users.set_theme', theme='dark') }}" class="btn btn-outline-dark btn-sm">Темна</a>
+</div>
+
+
+  <h5>Список поточних кукі:</h5>
+  <table class="table table-bordered table-striped mt-2">
+    <thead>
+      <tr>
+        <th>Ключ</th>
+        <th>Значення</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for key, value in cookies.items() %}
+      <tr>
+        <td>{{ key }}</td>
+        <td>{{ value }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endblock %}
