@@ -1,4 +1,5 @@
 from flask import Blueprint, render_template, request, redirect, url_for, flash, session, make_response
+from app.forms import LoginForm
 
 users_bp = Blueprint('users', __name__, template_folder='templates')
 
@@ -19,19 +20,24 @@ def admin():
 
 @users_bp.route('/login', methods=['GET', 'POST'])
 def login():
-    if request.method == 'POST':
-        username = request.form.get('username')
-        password = request.form.get('password')
+    form = LoginForm()
+
+    if form.validate_on_submit():
+        username = form.username.data
+        password = form.password.data
 
         if username == VALID_USERNAME and password == VALID_PASSWORD:
             session['user'] = username
-            flash("Вхід виконано успішно!", "success")
+            flash(f"Вітаю, {username}! Вхід успішний ✅", "success")
             return redirect(url_for('users.profile'))
         else:
             flash("Невірне ім’я користувача або пароль!", "danger")
             return redirect(url_for('users.login'))
 
-    return render_template('users/login.html', title='Вхід')
+    if request.method == 'POST' and not form.validate():
+        flash("Будь ласка, перевірте правильність введених даних!", "warning")
+
+    return render_template('users/login.html', form=form, title='Вхід')
 
 
 @users_bp.route('/profile', methods=['GET', 'POST'])

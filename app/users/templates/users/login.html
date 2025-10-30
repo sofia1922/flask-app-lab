@@ -1,17 +1,21 @@
 {% extends 'base.html' %}
+{% from 'macros.html' import render_field %}
+
 {% block content %}
-<div class="container mt-4 p-4 bg-white rounded-4 shadow-sm" style="max-width: 400px;">
-  <h2 class="mb-3 text-center text-primary">Вхід у систему</h2>
-  <form method="POST">
-    <div class="mb-3">
-      <label for="username" class="form-label">Ім’я користувача</label>
-      <input type="text" name="username" class="form-control" required>
-    </div>
-    <div class="mb-3">
-      <label for="password" class="form-label">Пароль</label>
-      <input type="password" name="password" class="form-control" required>
-    </div>
-    <button type="submit" class="btn btn-outline-primary w-100">Увійти</button>
+<div class="container mt-4 p-4 bg-white rounded-4 shadow-sm" style="max-width: 420px;">
+  <h2 class="mb-3 text-center text-primary">🔐 Вхід у систему</h2>
+
+  {% with messages = get_flashed_messages(with_categories=true) %}
+    {% for category, message in messages %}
+      <div class="alert alert-{{ category }}">{{ message }}</div>
+    {% endfor %}
+  {% endwith %}
+
+  <form method="POST" novalidate class="p-3 bg-light rounded-3 shadow-sm">
+    {{ form.csrf_token }}
+    {{ render_field(form.username) }}
+    {{ render_field(form.password) }}
+    {{ form.submit(class="btn btn-outline-primary w-100") }}
   </form>
 </div>
 {% endblock %}

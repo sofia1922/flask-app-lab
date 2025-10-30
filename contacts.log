@@ -1,0 +1,296 @@
+2025-10-29 23:16:15,979 -  * Debugger is active!
+2025-10-29 23:16:15,984 -  * Debugger PIN: 158-889-685
+2025-10-29 23:20:36,639 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\3курс\\flask\\flask_lab2\\app\\forms.py', reloading
+2025-10-29 23:20:37,428 -  * Debugger is active!
+2025-10-29 23:20:37,433 -  * Debugger PIN: 158-889-685
+2025-10-29 23:20:43,519 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\3курс\\flask\\flask_lab2\\app\\forms.py', reloading
+2025-10-29 23:20:44,153 -  * Debugger is active!
+2025-10-29 23:20:44,158 -  * Debugger PIN: 158-889-685
+2025-10-29 23:21:12,485 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\3курс\\flask\\flask_lab2\\app\\main_views.py', reloading
+2025-10-29 23:21:13,254 -  * Debugger is active!
+2025-10-29 23:21:13,261 -  * Debugger PIN: 158-889-685
+2025-10-29 23:21:25,404 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\3курс\\flask\\flask_lab2\\app\\main_views.py', reloading
+2025-10-29 23:21:26,060 -  * Debugger is active!
+2025-10-29 23:21:26,066 -  * Debugger PIN: 158-889-685
+2025-10-29 23:21:33,982 - 127.0.0.1 - - [29/Oct/2025 23:21:33] "[35m[1mPOST /contacts HTTP/1.1[0m" 500 -
+2025-10-29 23:21:34,171 - 127.0.0.1 - - [29/Oct/2025 23:21:34] "[36mGET /contacts?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-10-29 23:21:34,175 - 127.0.0.1 - - [29/Oct/2025 23:21:34] "[36mGET /contacts?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-10-29 23:21:34,194 - 127.0.0.1 - - [29/Oct/2025 23:21:34] "GET /contacts?__debugger__=yes&cmd=resource&f=console.png&s=t48hi9e2pK5khd7T08FD HTTP/1.1" 200 -
+2025-10-29 23:21:34,210 - 127.0.0.1 - - [29/Oct/2025 23:21:34] "[36mGET /contacts?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-10-29 23:22:37,852 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\3курс\\flask\\flask_lab2\\app\\main_views.py', reloading
+2025-10-29 23:22:38,568 -  * Debugger is active!
+2025-10-29 23:22:38,573 -  * Debugger PIN: 158-889-685
+2025-10-29 23:22:46,684 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\3курс\\flask\\flask_lab2\\app\\main_views.py', reloading
+2025-10-29 23:22:47,380 -  * Debugger is active!
+2025-10-29 23:22:47,385 -  * Debugger PIN: 158-889-685
+2025-10-29 23:22:51,144 - 127.0.0.1 - - [29/Oct/2025 23:22:51] "[35m[1mPOST /contacts HTTP/1.1[0m" 500 -
+2025-10-29 23:22:51,290 - 127.0.0.1 - - [29/Oct/2025 23:22:51] "[36mGET /contacts?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-10-29 23:22:51,294 - 127.0.0.1 - - [29/Oct/2025 23:22:51] "[36mGET /contacts?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-10-29 23:22:51,308 - 127.0.0.1 - - [29/Oct/2025 23:22:51] "GET /contacts?__debugger__=yes&cmd=resource&f=console.png&s=Y4UanKtCxntYwYs8YHkQ HTTP/1.1" 200 -
+2025-10-29 23:22:51,317 - 127.0.0.1 - - [29/Oct/2025 23:22:51] "[36mGET /contacts?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-10-29 23:23:51,141 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\3курс\\flask\\flask_lab2\\app\\main_views.py', reloading
+2025-10-29 23:23:51,886 -  * Debugger is active!
+2025-10-29 23:23:51,891 -  * Debugger PIN: 158-889-685
+2025-10-29 23:23:55,718 - 127.0.0.1 - - [29/Oct/2025 23:23:55] "POST /contacts HTTP/1.1" 200 -
+2025-10-29 23:23:55,803 - 127.0.0.1 - - [29/Oct/2025 23:23:55] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-29 23:24:15,359 - 127.0.0.1 - - [29/Oct/2025 23:24:15] "POST /contacts HTTP/1.1" 200 -
+2025-10-29 23:24:15,379 - 127.0.0.1 - - [29/Oct/2025 23:24:15] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-29 23:24:25,812 - 127.0.0.1 - - [29/Oct/2025 23:24:25] "POST /contacts HTTP/1.1" 200 -
+2025-10-29 23:24:25,829 - 127.0.0.1 - - [29/Oct/2025 23:24:25] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-29 23:25:07,838 - Sofia FEDORKO (sofia.fedorko14@gmail.com, +380683088948) \u2192 Знайомство: привіт
+2025-10-29 23:25:07,852 - 127.0.0.1 - - [29/Oct/2025 23:25:07] "[35m[1mPOST /contacts HTTP/1.1[0m" 500 -
+2025-10-29 23:25:07,868 - 127.0.0.1 - - [29/Oct/2025 23:25:07] "[36mGET /contacts?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-10-29 23:25:07,868 - 127.0.0.1 - - [29/Oct/2025 23:25:07] "[36mGET /contacts?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-10-29 23:25:07,885 - 127.0.0.1 - - [29/Oct/2025 23:25:07] "GET /contacts?__debugger__=yes&cmd=resource&f=console.png&s=qJoBPRBum4XGqXAwxk5i HTTP/1.1" 200 -
+2025-10-29 23:25:07,903 - 127.0.0.1 - - [29/Oct/2025 23:25:07] "[36mGET /contacts?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-10-29 23:25:43,241 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\3курс\\flask\\flask_lab2\\app\\main_views.py', reloading
+2025-10-29 23:25:43,992 -  * Debugger is active!
+2025-10-29 23:25:43,998 -  * Debugger PIN: 158-889-685
+2025-10-29 23:25:46,855 - Sofia FEDORKO (sofia.fedorko14@gmail.com, +380683088948) \u2192 Знайомство: привіт
+2025-10-29 23:25:46,856 - 127.0.0.1 - - [29/Oct/2025 23:25:46] "[32mPOST /contacts HTTP/1.1[0m" 302 -
+2025-10-29 23:25:46,888 - 127.0.0.1 - - [29/Oct/2025 23:25:46] "GET /contacts HTTP/1.1" 200 -
+2025-10-29 23:25:46,984 - 127.0.0.1 - - [29/Oct/2025 23:25:46] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-29 23:26:22,925 - 127.0.0.1 - - [29/Oct/2025 23:26:22] "GET /contacts HTTP/1.1" 200 -
+2025-10-29 23:26:22,939 - 127.0.0.1 - - [29/Oct/2025 23:26:22] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-29 23:27:09,269 - 127.0.0.1 - - [29/Oct/2025 23:27:09] "POST /contacts HTTP/1.1" 200 -
+2025-10-29 23:27:09,291 - 127.0.0.1 - - [29/Oct/2025 23:27:09] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-29 23:27:14,638 - 127.0.0.1 - - [29/Oct/2025 23:27:14] "POST /contacts HTTP/1.1" 200 -
+2025-10-29 23:27:14,655 - 127.0.0.1 - - [29/Oct/2025 23:27:14] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-29 23:27:16,922 - 127.0.0.1 - - [29/Oct/2025 23:27:16] "POST /contacts HTTP/1.1" 200 -
+2025-10-29 23:27:16,940 - 127.0.0.1 - - [29/Oct/2025 23:27:16] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-29 23:27:20,450 - 127.0.0.1 - - [29/Oct/2025 23:27:20] "POST /contacts HTTP/1.1" 200 -
+2025-10-29 23:27:20,467 - 127.0.0.1 - - [29/Oct/2025 23:27:20] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-29 23:27:30,545 - 127.0.0.1 - - [29/Oct/2025 23:27:30] "POST /contacts HTTP/1.1" 200 -
+2025-10-29 23:27:30,563 - 127.0.0.1 - - [29/Oct/2025 23:27:30] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-29 23:28:30,923 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\3курс\\flask\\flask_lab2\\app\\forms.py', reloading
+2025-10-29 23:28:31,665 -  * Debugger is active!
+2025-10-29 23:28:31,671 -  * Debugger PIN: 158-889-685
+2025-10-29 23:31:20,524 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\3курс\\flask\\flask_lab2\\app\\forms.py', reloading
+2025-10-29 23:31:41,381 -  * Debugger is active!
+2025-10-29 23:31:41,388 -  * Debugger PIN: 158-889-685
+2025-10-29 23:31:43,592 - 127.0.0.1 - - [29/Oct/2025 23:31:43] "[35m[1mPOST /contacts HTTP/1.1[0m" 500 -
+2025-10-29 23:31:43,736 - 127.0.0.1 - - [29/Oct/2025 23:31:43] "[36mGET /contacts?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-10-29 23:31:43,738 - 127.0.0.1 - - [29/Oct/2025 23:31:43] "[36mGET /contacts?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-10-29 23:31:43,759 - 127.0.0.1 - - [29/Oct/2025 23:31:43] "GET /contacts?__debugger__=yes&cmd=resource&f=console.png&s=StAj5yWH9DJRaGHXSNcR HTTP/1.1" 200 -
+2025-10-29 23:31:43,775 - 127.0.0.1 - - [29/Oct/2025 23:31:43] "[36mGET /contacts?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-10-29 23:32:38,123 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\3курс\\flask\\flask_lab2\\app\\forms.py', reloading
+2025-10-29 23:32:38,998 -  * Debugger is active!
+2025-10-29 23:32:39,005 -  * Debugger PIN: 158-889-685
+2025-10-29 23:32:44,164 - 127.0.0.1 - - [29/Oct/2025 23:32:44] "[35m[1mPOST /contacts HTTP/1.1[0m" 500 -
+2025-10-29 23:32:44,335 - 127.0.0.1 - - [29/Oct/2025 23:32:44] "[36mGET /contacts?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-10-29 23:32:44,345 - 127.0.0.1 - - [29/Oct/2025 23:32:44] "[36mGET /contacts?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-10-29 23:32:44,361 - 127.0.0.1 - - [29/Oct/2025 23:32:44] "GET /contacts?__debugger__=yes&cmd=resource&f=console.png&s=4PbbciDB4BajiXgl0L5p HTTP/1.1" 200 -
+2025-10-29 23:32:44,373 - 127.0.0.1 - - [29/Oct/2025 23:32:44] "[36mGET /contacts?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-10-29 23:32:48,828 - 127.0.0.1 - - [29/Oct/2025 23:32:48] "[35m[1mPOST /contacts HTTP/1.1[0m" 500 -
+2025-10-29 23:32:48,846 - 127.0.0.1 - - [29/Oct/2025 23:32:48] "[36mGET /contacts?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-10-29 23:32:48,847 - 127.0.0.1 - - [29/Oct/2025 23:32:48] "[36mGET /contacts?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-10-29 23:32:48,862 - 127.0.0.1 - - [29/Oct/2025 23:32:48] "[36mGET /contacts?__debugger__=yes&cmd=resource&f=console.png&s=4PbbciDB4BajiXgl0L5p HTTP/1.1[0m" 304 -
+2025-10-29 23:32:48,888 - 127.0.0.1 - - [29/Oct/2025 23:32:48] "[36mGET /contacts?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-10-29 23:33:22,577 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\3курс\\flask\\flask_lab2\\app\\forms.py', reloading
+2025-10-29 23:33:23,397 -  * Debugger is active!
+2025-10-29 23:33:23,403 -  * Debugger PIN: 158-889-685
+2025-10-29 23:34:03,836 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\3курс\\flask\\flask_lab2\\app\\main_views.py', reloading
+2025-10-29 23:34:04,528 -  * Debugger is active!
+2025-10-29 23:34:04,533 -  * Debugger PIN: 158-889-685
+2025-10-29 23:34:59,154 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\3курс\\flask\\flask_lab2\\app\\forms.py', reloading
+2025-10-29 23:34:59,884 -  * Debugger is active!
+2025-10-29 23:34:59,889 -  * Debugger PIN: 158-889-685
+2025-10-29 23:35:04,089 - 127.0.0.1 - - [29/Oct/2025 23:35:04] "[35m[1mPOST /contacts HTTP/1.1[0m" 500 -
+2025-10-29 23:35:04,219 - 127.0.0.1 - - [29/Oct/2025 23:35:04] "[36mGET /contacts?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-10-29 23:35:04,226 - 127.0.0.1 - - [29/Oct/2025 23:35:04] "[36mGET /contacts?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-10-29 23:35:04,242 - 127.0.0.1 - - [29/Oct/2025 23:35:04] "GET /contacts?__debugger__=yes&cmd=resource&f=console.png&s=ogCOxRMWDrfw4ExwOnrc HTTP/1.1" 200 -
+2025-10-29 23:35:04,255 - 127.0.0.1 - - [29/Oct/2025 23:35:04] "[36mGET /contacts?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-10-29 23:38:19,236 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\3курс\\flask\\flask_lab2\\app\\forms.py', reloading
+2025-10-29 23:39:00,166 -  * Debugger is active!
+2025-10-29 23:39:00,171 -  * Debugger PIN: 158-889-685
+2025-10-29 23:39:03,425 - 127.0.0.1 - - [29/Oct/2025 23:39:03] "[35m[1mPOST /contacts HTTP/1.1[0m" 500 -
+2025-10-29 23:39:03,559 - 127.0.0.1 - - [29/Oct/2025 23:39:03] "[36mGET /contacts?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-10-29 23:39:03,567 - 127.0.0.1 - - [29/Oct/2025 23:39:03] "[36mGET /contacts?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-10-29 23:39:03,584 - 127.0.0.1 - - [29/Oct/2025 23:39:03] "GET /contacts?__debugger__=yes&cmd=resource&f=console.png&s=6Ism6PJDJWOInkXLdwXT HTTP/1.1" 200 -
+2025-10-29 23:39:03,603 - 127.0.0.1 - - [29/Oct/2025 23:39:03] "[36mGET /contacts?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-10-29 23:39:11,324 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\3курс\\flask\\flask_lab2\\app\\forms.py', reloading
+2025-10-29 23:39:12,109 -  * Debugger is active!
+2025-10-29 23:39:12,115 -  * Debugger PIN: 158-889-685
+2025-10-29 23:39:14,087 - 127.0.0.1 - - [29/Oct/2025 23:39:14] "[35m[1mPOST /contacts HTTP/1.1[0m" 500 -
+2025-10-29 23:39:14,218 - 127.0.0.1 - - [29/Oct/2025 23:39:14] "[36mGET /contacts?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-10-29 23:39:14,225 - 127.0.0.1 - - [29/Oct/2025 23:39:14] "[36mGET /contacts?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-10-29 23:39:14,243 - 127.0.0.1 - - [29/Oct/2025 23:39:14] "GET /contacts?__debugger__=yes&cmd=resource&f=console.png&s=1YrtBAgRy8xQJ3NSn0PO HTTP/1.1" 200 -
+2025-10-29 23:39:14,256 - 127.0.0.1 - - [29/Oct/2025 23:39:14] "[36mGET /contacts?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-10-29 23:40:17,655 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-29 23:40:17,656 - [33mPress CTRL+C to quit[0m
+2025-10-29 23:40:17,657 -  * Restarting with stat
+2025-10-29 23:40:18,277 -  * Debugger is active!
+2025-10-29 23:40:18,282 -  * Debugger PIN: 158-889-685
+2025-10-29 23:40:36,946 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-29 23:40:36,946 - [33mPress CTRL+C to quit[0m
+2025-10-29 23:41:18,324 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-29 23:41:18,324 - [33mPress CTRL+C to quit[0m
+2025-10-29 23:42:30,441 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-29 23:42:30,441 - [33mPress CTRL+C to quit[0m
+2025-10-29 23:42:30,443 -  * Restarting with stat
+2025-10-29 23:42:31,040 -  * Debugger is active!
+2025-10-29 23:42:31,045 -  * Debugger PIN: 158-889-685
+2025-10-29 23:42:52,279 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\3курс\\flask\\flask_lab2\\app\\forms.py', reloading
+2025-10-29 23:42:52,343 -  * Restarting with stat
+2025-10-29 23:43:06,206 -  * Restarting with stat
+2025-10-29 23:43:06,898 -  * Debugger is active!
+2025-10-29 23:43:06,905 -  * Debugger PIN: 158-889-685
+2025-10-29 23:43:35,568 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-29 23:43:35,569 - [33mPress CTRL+C to quit[0m
+2025-10-29 23:43:35,570 -  * Restarting with stat
+2025-10-29 23:43:36,176 -  * Debugger is active!
+2025-10-29 23:43:36,181 -  * Debugger PIN: 158-889-685
+2025-10-29 23:44:25,086 - 127.0.0.1 - - [29/Oct/2025 23:44:25] "[35m[1mGET /contacts HTTP/1.1[0m" 500 -
+2025-10-29 23:44:25,351 - 127.0.0.1 - - [29/Oct/2025 23:44:25] "GET /contacts?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-10-29 23:44:25,354 - 127.0.0.1 - - [29/Oct/2025 23:44:25] "GET /contacts?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-10-29 23:44:25,422 - 127.0.0.1 - - [29/Oct/2025 23:44:25] "GET /contacts?__debugger__=yes&cmd=resource&f=console.png&s=E4iKHyquDyL56Fu7K2f0 HTTP/1.1" 200 -
+2025-10-29 23:44:25,540 - 127.0.0.1 - - [29/Oct/2025 23:44:25] "GET /contacts?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-10-29 23:45:33,456 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\3курс\\flask\\flask_lab2\\app\\forms.py', reloading
+2025-10-29 23:45:33,518 -  * Restarting with stat
+2025-10-29 23:45:34,175 -  * Debugger is active!
+2025-10-29 23:45:34,180 -  * Debugger PIN: 158-889-685
+2025-10-29 23:45:41,987 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-29 23:45:41,987 - [33mPress CTRL+C to quit[0m
+2025-10-29 23:45:46,910 - 127.0.0.1 - - [29/Oct/2025 23:45:46] "GET /contacts HTTP/1.1" 200 -
+2025-10-29 23:45:47,060 - 127.0.0.1 - - [29/Oct/2025 23:45:47] "GET /static/css/styles.css HTTP/1.1" 200 -
+2025-10-29 23:45:47,180 - 127.0.0.1 - - [29/Oct/2025 23:45:47] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-10-29 23:46:13,628 - Софія (sofiia.fedorko.23@pnu.edu.ua, 380683088948) \u2192 знайомство: привіт
+2025-10-29 23:46:13,629 - 127.0.0.1 - - [29/Oct/2025 23:46:13] "[32mPOST /contacts HTTP/1.1[0m" 302 -
+2025-10-29 23:46:13,636 - 127.0.0.1 - - [29/Oct/2025 23:46:13] "GET /contacts HTTP/1.1" 200 -
+2025-10-29 23:46:13,710 - 127.0.0.1 - - [29/Oct/2025 23:46:13] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-29 23:46:37,360 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-29 23:46:37,361 - [33mPress CTRL+C to quit[0m
+2025-10-29 23:46:37,362 -  * Restarting with stat
+2025-10-29 23:46:37,960 -  * Debugger is active!
+2025-10-29 23:46:37,965 -  * Debugger PIN: 158-889-685
+2025-10-29 23:46:44,054 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\3курс\\flask\\flask_lab2\\app\\forms.py', reloading
+2025-10-29 23:46:44,113 -  * Restarting with stat
+2025-10-29 23:46:44,748 -  * Debugger is active!
+2025-10-29 23:46:44,753 -  * Debugger PIN: 158-889-685
+2025-10-30 00:03:33,578 - 127.0.0.1 - - [30/Oct/2025 00:03:33] "GET /resume HTTP/1.1" 200 -
+2025-10-30 00:03:33,828 - 127.0.0.1 - - [30/Oct/2025 00:03:33] "GET /static/images/photo.jpg HTTP/1.1" 200 -
+2025-10-30 00:03:33,851 - 127.0.0.1 - - [30/Oct/2025 00:03:33] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-30 00:03:35,031 - 127.0.0.1 - - [30/Oct/2025 00:03:35] "GET /contacts HTTP/1.1" 200 -
+2025-10-30 00:03:35,084 - 127.0.0.1 - - [30/Oct/2025 00:03:35] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-30 00:03:36,369 - 127.0.0.1 - - [30/Oct/2025 00:03:36] "GET /resume HTTP/1.1" 200 -
+2025-10-30 00:03:36,452 - 127.0.0.1 - - [30/Oct/2025 00:03:36] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-30 00:03:36,477 - 127.0.0.1 - - [30/Oct/2025 00:03:36] "[36mGET /static/images/photo.jpg HTTP/1.1[0m" 304 -
+2025-10-30 00:03:40,323 - 127.0.0.1 - - [30/Oct/2025 00:03:40] "GET /contacts HTTP/1.1" 200 -
+2025-10-30 00:03:40,403 - 127.0.0.1 - - [30/Oct/2025 00:03:40] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-30 00:03:41,272 - 127.0.0.1 - - [30/Oct/2025 00:03:41] "GET /resume HTTP/1.1" 200 -
+2025-10-30 00:03:41,319 - 127.0.0.1 - - [30/Oct/2025 00:03:41] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-30 00:03:41,345 - 127.0.0.1 - - [30/Oct/2025 00:03:41] "[36mGET /static/images/photo.jpg HTTP/1.1[0m" 304 -
+2025-10-30 00:04:00,468 - 127.0.0.1 - - [30/Oct/2025 00:04:00] "GET /contacts HTTP/1.1" 200 -
+2025-10-30 00:04:00,518 - 127.0.0.1 - - [30/Oct/2025 00:04:00] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-30 00:04:01,446 - 127.0.0.1 - - [30/Oct/2025 00:04:01] "GET /resume HTTP/1.1" 200 -
+2025-10-30 00:04:01,524 - 127.0.0.1 - - [30/Oct/2025 00:04:01] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-30 00:04:01,546 - 127.0.0.1 - - [30/Oct/2025 00:04:01] "[36mGET /static/images/photo.jpg HTTP/1.1[0m" 304 -
+2025-10-30 10:58:32,350 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\3курс\\flask\\flask_lab2\\app\\forms.py', reloading
+2025-10-30 10:58:32,531 -  * Restarting with stat
+2025-10-30 11:12:31,203 -  * Restarting with stat
+2025-10-30 11:13:22,641 -  * Restarting with stat
+2025-10-30 11:16:13,383 -  * Restarting with stat
+2025-10-30 11:16:14,327 -  * Debugger is active!
+2025-10-30 11:16:14,332 -  * Debugger PIN: 107-452-128
+2025-10-30 11:16:19,155 - 127.0.0.1 - - [30/Oct/2025 11:16:19] "[35m[1mGET /resume HTTP/1.1[0m" 500 -
+2025-10-30 11:16:19,282 - 127.0.0.1 - - [30/Oct/2025 11:16:19] "[36mGET /resume?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-10-30 11:16:19,304 - 127.0.0.1 - - [30/Oct/2025 11:16:19] "[36mGET /resume?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-10-30 11:16:19,322 - 127.0.0.1 - - [30/Oct/2025 11:16:19] "GET /resume?__debugger__=yes&cmd=resource&f=console.png&s=W1t7ELAbZUO1UQEQbdjn HTTP/1.1" 200 -
+2025-10-30 11:16:19,367 - 127.0.0.1 - - [30/Oct/2025 11:16:19] "[36mGET /resume?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-10-30 11:16:24,665 - 127.0.0.1 - - [30/Oct/2025 11:16:24] "[35m[1mGET /resume HTTP/1.1[0m" 500 -
+2025-10-30 11:16:24,706 - 127.0.0.1 - - [30/Oct/2025 11:16:24] "[36mGET /resume?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-10-30 11:16:24,732 - 127.0.0.1 - - [30/Oct/2025 11:16:24] "[36mGET /resume?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-10-30 11:16:24,775 - 127.0.0.1 - - [30/Oct/2025 11:16:24] "[36mGET /resume?__debugger__=yes&cmd=resource&f=console.png&s=W1t7ELAbZUO1UQEQbdjn HTTP/1.1[0m" 304 -
+2025-10-30 11:16:24,814 - 127.0.0.1 - - [30/Oct/2025 11:16:24] "[36mGET /resume?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-10-30 11:20:14,085 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\3курс\\flask\\flask_lab2\\app\\users\\views.py', reloading
+2025-10-30 11:20:14,148 -  * Restarting with stat
+2025-10-30 11:20:14,830 -  * Debugger is active!
+2025-10-30 11:20:14,837 -  * Debugger PIN: 107-452-128
+2025-10-30 11:20:17,450 - 127.0.0.1 - - [30/Oct/2025 11:20:17] "[35m[1mGET /resume HTTP/1.1[0m" 500 -
+2025-10-30 11:20:17,626 - 127.0.0.1 - - [30/Oct/2025 11:20:17] "[36mGET /resume?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-10-30 11:20:17,635 - 127.0.0.1 - - [30/Oct/2025 11:20:17] "[36mGET /resume?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-10-30 11:20:17,656 - 127.0.0.1 - - [30/Oct/2025 11:20:17] "GET /resume?__debugger__=yes&cmd=resource&f=console.png&s=zPHTZpwNSlblDiwXQbRf HTTP/1.1" 200 -
+2025-10-30 11:20:17,750 - 127.0.0.1 - - [30/Oct/2025 11:20:17] "[36mGET /resume?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-10-30 11:20:19,639 - 127.0.0.1 - - [30/Oct/2025 11:20:19] "[35m[1mGET /resume HTTP/1.1[0m" 500 -
+2025-10-30 11:20:19,670 - 127.0.0.1 - - [30/Oct/2025 11:20:19] "[36mGET /resume?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-10-30 11:20:19,671 - 127.0.0.1 - - [30/Oct/2025 11:20:19] "[36mGET /resume?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-10-30 11:20:19,732 - 127.0.0.1 - - [30/Oct/2025 11:20:19] "[36mGET /resume?__debugger__=yes&cmd=resource&f=console.png&s=zPHTZpwNSlblDiwXQbRf HTTP/1.1[0m" 304 -
+2025-10-30 11:20:19,765 - 127.0.0.1 - - [30/Oct/2025 11:20:19] "[36mGET /resume?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-10-30 11:20:20,264 - 127.0.0.1 - - [30/Oct/2025 11:20:20] "[35m[1mGET /resume HTTP/1.1[0m" 500 -
+2025-10-30 11:20:20,299 - 127.0.0.1 - - [30/Oct/2025 11:20:20] "[36mGET /resume?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-10-30 11:20:20,323 - 127.0.0.1 - - [30/Oct/2025 11:20:20] "[36mGET /resume?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-10-30 11:20:20,357 - 127.0.0.1 - - [30/Oct/2025 11:20:20] "[36mGET /resume?__debugger__=yes&cmd=resource&f=console.png&s=zPHTZpwNSlblDiwXQbRf HTTP/1.1[0m" 304 -
+2025-10-30 11:20:20,388 - 127.0.0.1 - - [30/Oct/2025 11:20:20] "[36mGET /resume?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-10-30 11:20:20,430 - 127.0.0.1 - - [30/Oct/2025 11:20:20] "[35m[1mGET /resume HTTP/1.1[0m" 500 -
+2025-10-30 11:20:20,467 - 127.0.0.1 - - [30/Oct/2025 11:20:20] "[36mGET /resume?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-10-30 11:20:20,494 - 127.0.0.1 - - [30/Oct/2025 11:20:20] "[36mGET /resume?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-10-30 11:20:20,533 - 127.0.0.1 - - [30/Oct/2025 11:20:20] "[36mGET /resume?__debugger__=yes&cmd=resource&f=console.png&s=zPHTZpwNSlblDiwXQbRf HTTP/1.1[0m" 304 -
+2025-10-30 11:20:20,563 - 127.0.0.1 - - [30/Oct/2025 11:20:20] "[36mGET /resume?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-10-30 11:20:20,650 - 127.0.0.1 - - [30/Oct/2025 11:20:20] "[35m[1mGET /resume HTTP/1.1[0m" 500 -
+2025-10-30 11:20:20,706 - 127.0.0.1 - - [30/Oct/2025 11:20:20] "[36mGET /resume?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-10-30 11:20:20,727 - 127.0.0.1 - - [30/Oct/2025 11:20:20] "[36mGET /resume?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-10-30 11:20:20,743 - 127.0.0.1 - - [30/Oct/2025 11:20:20] "[36mGET /resume?__debugger__=yes&cmd=resource&f=console.png&s=zPHTZpwNSlblDiwXQbRf HTTP/1.1[0m" 304 -
+2025-10-30 11:20:20,777 - 127.0.0.1 - - [30/Oct/2025 11:20:20] "[36mGET /resume?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-10-30 11:20:37,126 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\3курс\\flask\\flask_lab2\\app\\users\\views.py', reloading
+2025-10-30 11:20:37,285 -  * Restarting with stat
+2025-10-30 11:20:38,127 -  * Debugger is active!
+2025-10-30 11:20:38,133 -  * Debugger PIN: 158-889-685
+2025-10-30 11:20:40,132 - 127.0.0.1 - - [30/Oct/2025 11:20:40] "GET /resume HTTP/1.1" 200 -
+2025-10-30 11:20:40,348 - 127.0.0.1 - - [30/Oct/2025 11:20:40] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-30 11:20:40,361 - 127.0.0.1 - - [30/Oct/2025 11:20:40] "[36mGET /static/images/photo.jpg HTTP/1.1[0m" 304 -
+2025-10-30 11:20:43,389 - 127.0.0.1 - - [30/Oct/2025 11:20:43] "GET /contacts HTTP/1.1" 200 -
+2025-10-30 11:20:43,458 - 127.0.0.1 - - [30/Oct/2025 11:20:43] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-30 11:20:58,056 - Cjasz (sofia.fedorko14@gmail.com, 380683088948) \u2192 запитання: lsdgvko;s
+2025-10-30 11:20:58,057 - 127.0.0.1 - - [30/Oct/2025 11:20:58] "[32mPOST /contacts HTTP/1.1[0m" 302 -
+2025-10-30 11:20:58,066 - 127.0.0.1 - - [30/Oct/2025 11:20:58] "GET /contacts HTTP/1.1" 200 -
+2025-10-30 11:20:58,153 - 127.0.0.1 - - [30/Oct/2025 11:20:58] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-30 11:21:10,517 - 127.0.0.1 - - [30/Oct/2025 11:21:10] "[33mGET /login HTTP/1.1[0m" 404 -
+2025-10-30 11:24:18,873 - 127.0.0.1 - - [30/Oct/2025 11:24:18] "GET /users/login HTTP/1.1" 200 -
+2025-10-30 11:24:18,934 - 127.0.0.1 - - [30/Oct/2025 11:24:18] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-30 11:24:30,464 - 127.0.0.1 - - [30/Oct/2025 11:24:30] "[32mPOST /users/login HTTP/1.1[0m" 302 -
+2025-10-30 11:24:30,475 - 127.0.0.1 - - [30/Oct/2025 11:24:30] "GET /users/login HTTP/1.1" 200 -
+2025-10-30 11:24:30,567 - 127.0.0.1 - - [30/Oct/2025 11:24:30] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-30 11:24:39,354 - 127.0.0.1 - - [30/Oct/2025 11:24:39] "[32mPOST /users/login HTTP/1.1[0m" 302 -
+2025-10-30 11:24:39,368 - 127.0.0.1 - - [30/Oct/2025 11:24:39] "GET /users/profile HTTP/1.1" 200 -
+2025-10-30 11:24:39,502 - 127.0.0.1 - - [30/Oct/2025 11:24:39] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-30 11:31:41,725 - 127.0.0.1 - - [30/Oct/2025 11:31:41] "[32mGET /users/set_theme/light HTTP/1.1[0m" 302 -
+2025-10-30 11:31:41,735 - 127.0.0.1 - - [30/Oct/2025 11:31:41] "GET /users/profile HTTP/1.1" 200 -
+2025-10-30 11:31:41,868 - 127.0.0.1 - - [30/Oct/2025 11:31:41] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-30 11:31:44,390 - 127.0.0.1 - - [30/Oct/2025 11:31:44] "[32mGET /users/set_theme/dark HTTP/1.1[0m" 302 -
+2025-10-30 11:31:44,398 - 127.0.0.1 - - [30/Oct/2025 11:31:44] "GET /users/profile HTTP/1.1" 200 -
+2025-10-30 11:31:44,482 - 127.0.0.1 - - [30/Oct/2025 11:31:44] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-30 11:31:46,383 - 127.0.0.1 - - [30/Oct/2025 11:31:46] "[32mGET /users/set_theme/light HTTP/1.1[0m" 302 -
+2025-10-30 11:31:46,393 - 127.0.0.1 - - [30/Oct/2025 11:31:46] "GET /users/profile HTTP/1.1" 200 -
+2025-10-30 11:31:46,516 - 127.0.0.1 - - [30/Oct/2025 11:31:46] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-30 11:31:54,823 - 127.0.0.1 - - [30/Oct/2025 11:31:54] "GET /resume HTTP/1.1" 200 -
+2025-10-30 11:31:54,895 - 127.0.0.1 - - [30/Oct/2025 11:31:54] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-30 11:31:54,919 - 127.0.0.1 - - [30/Oct/2025 11:31:54] "[36mGET /static/images/photo.jpg HTTP/1.1[0m" 304 -
+2025-10-30 11:33:06,758 - 127.0.0.1 - - [30/Oct/2025 11:33:06] "GET /contacts HTTP/1.1" 200 -
+2025-10-30 11:33:06,829 - 127.0.0.1 - - [30/Oct/2025 11:33:06] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-30 11:33:48,296 - Софія (sofia.fedorko14@gmail.com, 380683088949) \u2192 знайомство: Привіт
+2025-10-30 11:33:48,297 - 127.0.0.1 - - [30/Oct/2025 11:33:48] "[32mPOST /contacts HTTP/1.1[0m" 302 -
+2025-10-30 11:33:48,307 - 127.0.0.1 - - [30/Oct/2025 11:33:48] "GET /contacts HTTP/1.1" 200 -
+2025-10-30 11:33:48,415 - 127.0.0.1 - - [30/Oct/2025 11:33:48] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-30 11:34:11,052 - 127.0.0.1 - - [30/Oct/2025 11:34:11] "GET /users/profile HTTP/1.1" 200 -
+2025-10-30 11:34:11,139 - 127.0.0.1 - - [30/Oct/2025 11:34:11] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-30 11:34:16,782 - 127.0.0.1 - - [30/Oct/2025 11:34:16] "GET /users/login HTTP/1.1" 200 -
+2025-10-30 11:34:16,858 - 127.0.0.1 - - [30/Oct/2025 11:34:16] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-30 11:35:18,506 - 127.0.0.1 - - [30/Oct/2025 11:35:18] "GET /users/login HTTP/1.1" 200 -
+2025-10-30 11:35:18,593 - 127.0.0.1 - - [30/Oct/2025 11:35:18] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-30 11:35:52,638 - 127.0.0.1 - - [30/Oct/2025 11:35:52] "[32mPOST /users/login HTTP/1.1[0m" 302 -
+2025-10-30 11:35:52,651 - 127.0.0.1 - - [30/Oct/2025 11:35:52] "GET /users/profile HTTP/1.1" 200 -
+2025-10-30 11:35:52,801 - 127.0.0.1 - - [30/Oct/2025 11:35:52] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-30 11:56:40,520 - 127.0.0.1 - - [30/Oct/2025 11:56:40] "GET /users/profile HTTP/1.1" 200 -
+2025-10-30 11:56:40,589 - 127.0.0.1 - - [30/Oct/2025 11:56:40] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-30 11:56:45,698 - 127.0.0.1 - - [30/Oct/2025 11:56:45] "GET /users/login HTTP/1.1" 200 -
+2025-10-30 11:56:45,771 - 127.0.0.1 - - [30/Oct/2025 11:56:45] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-10-30 11:56:48,498 - 127.0.0.1 - - [30/Oct/2025 11:56:48] "[32mPOST /users/login HTTP/1.1[0m" 302 -
+2025-10-30 11:56:48,507 - 127.0.0.1 - - [30/Oct/2025 11:56:48] "GET /users/profile HTTP/1.1" 200 -
+2025-10-30 11:56:48,643 - 127.0.0.1 - - [30/Oct/2025 11:56:48] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
