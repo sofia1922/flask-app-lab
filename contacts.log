@@ -11190,3 +11190,1069 @@ werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'main_b
 2025-11-07 11:29:15,972 - 127.0.0.1 - - [07/Nov/2025 11:29:15] "GET /post/ HTTP/1.1" 200 -
 2025-11-07 11:29:16,035 - 127.0.0.1 - - [07/Nov/2025 11:29:16] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
 2025-11-07 11:29:16,037 - 127.0.0.1 - - [07/Nov/2025 11:29:16] "[36mGET /static/images/img.jpg HTTP/1.1[0m" 304 -
+2025-11-07 21:20:28,626 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-11-07 21:20:28,626 - [33mPress CTRL+C to quit[0m
+2025-11-07 21:20:34,254 - 127.0.0.1 - - [07/Nov/2025 21:20:34] "GET /post/ HTTP/1.1" 200 -
+2025-11-07 21:20:34,428 - 127.0.0.1 - - [07/Nov/2025 21:20:34] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-07 21:20:36,160 - Exception on /post/create [GET]
+Traceback (most recent call last):
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\posts\views.py", line 33, in create_post
+    return render_template("posts/add_post.html", title="Create Post")
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\posts\templates\posts\add_post.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\templates\base.html", line 32, in top-level template code
+    {% block content %}{% endblock %}
+    ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\posts\templates\posts\add_post.html", line 12, in block 'content'
+    {{ form.hidden_tag() }}
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 490, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'form' is undefined
+2025-11-07 21:20:36,226 - 127.0.0.1 - - [07/Nov/2025 21:20:36] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 21:43:58,301 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-11-07 21:43:58,301 - [33mPress CTRL+C to quit[0m
+2025-11-07 21:44:02,723 - Exception on /post/create [GET]
+Traceback (most recent call last):
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\posts\views.py", line 33, in create_post
+    return render_template("posts/add_post.html", title="Create Post")
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\posts\templates\posts\add_post.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\templates\base.html", line 32, in top-level template code
+    {% block content %}{% endblock %}
+    ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\posts\templates\posts\add_post.html", line 12, in block 'content'
+    {{ form.hidden_tag() }}
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 490, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'form' is undefined
+2025-11-07 21:44:02,731 - 127.0.0.1 - - [07/Nov/2025 21:44:02] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 21:44:03,613 - Exception on /post/create [GET]
+Traceback (most recent call last):
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\posts\views.py", line 33, in create_post
+    return render_template("posts/add_post.html", title="Create Post")
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\posts\templates\posts\add_post.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\templates\base.html", line 32, in top-level template code
+    {% block content %}{% endblock %}
+    ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\posts\templates\posts\add_post.html", line 12, in block 'content'
+    {{ form.hidden_tag() }}
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 490, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'form' is undefined
+2025-11-07 21:44:03,616 - 127.0.0.1 - - [07/Nov/2025 21:44:03] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 21:44:03,766 - Exception on /post/create [GET]
+Traceback (most recent call last):
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\posts\views.py", line 33, in create_post
+    return render_template("posts/add_post.html", title="Create Post")
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\posts\templates\posts\add_post.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\templates\base.html", line 32, in top-level template code
+    {% block content %}{% endblock %}
+    ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\posts\templates\posts\add_post.html", line 12, in block 'content'
+    {{ form.hidden_tag() }}
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 490, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'form' is undefined
+2025-11-07 21:44:03,772 - 127.0.0.1 - - [07/Nov/2025 21:44:03] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 21:44:03,916 - Exception on /post/create [GET]
+Traceback (most recent call last):
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\posts\views.py", line 33, in create_post
+    return render_template("posts/add_post.html", title="Create Post")
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\posts\templates\posts\add_post.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\templates\base.html", line 32, in top-level template code
+    {% block content %}{% endblock %}
+    ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\posts\templates\posts\add_post.html", line 12, in block 'content'
+    {{ form.hidden_tag() }}
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 490, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'form' is undefined
+2025-11-07 21:44:03,919 - 127.0.0.1 - - [07/Nov/2025 21:44:03] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 21:44:04,134 - Exception on /post/create [GET]
+Traceback (most recent call last):
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\posts\views.py", line 33, in create_post
+    return render_template("posts/add_post.html", title="Create Post")
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\posts\templates\posts\add_post.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\templates\base.html", line 32, in top-level template code
+    {% block content %}{% endblock %}
+    ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\posts\templates\posts\add_post.html", line 12, in block 'content'
+    {{ form.hidden_tag() }}
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 490, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'form' is undefined
+2025-11-07 21:44:04,137 - 127.0.0.1 - - [07/Nov/2025 21:44:04] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 21:44:06,498 - 127.0.0.1 - - [07/Nov/2025 21:44:06] "GET /post/ HTTP/1.1" 200 -
+2025-11-07 21:44:06,534 - 127.0.0.1 - - [07/Nov/2025 21:44:06] "[33mGET /static/images/postdefault.jpg HTTP/1.1[0m" 404 -
+2025-11-07 21:44:06,615 - 127.0.0.1 - - [07/Nov/2025 21:44:06] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-07 21:44:07,178 - 127.0.0.1 - - [07/Nov/2025 21:44:07] "GET /post/ HTTP/1.1" 200 -
+2025-11-07 21:44:07,200 - 127.0.0.1 - - [07/Nov/2025 21:44:07] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-07 21:44:07,207 - 127.0.0.1 - - [07/Nov/2025 21:44:07] "[33mGET /static/images/postdefault.jpg HTTP/1.1[0m" 404 -
+2025-11-07 21:44:10,211 - Exception on /post/create [GET]
+Traceback (most recent call last):
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\posts\views.py", line 33, in create_post
+    return render_template("posts/add_post.html", title="Create Post")
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\posts\templates\posts\add_post.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\templates\base.html", line 32, in top-level template code
+    {% block content %}{% endblock %}
+    ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\posts\templates\posts\add_post.html", line 12, in block 'content'
+    {{ form.hidden_tag() }}
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 490, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'form' is undefined
+2025-11-07 21:44:10,214 - 127.0.0.1 - - [07/Nov/2025 21:44:10] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 21:44:14,273 - Exception on /post/create [GET]
+Traceback (most recent call last):
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\posts\views.py", line 33, in create_post
+    return render_template("posts/add_post.html", title="Create Post")
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\posts\templates\posts\add_post.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\templates\base.html", line 32, in top-level template code
+    {% block content %}{% endblock %}
+    ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\posts\templates\posts\add_post.html", line 12, in block 'content'
+    {{ form.hidden_tag() }}
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 490, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'form' is undefined
+2025-11-07 21:44:14,277 - 127.0.0.1 - - [07/Nov/2025 21:44:14] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 21:44:16,497 - 127.0.0.1 - - [07/Nov/2025 21:44:16] "GET /post/1 HTTP/1.1" 200 -
+2025-11-07 21:44:16,537 - 127.0.0.1 - - [07/Nov/2025 21:44:16] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-07 21:44:20,021 - 127.0.0.1 - - [07/Nov/2025 21:44:20] "GET /post/1/delete HTTP/1.1" 200 -
+2025-11-07 21:44:20,059 - 127.0.0.1 - - [07/Nov/2025 21:44:20] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-07 21:45:40,079 - 127.0.0.1 - - [07/Nov/2025 21:45:40] "GET /post/ HTTP/1.1" 200 -
+2025-11-07 21:45:40,105 - 127.0.0.1 - - [07/Nov/2025 21:45:40] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-07 21:45:40,108 - 127.0.0.1 - - [07/Nov/2025 21:45:40] "[33mGET /static/images/postdefault.jpg HTTP/1.1[0m" 404 -
+2025-11-07 21:45:40,307 - 127.0.0.1 - - [07/Nov/2025 21:45:40] "GET /post/ HTTP/1.1" 200 -
+2025-11-07 21:45:40,355 - 127.0.0.1 - - [07/Nov/2025 21:45:40] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-07 21:45:40,357 - 127.0.0.1 - - [07/Nov/2025 21:45:40] "[33mGET /static/images/postdefault.jpg HTTP/1.1[0m" 404 -
+2025-11-07 21:45:40,549 - 127.0.0.1 - - [07/Nov/2025 21:45:40] "GET /post/ HTTP/1.1" 200 -
+2025-11-07 21:45:40,587 - 127.0.0.1 - - [07/Nov/2025 21:45:40] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-07 21:45:40,589 - 127.0.0.1 - - [07/Nov/2025 21:45:40] "[33mGET /static/images/postdefault.jpg HTTP/1.1[0m" 404 -
+2025-11-07 21:45:40,766 - 127.0.0.1 - - [07/Nov/2025 21:45:40] "GET /post/ HTTP/1.1" 200 -
+2025-11-07 21:45:40,791 - 127.0.0.1 - - [07/Nov/2025 21:45:40] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-07 21:45:40,793 - 127.0.0.1 - - [07/Nov/2025 21:45:40] "[33mGET /static/images/postdefault.jpg HTTP/1.1[0m" 404 -
+2025-11-07 21:45:40,961 - 127.0.0.1 - - [07/Nov/2025 21:45:40] "GET /post/ HTTP/1.1" 200 -
+2025-11-07 21:45:40,986 - 127.0.0.1 - - [07/Nov/2025 21:45:40] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-07 21:45:40,987 - 127.0.0.1 - - [07/Nov/2025 21:45:40] "[33mGET /static/images/postdefault.jpg HTTP/1.1[0m" 404 -
+2025-11-07 21:45:41,187 - 127.0.0.1 - - [07/Nov/2025 21:45:41] "GET /post/ HTTP/1.1" 200 -
+2025-11-07 21:45:41,214 - 127.0.0.1 - - [07/Nov/2025 21:45:41] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-07 21:45:41,217 - 127.0.0.1 - - [07/Nov/2025 21:45:41] "[33mGET /static/images/postdefault.jpg HTTP/1.1[0m" 404 -
+2025-11-07 21:45:58,657 - 127.0.0.1 - - [07/Nov/2025 21:45:58] "GET /post/ HTTP/1.1" 200 -
+2025-11-07 21:45:58,689 - 127.0.0.1 - - [07/Nov/2025 21:45:58] "[33mGET /static/images/postdefault.jpg HTTP/1.1[0m" 404 -
+2025-11-07 21:45:58,690 - 127.0.0.1 - - [07/Nov/2025 21:45:58] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-07 21:45:58,872 - 127.0.0.1 - - [07/Nov/2025 21:45:58] "GET /post/ HTTP/1.1" 200 -
+2025-11-07 21:45:58,902 - 127.0.0.1 - - [07/Nov/2025 21:45:58] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-07 21:45:58,903 - 127.0.0.1 - - [07/Nov/2025 21:45:58] "[33mGET /static/images/postdefault.jpg HTTP/1.1[0m" 404 -
+2025-11-07 21:45:59,065 - 127.0.0.1 - - [07/Nov/2025 21:45:59] "GET /post/ HTTP/1.1" 200 -
+2025-11-07 21:45:59,093 - 127.0.0.1 - - [07/Nov/2025 21:45:59] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-07 21:45:59,100 - 127.0.0.1 - - [07/Nov/2025 21:45:59] "[33mGET /static/images/postdefault.jpg HTTP/1.1[0m" 404 -
+2025-11-07 21:45:59,252 - 127.0.0.1 - - [07/Nov/2025 21:45:59] "GET /post/ HTTP/1.1" 200 -
+2025-11-07 21:45:59,288 - 127.0.0.1 - - [07/Nov/2025 21:45:59] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-07 21:45:59,294 - 127.0.0.1 - - [07/Nov/2025 21:45:59] "[33mGET /static/images/postdefault.jpg HTTP/1.1[0m" 404 -
+2025-11-07 21:45:59,982 - 127.0.0.1 - - [07/Nov/2025 21:45:59] "GET /post/ HTTP/1.1" 200 -
+2025-11-07 21:46:00,007 - 127.0.0.1 - - [07/Nov/2025 21:46:00] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-07 21:46:00,009 - 127.0.0.1 - - [07/Nov/2025 21:46:00] "[33mGET /static/images/postdefault.jpg HTTP/1.1[0m" 404 -
+2025-11-07 21:46:01,285 - Exception on /post/create [GET]
+Traceback (most recent call last):
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\posts\views.py", line 33, in create_post
+    return render_template("posts/add_post.html", title="Create Post")
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\posts\templates\posts\add_post.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\templates\base.html", line 32, in top-level template code
+    {% block content %}{% endblock %}
+    ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\posts\templates\posts\add_post.html", line 12, in block 'content'
+    {{ form.hidden_tag() }}
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 490, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'form' is undefined
+2025-11-07 21:46:01,288 - 127.0.0.1 - - [07/Nov/2025 21:46:01] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 21:46:05,917 - 127.0.0.1 - - [07/Nov/2025 21:46:05] "GET /post/1 HTTP/1.1" 200 -
+2025-11-07 21:46:05,972 - 127.0.0.1 - - [07/Nov/2025 21:46:05] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-07 21:46:12,655 - 127.0.0.1 - - [07/Nov/2025 21:46:12] "GET /post/1/update HTTP/1.1" 200 -
+2025-11-07 21:46:12,695 - 127.0.0.1 - - [07/Nov/2025 21:46:12] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-07 21:46:16,128 - 127.0.0.1 - - [07/Nov/2025 21:46:16] "GET /post/ HTTP/1.1" 200 -
+2025-11-07 21:46:16,184 - 127.0.0.1 - - [07/Nov/2025 21:46:16] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-07 21:46:16,185 - 127.0.0.1 - - [07/Nov/2025 21:46:16] "[33mGET /static/images/postdefault.jpg HTTP/1.1[0m" 404 -
+2025-11-07 21:50:45,039 - 127.0.0.1 - - [07/Nov/2025 21:50:45] "GET /post/1 HTTP/1.1" 200 -
+2025-11-07 21:50:45,078 - 127.0.0.1 - - [07/Nov/2025 21:50:45] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-07 21:50:47,206 - 127.0.0.1 - - [07/Nov/2025 21:50:47] "GET /post/1/delete HTTP/1.1" 200 -
+2025-11-07 21:50:47,254 - 127.0.0.1 - - [07/Nov/2025 21:50:47] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-07 21:50:59,668 - 127.0.0.1 - - [07/Nov/2025 21:50:59] "GET /post/ HTTP/1.1" 200 -
+2025-11-07 21:50:59,716 - 127.0.0.1 - - [07/Nov/2025 21:50:59] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-07 21:50:59,718 - 127.0.0.1 - - [07/Nov/2025 21:50:59] "[33mGET /static/images/postdefault.jpg HTTP/1.1[0m" 404 -
+2025-11-07 21:51:02,097 - 127.0.0.1 - - [07/Nov/2025 21:51:02] "GET /post/1 HTTP/1.1" 200 -
+2025-11-07 21:51:02,142 - 127.0.0.1 - - [07/Nov/2025 21:51:02] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-07 21:51:03,966 - 127.0.0.1 - - [07/Nov/2025 21:51:03] "GET /post/ HTTP/1.1" 200 -
+2025-11-07 21:51:04,016 - 127.0.0.1 - - [07/Nov/2025 21:51:04] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-07 21:51:04,025 - 127.0.0.1 - - [07/Nov/2025 21:51:04] "[33mGET /static/images/postdefault.jpg HTTP/1.1[0m" 404 -
+2025-11-07 21:53:11,345 - Exception on /post/create [GET]
+Traceback (most recent call last):
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\posts\views.py", line 33, in create_post
+    return render_template("posts/add_post.html", title="Create Post")
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\posts\templates\posts\add_post.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\templates\base.html", line 32, in top-level template code
+    {% block content %}{% endblock %}
+    ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\posts\templates\posts\add_post.html", line 12, in block 'content'
+    {{ form.hidden_tag() }}
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 490, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'form' is undefined
+2025-11-07 21:53:11,350 - 127.0.0.1 - - [07/Nov/2025 21:53:11] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 21:56:15,900 - Exception on /post/create [GET]
+Traceback (most recent call last):
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\posts\views.py", line 33, in create_post
+    return render_template("posts/add_post.html", title="Create Post")
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\posts\templates\posts\add_post.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\templates\base.html", line 32, in top-level template code
+    {% block content %}{% endblock %}
+    ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\posts\templates\posts\add_post.html", line 12, in block 'content'
+    {{ form.hidden_tag() }}
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 490, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'form' is undefined
+2025-11-07 21:56:15,905 - 127.0.0.1 - - [07/Nov/2025 21:56:15] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 21:56:18,873 - 127.0.0.1 - - [07/Nov/2025 21:56:18] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-11-07 21:56:35,985 - Exception on /post/create [GET]
+Traceback (most recent call last):
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\posts\views.py", line 33, in create_post
+    return render_template("posts/add_post.html", title="Create Post")
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\posts\templates\posts\add_post.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\templates\base.html", line 32, in top-level template code
+    {% block content %}{% endblock %}
+    ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\posts\templates\posts\add_post.html", line 12, in block 'content'
+    {{ form.hidden_tag() }}
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 490, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'form' is undefined
+2025-11-07 21:56:35,989 - 127.0.0.1 - - [07/Nov/2025 21:56:35] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 21:56:36,142 - Exception on /post/create [GET]
+Traceback (most recent call last):
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\posts\views.py", line 33, in create_post
+    return render_template("posts/add_post.html", title="Create Post")
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\posts\templates\posts\add_post.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\templates\base.html", line 32, in top-level template code
+    {% block content %}{% endblock %}
+    ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\posts\templates\posts\add_post.html", line 12, in block 'content'
+    {{ form.hidden_tag() }}
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 490, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'form' is undefined
+2025-11-07 21:56:36,145 - 127.0.0.1 - - [07/Nov/2025 21:56:36] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 21:56:36,298 - Exception on /post/create [GET]
+Traceback (most recent call last):
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\posts\views.py", line 33, in create_post
+    return render_template("posts/add_post.html", title="Create Post")
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\posts\templates\posts\add_post.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\templates\base.html", line 32, in top-level template code
+    {% block content %}{% endblock %}
+    ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\posts\templates\posts\add_post.html", line 12, in block 'content'
+    {{ form.hidden_tag() }}
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 490, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'form' is undefined
+2025-11-07 21:56:36,302 - 127.0.0.1 - - [07/Nov/2025 21:56:36] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 21:56:38,148 - 127.0.0.1 - - [07/Nov/2025 21:56:38] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-11-07 21:59:15,368 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-11-07 21:59:15,369 - [33mPress CTRL+C to quit[0m
+2025-11-07 21:59:45,723 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-11-07 21:59:45,723 - [33mPress CTRL+C to quit[0m
+2025-11-07 21:59:45,725 -  * Restarting with stat
+2025-11-07 21:59:47,269 -  * Debugger is active!
+2025-11-07 21:59:47,275 -  * Debugger PIN: 143-009-978
+2025-11-07 21:59:52,580 - 127.0.0.1 - - [07/Nov/2025 21:59:52] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 21:59:52,743 - 127.0.0.1 - - [07/Nov/2025 21:59:52] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-07 21:59:52,782 - 127.0.0.1 - - [07/Nov/2025 21:59:52] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-07 21:59:52,877 - 127.0.0.1 - - [07/Nov/2025 21:59:52] "GET /post/create?__debugger__=yes&cmd=resource&f=console.png&s=RbRbovahhHzMd6VSjf17 HTTP/1.1" 200 -
+2025-11-07 21:59:53,058 - 127.0.0.1 - - [07/Nov/2025 21:59:53] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-11-07 22:02:30,608 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\third\\flask\\flask_lab2\\app\\posts\\views.py', reloading
+2025-11-07 22:02:30,819 -  * Restarting with stat
+2025-11-07 22:02:32,429 -  * Debugger is active!
+2025-11-07 22:02:32,434 -  * Debugger PIN: 143-009-978
+2025-11-07 22:02:33,330 - 127.0.0.1 - - [07/Nov/2025 22:02:33] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 22:02:33,521 - 127.0.0.1 - - [07/Nov/2025 22:02:33] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-07 22:02:33,525 - 127.0.0.1 - - [07/Nov/2025 22:02:33] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-07 22:02:33,540 - 127.0.0.1 - - [07/Nov/2025 22:02:33] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 22:02:33,568 - 127.0.0.1 - - [07/Nov/2025 22:02:33] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-07 22:02:33,569 - 127.0.0.1 - - [07/Nov/2025 22:02:33] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-07 22:02:33,687 - 127.0.0.1 - - [07/Nov/2025 22:02:33] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 22:02:33,739 - 127.0.0.1 - - [07/Nov/2025 22:02:33] "GET /post/create?__debugger__=yes&cmd=resource&f=console.png&s=bBj8tVYLsfklEqizgamX HTTP/1.1" 200 -
+2025-11-07 22:02:33,807 - 127.0.0.1 - - [07/Nov/2025 22:02:33] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-07 22:02:33,809 - 127.0.0.1 - - [07/Nov/2025 22:02:33] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-07 22:02:33,886 - 127.0.0.1 - - [07/Nov/2025 22:02:33] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png&s=bBj8tVYLsfklEqizgamX HTTP/1.1[0m" 304 -
+2025-11-07 22:02:33,956 - 127.0.0.1 - - [07/Nov/2025 22:02:33] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-11-07 22:02:34,295 - 127.0.0.1 - - [07/Nov/2025 22:02:34] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 22:02:34,334 - 127.0.0.1 - - [07/Nov/2025 22:02:34] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-07 22:02:34,336 - 127.0.0.1 - - [07/Nov/2025 22:02:34] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-07 22:02:34,468 - 127.0.0.1 - - [07/Nov/2025 22:02:34] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png&s=bBj8tVYLsfklEqizgamX HTTP/1.1[0m" 304 -
+2025-11-07 22:02:34,571 - 127.0.0.1 - - [07/Nov/2025 22:02:34] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-11-07 22:02:58,017 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\third\\flask\\flask_lab2\\app\\posts\\views.py', reloading
+2025-11-07 22:02:58,209 -  * Restarting with stat
+2025-11-07 22:02:59,890 -  * Debugger is active!
+2025-11-07 22:02:59,897 -  * Debugger PIN: 143-009-978
+2025-11-07 22:03:01,559 - 127.0.0.1 - - [07/Nov/2025 22:03:01] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 22:03:01,761 - 127.0.0.1 - - [07/Nov/2025 22:03:01] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 22:03:01,765 - 127.0.0.1 - - [07/Nov/2025 22:03:01] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-07 22:03:01,770 - 127.0.0.1 - - [07/Nov/2025 22:03:01] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-07 22:03:01,793 - 127.0.0.1 - - [07/Nov/2025 22:03:01] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-07 22:03:01,800 - 127.0.0.1 - - [07/Nov/2025 22:03:01] "GET /post/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-11-07 22:03:01,916 - 127.0.0.1 - - [07/Nov/2025 22:03:01] "GET /post/create?__debugger__=yes&cmd=resource&f=console.png&s=75yWel5OYMlbE6gyYsQN HTTP/1.1" 200 -
+2025-11-07 22:03:02,016 - 127.0.0.1 - - [07/Nov/2025 22:03:02] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 22:03:02,020 - 127.0.0.1 - - [07/Nov/2025 22:03:02] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-11-07 22:03:02,072 - 127.0.0.1 - - [07/Nov/2025 22:03:02] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-07 22:03:02,079 - 127.0.0.1 - - [07/Nov/2025 22:03:02] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-07 22:03:02,117 - 127.0.0.1 - - [07/Nov/2025 22:03:02] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png&s=75yWel5OYMlbE6gyYsQN HTTP/1.1[0m" 304 -
+2025-11-07 22:03:02,196 - 127.0.0.1 - - [07/Nov/2025 22:03:02] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-11-07 22:03:02,258 - 127.0.0.1 - - [07/Nov/2025 22:03:02] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 22:03:02,297 - 127.0.0.1 - - [07/Nov/2025 22:03:02] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-07 22:03:02,299 - 127.0.0.1 - - [07/Nov/2025 22:03:02] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-07 22:03:02,372 - 127.0.0.1 - - [07/Nov/2025 22:03:02] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png&s=75yWel5OYMlbE6gyYsQN HTTP/1.1[0m" 304 -
+2025-11-07 22:03:02,447 - 127.0.0.1 - - [07/Nov/2025 22:03:02] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-11-07 22:03:02,565 - 127.0.0.1 - - [07/Nov/2025 22:03:02] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 22:03:02,610 - 127.0.0.1 - - [07/Nov/2025 22:03:02] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-07 22:03:02,613 - 127.0.0.1 - - [07/Nov/2025 22:03:02] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-07 22:03:02,656 - 127.0.0.1 - - [07/Nov/2025 22:03:02] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png&s=75yWel5OYMlbE6gyYsQN HTTP/1.1[0m" 304 -
+2025-11-07 22:03:02,721 - 127.0.0.1 - - [07/Nov/2025 22:03:02] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-11-07 22:03:19,373 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\third\\flask\\flask_lab2\\app\\posts\\views.py', reloading
+2025-11-07 22:03:19,634 -  * Restarting with stat
+2025-11-07 22:03:21,446 -  * Debugger is active!
+2025-11-07 22:03:21,451 -  * Debugger PIN: 143-009-978
+2025-11-07 22:03:21,639 - 127.0.0.1 - - [07/Nov/2025 22:03:21] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 22:03:21,754 - 127.0.0.1 - - [07/Nov/2025 22:03:21] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 22:03:21,779 - 127.0.0.1 - - [07/Nov/2025 22:03:21] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-07 22:03:21,788 - 127.0.0.1 - - [07/Nov/2025 22:03:21] "GET /post/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-11-07 22:03:21,800 - 127.0.0.1 - - [07/Nov/2025 22:03:21] "GET /post/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-11-07 22:03:21,802 - 127.0.0.1 - - [07/Nov/2025 22:03:21] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-07 22:03:21,952 - 127.0.0.1 - - [07/Nov/2025 22:03:21] "GET /post/create?__debugger__=yes&cmd=resource&f=console.png&s=l6VrJuhgJCUKcLIoOWvT HTTP/1.1" 200 -
+2025-11-07 22:03:21,968 - 127.0.0.1 - - [07/Nov/2025 22:03:21] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 22:03:22,041 - 127.0.0.1 - - [07/Nov/2025 22:03:22] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-07 22:03:22,042 - 127.0.0.1 - - [07/Nov/2025 22:03:22] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-07 22:03:22,138 - 127.0.0.1 - - [07/Nov/2025 22:03:22] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png&s=l6VrJuhgJCUKcLIoOWvT HTTP/1.1[0m" 304 -
+2025-11-07 22:03:22,210 - 127.0.0.1 - - [07/Nov/2025 22:03:22] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-11-07 22:03:22,308 - 127.0.0.1 - - [07/Nov/2025 22:03:22] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 22:03:22,348 - 127.0.0.1 - - [07/Nov/2025 22:03:22] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-07 22:03:22,350 - 127.0.0.1 - - [07/Nov/2025 22:03:22] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-07 22:03:22,466 - 127.0.0.1 - - [07/Nov/2025 22:03:22] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png&s=l6VrJuhgJCUKcLIoOWvT HTTP/1.1[0m" 304 -
+2025-11-07 22:03:22,582 - 127.0.0.1 - - [07/Nov/2025 22:03:22] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-11-07 22:06:09,727 - 127.0.0.1 - - [07/Nov/2025 22:06:09] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 22:06:09,754 - 127.0.0.1 - - [07/Nov/2025 22:06:09] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-07 22:06:09,766 - 127.0.0.1 - - [07/Nov/2025 22:06:09] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-07 22:06:09,912 - 127.0.0.1 - - [07/Nov/2025 22:06:09] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png&s=l6VrJuhgJCUKcLIoOWvT HTTP/1.1[0m" 304 -
+2025-11-07 22:06:09,965 - 127.0.0.1 - - [07/Nov/2025 22:06:09] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 22:06:10,007 - 127.0.0.1 - - [07/Nov/2025 22:06:10] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-07 22:06:10,010 - 127.0.0.1 - - [07/Nov/2025 22:06:10] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-07 22:06:10,058 - 127.0.0.1 - - [07/Nov/2025 22:06:10] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png&s=l6VrJuhgJCUKcLIoOWvT HTTP/1.1[0m" 304 -
+2025-11-07 22:06:10,124 - 127.0.0.1 - - [07/Nov/2025 22:06:10] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 22:06:10,134 - 127.0.0.1 - - [07/Nov/2025 22:06:10] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-11-07 22:06:10,171 - 127.0.0.1 - - [07/Nov/2025 22:06:10] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-07 22:06:10,172 - 127.0.0.1 - - [07/Nov/2025 22:06:10] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-07 22:06:10,275 - 127.0.0.1 - - [07/Nov/2025 22:06:10] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png&s=l6VrJuhgJCUKcLIoOWvT HTTP/1.1[0m" 304 -
+2025-11-07 22:06:10,383 - 127.0.0.1 - - [07/Nov/2025 22:06:10] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 22:06:10,388 - 127.0.0.1 - - [07/Nov/2025 22:06:10] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-11-07 22:06:10,425 - 127.0.0.1 - - [07/Nov/2025 22:06:10] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-07 22:06:10,428 - 127.0.0.1 - - [07/Nov/2025 22:06:10] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-07 22:06:10,479 - 127.0.0.1 - - [07/Nov/2025 22:06:10] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png&s=l6VrJuhgJCUKcLIoOWvT HTTP/1.1[0m" 304 -
+2025-11-07 22:06:10,550 - 127.0.0.1 - - [07/Nov/2025 22:06:10] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-11-07 22:06:16,658 - 127.0.0.1 - - [07/Nov/2025 22:06:16] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 22:06:16,692 - 127.0.0.1 - - [07/Nov/2025 22:06:16] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-07 22:06:16,695 - 127.0.0.1 - - [07/Nov/2025 22:06:16] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-07 22:06:16,757 - 127.0.0.1 - - [07/Nov/2025 22:06:16] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png&s=l6VrJuhgJCUKcLIoOWvT HTTP/1.1[0m" 304 -
+2025-11-07 22:06:16,878 - 127.0.0.1 - - [07/Nov/2025 22:06:16] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-11-07 22:06:16,894 - 127.0.0.1 - - [07/Nov/2025 22:06:16] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 22:06:16,935 - 127.0.0.1 - - [07/Nov/2025 22:06:16] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-07 22:06:16,936 - 127.0.0.1 - - [07/Nov/2025 22:06:16] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-07 22:06:17,040 - 127.0.0.1 - - [07/Nov/2025 22:06:17] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png&s=l6VrJuhgJCUKcLIoOWvT HTTP/1.1[0m" 304 -
+2025-11-07 22:06:17,476 - 127.0.0.1 - - [07/Nov/2025 22:06:17] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 22:06:17,513 - 127.0.0.1 - - [07/Nov/2025 22:06:17] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-07 22:06:17,515 - 127.0.0.1 - - [07/Nov/2025 22:06:17] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-07 22:06:17,565 - 127.0.0.1 - - [07/Nov/2025 22:06:17] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png&s=l6VrJuhgJCUKcLIoOWvT HTTP/1.1[0m" 304 -
+2025-11-07 22:06:17,665 - 127.0.0.1 - - [07/Nov/2025 22:06:17] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-11-07 22:06:34,248 - 127.0.0.1 - - [07/Nov/2025 22:06:34] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 22:06:34,286 - 127.0.0.1 - - [07/Nov/2025 22:06:34] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-07 22:06:34,289 - 127.0.0.1 - - [07/Nov/2025 22:06:34] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-07 22:06:34,357 - 127.0.0.1 - - [07/Nov/2025 22:06:34] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png&s=l6VrJuhgJCUKcLIoOWvT HTTP/1.1[0m" 304 -
+2025-11-07 22:06:34,412 - 127.0.0.1 - - [07/Nov/2025 22:06:34] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-11-07 22:06:34,513 - 127.0.0.1 - - [07/Nov/2025 22:06:34] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 22:06:34,550 - 127.0.0.1 - - [07/Nov/2025 22:06:34] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-07 22:06:34,552 - 127.0.0.1 - - [07/Nov/2025 22:06:34] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-07 22:06:34,673 - 127.0.0.1 - - [07/Nov/2025 22:06:34] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png&s=l6VrJuhgJCUKcLIoOWvT HTTP/1.1[0m" 304 -
+2025-11-07 22:06:34,770 - 127.0.0.1 - - [07/Nov/2025 22:06:34] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-11-07 22:06:35,681 - 127.0.0.1 - - [07/Nov/2025 22:06:35] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 22:06:35,718 - 127.0.0.1 - - [07/Nov/2025 22:06:35] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-07 22:06:35,720 - 127.0.0.1 - - [07/Nov/2025 22:06:35] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-07 22:06:35,776 - 127.0.0.1 - - [07/Nov/2025 22:06:35] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png&s=l6VrJuhgJCUKcLIoOWvT HTTP/1.1[0m" 304 -
+2025-11-07 22:06:35,854 - 127.0.0.1 - - [07/Nov/2025 22:06:35] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-11-07 22:09:21,128 - 127.0.0.1 - - [07/Nov/2025 22:09:21] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 22:09:21,155 - 127.0.0.1 - - [07/Nov/2025 22:09:21] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-07 22:09:21,157 - 127.0.0.1 - - [07/Nov/2025 22:09:21] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-07 22:09:21,267 - 127.0.0.1 - - [07/Nov/2025 22:09:21] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png&s=l6VrJuhgJCUKcLIoOWvT HTTP/1.1[0m" 304 -
+2025-11-07 22:09:21,335 - 127.0.0.1 - - [07/Nov/2025 22:09:21] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-11-07 22:09:21,384 - 127.0.0.1 - - [07/Nov/2025 22:09:21] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 22:09:21,421 - 127.0.0.1 - - [07/Nov/2025 22:09:21] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-07 22:09:21,423 - 127.0.0.1 - - [07/Nov/2025 22:09:21] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-07 22:09:21,547 - 127.0.0.1 - - [07/Nov/2025 22:09:21] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png&s=l6VrJuhgJCUKcLIoOWvT HTTP/1.1[0m" 304 -
+2025-11-07 22:09:21,634 - 127.0.0.1 - - [07/Nov/2025 22:09:21] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-11-07 22:11:37,466 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\third\\flask\\flask_lab2\\app\\posts\\views.py', reloading
+2025-11-07 22:11:37,654 -  * Restarting with stat
+2025-11-07 22:11:39,348 -  * Debugger is active!
+2025-11-07 22:11:39,353 -  * Debugger PIN: 143-009-978
+2025-11-07 22:11:50,651 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\third\\flask\\flask_lab2\\app\\posts\\views.py', reloading
+2025-11-07 22:11:50,896 -  * Restarting with stat
+2025-11-07 22:11:52,665 -  * Debugger is active!
+2025-11-07 22:11:52,670 -  * Debugger PIN: 143-009-978
+2025-11-07 22:12:31,351 - 127.0.0.1 - - [07/Nov/2025 22:12:31] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 22:12:31,517 - 127.0.0.1 - - [07/Nov/2025 22:12:31] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-07 22:12:31,521 - 127.0.0.1 - - [07/Nov/2025 22:12:31] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-07 22:12:31,600 - 127.0.0.1 - - [07/Nov/2025 22:12:31] "GET /post/create?__debugger__=yes&cmd=resource&f=console.png&s=3JA9nnWvWI7EYD4S5FNH HTTP/1.1" 200 -
+2025-11-07 22:12:31,652 - 127.0.0.1 - - [07/Nov/2025 22:12:31] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 22:12:31,723 - 127.0.0.1 - - [07/Nov/2025 22:12:31] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-07 22:12:31,726 - 127.0.0.1 - - [07/Nov/2025 22:12:31] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-07 22:12:31,850 - 127.0.0.1 - - [07/Nov/2025 22:12:31] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png&s=3JA9nnWvWI7EYD4S5FNH HTTP/1.1[0m" 304 -
+2025-11-07 22:12:31,937 - 127.0.0.1 - - [07/Nov/2025 22:12:31] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-11-07 22:12:32,086 - 127.0.0.1 - - [07/Nov/2025 22:12:32] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 22:12:32,119 - 127.0.0.1 - - [07/Nov/2025 22:12:32] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-07 22:12:32,121 - 127.0.0.1 - - [07/Nov/2025 22:12:32] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-07 22:12:32,215 - 127.0.0.1 - - [07/Nov/2025 22:12:32] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png&s=3JA9nnWvWI7EYD4S5FNH HTTP/1.1[0m" 304 -
+2025-11-07 22:12:32,276 - 127.0.0.1 - - [07/Nov/2025 22:12:32] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-11-07 22:12:32,598 - 127.0.0.1 - - [07/Nov/2025 22:12:32] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 22:12:32,632 - 127.0.0.1 - - [07/Nov/2025 22:12:32] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-07 22:12:32,634 - 127.0.0.1 - - [07/Nov/2025 22:12:32] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-07 22:12:32,689 - 127.0.0.1 - - [07/Nov/2025 22:12:32] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png&s=3JA9nnWvWI7EYD4S5FNH HTTP/1.1[0m" 304 -
+2025-11-07 22:12:32,762 - 127.0.0.1 - - [07/Nov/2025 22:12:32] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-11-07 22:12:39,313 - 127.0.0.1 - - [07/Nov/2025 22:12:39] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 22:12:39,341 - 127.0.0.1 - - [07/Nov/2025 22:12:39] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-07 22:12:39,347 - 127.0.0.1 - - [07/Nov/2025 22:12:39] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-07 22:12:39,491 - 127.0.0.1 - - [07/Nov/2025 22:12:39] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png&s=3JA9nnWvWI7EYD4S5FNH HTTP/1.1[0m" 304 -
+2025-11-07 22:12:39,543 - 127.0.0.1 - - [07/Nov/2025 22:12:39] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-11-07 22:12:39,577 - 127.0.0.1 - - [07/Nov/2025 22:12:39] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 22:12:39,608 - 127.0.0.1 - - [07/Nov/2025 22:12:39] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-07 22:12:39,617 - 127.0.0.1 - - [07/Nov/2025 22:12:39] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-07 22:12:39,720 - 127.0.0.1 - - [07/Nov/2025 22:12:39] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png&s=3JA9nnWvWI7EYD4S5FNH HTTP/1.1[0m" 304 -
+2025-11-07 22:12:39,764 - 127.0.0.1 - - [07/Nov/2025 22:12:39] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 22:12:39,800 - 127.0.0.1 - - [07/Nov/2025 22:12:39] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-07 22:12:39,802 - 127.0.0.1 - - [07/Nov/2025 22:12:39] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-07 22:12:39,926 - 127.0.0.1 - - [07/Nov/2025 22:12:39] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png&s=3JA9nnWvWI7EYD4S5FNH HTTP/1.1[0m" 304 -
+2025-11-07 22:12:40,022 - 127.0.0.1 - - [07/Nov/2025 22:12:40] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 22:12:40,075 - 127.0.0.1 - - [07/Nov/2025 22:12:40] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-07 22:12:40,078 - 127.0.0.1 - - [07/Nov/2025 22:12:40] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-07 22:12:40,119 - 127.0.0.1 - - [07/Nov/2025 22:12:40] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png&s=3JA9nnWvWI7EYD4S5FNH HTTP/1.1[0m" 304 -
+2025-11-07 22:12:40,179 - 127.0.0.1 - - [07/Nov/2025 22:12:40] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 22:12:40,186 - 127.0.0.1 - - [07/Nov/2025 22:12:40] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-11-07 22:12:40,213 - 127.0.0.1 - - [07/Nov/2025 22:12:40] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-07 22:12:40,213 - 127.0.0.1 - - [07/Nov/2025 22:12:40] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-07 22:12:40,310 - 127.0.0.1 - - [07/Nov/2025 22:12:40] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 22:12:40,335 - 127.0.0.1 - - [07/Nov/2025 22:12:40] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-07 22:12:40,338 - 127.0.0.1 - - [07/Nov/2025 22:12:40] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-07 22:12:40,397 - 127.0.0.1 - - [07/Nov/2025 22:12:40] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png&s=3JA9nnWvWI7EYD4S5FNH HTTP/1.1[0m" 304 -
+2025-11-07 22:12:40,491 - 127.0.0.1 - - [07/Nov/2025 22:12:40] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-11-07 22:13:03,115 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\third\\flask\\flask_lab2\\app\\posts\\views.py', reloading
+2025-11-07 22:13:03,355 -  * Restarting with stat
+2025-11-07 22:13:04,955 -  * Debugger is active!
+2025-11-07 22:13:04,961 -  * Debugger PIN: 143-009-978
+2025-11-07 22:13:07,759 - 127.0.0.1 - - [07/Nov/2025 22:13:07] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 22:13:07,934 - 127.0.0.1 - - [07/Nov/2025 22:13:07] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-07 22:13:07,947 - 127.0.0.1 - - [07/Nov/2025 22:13:07] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-07 22:13:08,026 - 127.0.0.1 - - [07/Nov/2025 22:13:08] "GET /post/create?__debugger__=yes&cmd=resource&f=console.png&s=9UExw9BMNByXNnx3TFfU HTTP/1.1" 200 -
+2025-11-07 22:13:08,092 - 127.0.0.1 - - [07/Nov/2025 22:13:08] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-11-07 22:13:08,103 - 127.0.0.1 - - [07/Nov/2025 22:13:08] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 22:13:08,141 - 127.0.0.1 - - [07/Nov/2025 22:13:08] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-07 22:13:08,142 - 127.0.0.1 - - [07/Nov/2025 22:13:08] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-07 22:13:08,192 - 127.0.0.1 - - [07/Nov/2025 22:13:08] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png&s=9UExw9BMNByXNnx3TFfU HTTP/1.1[0m" 304 -
+2025-11-07 22:13:08,870 - 127.0.0.1 - - [07/Nov/2025 22:13:08] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 22:13:08,902 - 127.0.0.1 - - [07/Nov/2025 22:13:08] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-07 22:13:08,905 - 127.0.0.1 - - [07/Nov/2025 22:13:08] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-07 22:13:09,016 - 127.0.0.1 - - [07/Nov/2025 22:13:09] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png&s=9UExw9BMNByXNnx3TFfU HTTP/1.1[0m" 304 -
+2025-11-07 22:13:09,104 - 127.0.0.1 - - [07/Nov/2025 22:13:09] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-11-07 22:13:14,018 - 127.0.0.1 - - [07/Nov/2025 22:13:14] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 22:13:14,054 - 127.0.0.1 - - [07/Nov/2025 22:13:14] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-07 22:13:14,058 - 127.0.0.1 - - [07/Nov/2025 22:13:14] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-07 22:13:14,162 - 127.0.0.1 - - [07/Nov/2025 22:13:14] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png&s=9UExw9BMNByXNnx3TFfU HTTP/1.1[0m" 304 -
+2025-11-07 22:13:14,231 - 127.0.0.1 - - [07/Nov/2025 22:13:14] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-11-07 22:13:14,444 - 127.0.0.1 - - [07/Nov/2025 22:13:14] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 22:13:14,477 - 127.0.0.1 - - [07/Nov/2025 22:13:14] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-07 22:13:14,479 - 127.0.0.1 - - [07/Nov/2025 22:13:14] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-07 22:13:14,531 - 127.0.0.1 - - [07/Nov/2025 22:13:14] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png&s=9UExw9BMNByXNnx3TFfU HTTP/1.1[0m" 304 -
+2025-11-07 22:13:14,597 - 127.0.0.1 - - [07/Nov/2025 22:13:14] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-11-07 22:13:14,849 - 127.0.0.1 - - [07/Nov/2025 22:13:14] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 22:13:14,875 - 127.0.0.1 - - [07/Nov/2025 22:13:14] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-07 22:13:14,882 - 127.0.0.1 - - [07/Nov/2025 22:13:14] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-07 22:13:14,935 - 127.0.0.1 - - [07/Nov/2025 22:13:14] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png&s=9UExw9BMNByXNnx3TFfU HTTP/1.1[0m" 304 -
+2025-11-07 22:13:15,033 - 127.0.0.1 - - [07/Nov/2025 22:13:15] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-11-07 22:13:15,744 - 127.0.0.1 - - [07/Nov/2025 22:13:15] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 22:13:15,771 - 127.0.0.1 - - [07/Nov/2025 22:13:15] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-07 22:13:15,780 - 127.0.0.1 - - [07/Nov/2025 22:13:15] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-07 22:13:15,836 - 127.0.0.1 - - [07/Nov/2025 22:13:15] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png&s=9UExw9BMNByXNnx3TFfU HTTP/1.1[0m" 304 -
+2025-11-07 22:13:15,903 - 127.0.0.1 - - [07/Nov/2025 22:13:15] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-11-07 22:13:15,998 - 127.0.0.1 - - [07/Nov/2025 22:13:15] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 22:13:16,029 - 127.0.0.1 - - [07/Nov/2025 22:13:16] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-07 22:13:16,031 - 127.0.0.1 - - [07/Nov/2025 22:13:16] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-07 22:13:16,146 - 127.0.0.1 - - [07/Nov/2025 22:13:16] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png&s=9UExw9BMNByXNnx3TFfU HTTP/1.1[0m" 304 -
+2025-11-07 22:13:16,237 - 127.0.0.1 - - [07/Nov/2025 22:13:16] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-11-07 22:13:50,964 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\third\\flask\\flask_lab2\\app\\posts\\views.py', reloading
+2025-11-07 22:13:51,149 -  * Restarting with stat
+2025-11-07 22:13:52,891 -  * Debugger is active!
+2025-11-07 22:13:52,896 -  * Debugger PIN: 143-009-978
+2025-11-07 22:13:52,980 - 127.0.0.1 - - [07/Nov/2025 22:13:52] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 22:13:53,094 - 127.0.0.1 - - [07/Nov/2025 22:13:53] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 22:13:53,140 - 127.0.0.1 - - [07/Nov/2025 22:13:53] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-07 22:13:53,164 - 127.0.0.1 - - [07/Nov/2025 22:13:53] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-07 22:13:53,285 - 127.0.0.1 - - [07/Nov/2025 22:13:53] "GET /post/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-11-07 22:13:53,288 - 127.0.0.1 - - [07/Nov/2025 22:13:53] "GET /post/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-11-07 22:13:53,311 - 127.0.0.1 - - [07/Nov/2025 22:13:53] "GET /post/create?__debugger__=yes&cmd=resource&f=console.png&s=Z6IwIXWLiTTu6lfSyNWf HTTP/1.1" 200 -
+2025-11-07 22:13:53,452 - 127.0.0.1 - - [07/Nov/2025 22:13:53] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-11-07 22:13:53,674 - 127.0.0.1 - - [07/Nov/2025 22:13:53] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 22:13:53,704 - 127.0.0.1 - - [07/Nov/2025 22:13:53] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-07 22:13:53,713 - 127.0.0.1 - - [07/Nov/2025 22:13:53] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-07 22:13:53,767 - 127.0.0.1 - - [07/Nov/2025 22:13:53] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png&s=Z6IwIXWLiTTu6lfSyNWf HTTP/1.1[0m" 304 -
+2025-11-07 22:13:53,838 - 127.0.0.1 - - [07/Nov/2025 22:13:53] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-11-07 22:13:54,634 - 127.0.0.1 - - [07/Nov/2025 22:13:54] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 22:13:54,660 - 127.0.0.1 - - [07/Nov/2025 22:13:54] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-07 22:13:54,662 - 127.0.0.1 - - [07/Nov/2025 22:13:54] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-07 22:13:54,724 - 127.0.0.1 - - [07/Nov/2025 22:13:54] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png&s=Z6IwIXWLiTTu6lfSyNWf HTTP/1.1[0m" 304 -
+2025-11-07 22:13:54,823 - 127.0.0.1 - - [07/Nov/2025 22:13:54] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-11-07 22:14:05,249 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\third\\flask\\flask_lab2\\app\\posts\\views.py', reloading
+2025-11-07 22:14:05,519 -  * Restarting with stat
+2025-11-07 22:14:07,210 -  * Debugger is active!
+2025-11-07 22:14:07,215 -  * Debugger PIN: 143-009-978
+2025-11-07 22:14:07,279 - 127.0.0.1 - - [07/Nov/2025 22:14:07] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 22:14:07,281 - 127.0.0.1 - - [07/Nov/2025 22:14:07] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 22:14:07,284 - 127.0.0.1 - - [07/Nov/2025 22:14:07] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 22:14:07,287 - 127.0.0.1 - - [07/Nov/2025 22:14:07] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 22:14:07,434 - 127.0.0.1 - - [07/Nov/2025 22:14:07] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-07 22:14:07,435 - 127.0.0.1 - - [07/Nov/2025 22:14:07] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-07 22:14:07,498 - 127.0.0.1 - - [07/Nov/2025 22:14:07] "GET /post/create?__debugger__=yes&cmd=resource&f=console.png&s=9KB2znRX0WRzqIatrVwW HTTP/1.1" 200 -
+2025-11-07 22:14:07,549 - 127.0.0.1 - - [07/Nov/2025 22:14:07] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-11-07 22:14:11,380 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\third\\flask\\flask_lab2\\app\\posts\\views.py', reloading
+2025-11-07 22:14:11,560 -  * Restarting with stat
+2025-11-07 22:14:13,197 -  * Debugger is active!
+2025-11-07 22:14:13,202 -  * Debugger PIN: 143-009-978
+2025-11-07 22:14:13,278 - 127.0.0.1 - - [07/Nov/2025 22:14:13] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 22:14:13,442 - 127.0.0.1 - - [07/Nov/2025 22:14:13] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-07 22:14:13,443 - 127.0.0.1 - - [07/Nov/2025 22:14:13] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-07 22:14:13,491 - 127.0.0.1 - - [07/Nov/2025 22:14:13] "GET /post/create?__debugger__=yes&cmd=resource&f=console.png&s=0VcJ3mu7tZ6Da4DeKBAO HTTP/1.1" 200 -
+2025-11-07 22:14:13,559 - 127.0.0.1 - - [07/Nov/2025 22:14:13] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-11-07 22:14:37,749 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\third\\flask\\flask_lab2\\app\\posts\\views.py', reloading
+2025-11-07 22:14:37,994 -  * Restarting with stat
+2025-11-07 22:14:39,565 -  * Debugger is active!
+2025-11-07 22:14:39,570 -  * Debugger PIN: 143-009-978
+2025-11-07 22:14:39,652 - 127.0.0.1 - - [07/Nov/2025 22:14:39] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 22:14:39,850 - 127.0.0.1 - - [07/Nov/2025 22:14:39] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-07 22:14:39,852 - 127.0.0.1 - - [07/Nov/2025 22:14:39] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-07 22:14:39,928 - 127.0.0.1 - - [07/Nov/2025 22:14:39] "GET /post/create?__debugger__=yes&cmd=resource&f=console.png&s=XS0IXVKE1H7U2BZk9EFk HTTP/1.1" 200 -
+2025-11-07 22:14:40,002 - 127.0.0.1 - - [07/Nov/2025 22:14:40] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-11-07 22:14:58,709 - 127.0.0.1 - - [07/Nov/2025 22:14:58] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 22:14:59,285 - 127.0.0.1 - - [07/Nov/2025 22:14:59] "GET /post/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-11-07 22:14:59,288 - 127.0.0.1 - - [07/Nov/2025 22:14:59] "GET /post/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-11-07 22:14:59,369 - 127.0.0.1 - - [07/Nov/2025 22:14:59] "GET /post/create?__debugger__=yes&cmd=resource&f=console.png&s=XS0IXVKE1H7U2BZk9EFk HTTP/1.1" 200 -
+2025-11-07 22:14:59,476 - 127.0.0.1 - - [07/Nov/2025 22:14:59] "GET /post/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-11-07 22:15:03,565 - 127.0.0.1 - - [07/Nov/2025 22:15:03] "GET /post/ HTTP/1.1" 200 -
+2025-11-07 22:15:03,659 - 127.0.0.1 - - [07/Nov/2025 22:15:03] "GET /static/images/img.jpg HTTP/1.1" 200 -
+2025-11-07 22:15:03,662 - 127.0.0.1 - - [07/Nov/2025 22:15:03] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-07 22:15:07,998 - 127.0.0.1 - - [07/Nov/2025 22:15:07] "GET /post/1 HTTP/1.1" 200 -
+2025-11-07 22:15:08,090 - 127.0.0.1 - - [07/Nov/2025 22:15:08] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-07 22:15:09,687 - 127.0.0.1 - - [07/Nov/2025 22:15:09] "GET /post/1/delete HTTP/1.1" 200 -
+2025-11-07 22:15:09,762 - 127.0.0.1 - - [07/Nov/2025 22:15:09] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-07 22:15:12,805 - 127.0.0.1 - - [07/Nov/2025 22:15:12] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 22:15:12,902 - 127.0.0.1 - - [07/Nov/2025 22:15:12] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-07 22:15:12,924 - 127.0.0.1 - - [07/Nov/2025 22:15:12] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-07 22:15:12,963 - 127.0.0.1 - - [07/Nov/2025 22:15:12] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png&s=XS0IXVKE1H7U2BZk9EFk HTTP/1.1[0m" 304 -
+2025-11-07 22:17:08,943 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\third\\flask\\flask_lab2\\app\\posts\\views.py', reloading
+2025-11-07 22:17:09,147 -  * Restarting with stat
+2025-11-07 22:17:10,839 -  * Debugger is active!
+2025-11-07 22:17:10,845 -  * Debugger PIN: 143-009-978
+2025-11-07 22:17:12,568 - 127.0.0.1 - - [07/Nov/2025 22:17:12] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 22:17:12,740 - 127.0.0.1 - - [07/Nov/2025 22:17:12] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-07 22:17:12,742 - 127.0.0.1 - - [07/Nov/2025 22:17:12] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-07 22:17:12,783 - 127.0.0.1 - - [07/Nov/2025 22:17:12] "GET /post/create?__debugger__=yes&cmd=resource&f=console.png&s=jXVKxBjmGdyNKFCH0jDA HTTP/1.1" 200 -
+2025-11-07 22:17:12,817 - 127.0.0.1 - - [07/Nov/2025 22:17:12] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-11-07 22:17:13,306 - 127.0.0.1 - - [07/Nov/2025 22:17:13] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 22:17:13,364 - 127.0.0.1 - - [07/Nov/2025 22:17:13] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-07 22:17:13,385 - 127.0.0.1 - - [07/Nov/2025 22:17:13] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-07 22:17:13,421 - 127.0.0.1 - - [07/Nov/2025 22:17:13] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png&s=jXVKxBjmGdyNKFCH0jDA HTTP/1.1[0m" 304 -
+2025-11-07 22:17:13,450 - 127.0.0.1 - - [07/Nov/2025 22:17:13] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-11-07 22:17:13,535 - 127.0.0.1 - - [07/Nov/2025 22:17:13] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 22:17:13,574 - 127.0.0.1 - - [07/Nov/2025 22:17:13] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-07 22:17:13,577 - 127.0.0.1 - - [07/Nov/2025 22:17:13] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-07 22:17:13,709 - 127.0.0.1 - - [07/Nov/2025 22:17:13] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png&s=jXVKxBjmGdyNKFCH0jDA HTTP/1.1[0m" 304 -
+2025-11-07 22:17:13,736 - 127.0.0.1 - - [07/Nov/2025 22:17:13] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 22:17:13,746 - 127.0.0.1 - - [07/Nov/2025 22:17:13] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-11-07 22:17:13,803 - 127.0.0.1 - - [07/Nov/2025 22:17:13] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-07 22:17:13,828 - 127.0.0.1 - - [07/Nov/2025 22:17:13] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-07 22:17:13,919 - 127.0.0.1 - - [07/Nov/2025 22:17:13] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png&s=jXVKxBjmGdyNKFCH0jDA HTTP/1.1[0m" 304 -
+2025-11-07 22:17:13,957 - 127.0.0.1 - - [07/Nov/2025 22:17:13] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-11-07 22:17:46,431 - 127.0.0.1 - - [07/Nov/2025 22:17:46] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 22:17:46,495 - 127.0.0.1 - - [07/Nov/2025 22:17:46] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-07 22:17:46,522 - 127.0.0.1 - - [07/Nov/2025 22:17:46] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-07 22:17:46,615 - 127.0.0.1 - - [07/Nov/2025 22:17:46] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png&s=jXVKxBjmGdyNKFCH0jDA HTTP/1.1[0m" 304 -
+2025-11-07 22:17:46,648 - 127.0.0.1 - - [07/Nov/2025 22:17:46] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-11-07 22:17:46,959 - 127.0.0.1 - - [07/Nov/2025 22:17:46] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 22:17:47,023 - 127.0.0.1 - - [07/Nov/2025 22:17:47] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-07 22:17:47,051 - 127.0.0.1 - - [07/Nov/2025 22:17:47] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-07 22:17:47,113 - 127.0.0.1 - - [07/Nov/2025 22:17:47] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png&s=jXVKxBjmGdyNKFCH0jDA HTTP/1.1[0m" 304 -
+2025-11-07 22:17:47,148 - 127.0.0.1 - - [07/Nov/2025 22:17:47] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-11-07 22:17:47,161 - 127.0.0.1 - - [07/Nov/2025 22:17:47] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 22:17:47,224 - 127.0.0.1 - - [07/Nov/2025 22:17:47] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-07 22:17:47,244 - 127.0.0.1 - - [07/Nov/2025 22:17:47] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-07 22:17:47,287 - 127.0.0.1 - - [07/Nov/2025 22:17:47] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png&s=jXVKxBjmGdyNKFCH0jDA HTTP/1.1[0m" 304 -
+2025-11-07 22:17:47,303 - 127.0.0.1 - - [07/Nov/2025 22:17:47] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 22:17:47,369 - 127.0.0.1 - - [07/Nov/2025 22:17:47] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-07 22:17:47,391 - 127.0.0.1 - - [07/Nov/2025 22:17:47] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-07 22:17:47,426 - 127.0.0.1 - - [07/Nov/2025 22:17:47] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png&s=jXVKxBjmGdyNKFCH0jDA HTTP/1.1[0m" 304 -
+2025-11-07 22:17:47,461 - 127.0.0.1 - - [07/Nov/2025 22:17:47] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-11-07 22:17:53,480 - 127.0.0.1 - - [07/Nov/2025 22:17:53] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 22:17:53,541 - 127.0.0.1 - - [07/Nov/2025 22:17:53] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-07 22:17:53,564 - 127.0.0.1 - - [07/Nov/2025 22:17:53] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-07 22:17:53,600 - 127.0.0.1 - - [07/Nov/2025 22:17:53] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png&s=jXVKxBjmGdyNKFCH0jDA HTTP/1.1[0m" 304 -
+2025-11-07 22:17:53,639 - 127.0.0.1 - - [07/Nov/2025 22:17:53] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-11-07 22:17:53,689 - 127.0.0.1 - - [07/Nov/2025 22:17:53] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 22:17:53,749 - 127.0.0.1 - - [07/Nov/2025 22:17:53] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-07 22:17:53,771 - 127.0.0.1 - - [07/Nov/2025 22:17:53] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-07 22:17:53,842 - 127.0.0.1 - - [07/Nov/2025 22:17:53] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png&s=jXVKxBjmGdyNKFCH0jDA HTTP/1.1[0m" 304 -
+2025-11-07 22:17:53,865 - 127.0.0.1 - - [07/Nov/2025 22:17:53] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 22:17:53,880 - 127.0.0.1 - - [07/Nov/2025 22:17:53] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-11-07 22:17:53,911 - 127.0.0.1 - - [07/Nov/2025 22:17:53] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-07 22:17:53,936 - 127.0.0.1 - - [07/Nov/2025 22:17:53] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-07 22:17:54,014 - 127.0.0.1 - - [07/Nov/2025 22:17:54] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png&s=jXVKxBjmGdyNKFCH0jDA HTTP/1.1[0m" 304 -
+2025-11-07 22:17:54,051 - 127.0.0.1 - - [07/Nov/2025 22:17:54] "GET /post/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-11-07 22:18:31,533 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\third\\flask\\flask_lab2\\app\\posts\\views.py', reloading
+2025-11-07 22:18:31,728 -  * Restarting with stat
+2025-11-07 22:18:33,361 -  * Debugger is active!
+2025-11-07 22:18:33,366 -  * Debugger PIN: 143-009-978
+2025-11-07 22:18:33,446 - 127.0.0.1 - - [07/Nov/2025 22:18:33] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 22:18:33,578 - 127.0.0.1 - - [07/Nov/2025 22:18:33] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 22:18:33,612 - 127.0.0.1 - - [07/Nov/2025 22:18:33] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-07 22:18:33,617 - 127.0.0.1 - - [07/Nov/2025 22:18:33] "GET /post/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-11-07 22:18:33,624 - 127.0.0.1 - - [07/Nov/2025 22:18:33] "GET /post/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-11-07 22:18:33,645 - 127.0.0.1 - - [07/Nov/2025 22:18:33] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-07 22:18:33,743 - 127.0.0.1 - - [07/Nov/2025 22:18:33] "GET /post/create?__debugger__=yes&cmd=resource&f=console.png&s=uI21SvQpi20icrrryf7O HTTP/1.1" 200 -
+2025-11-07 22:18:33,779 - 127.0.0.1 - - [07/Nov/2025 22:18:33] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-11-07 22:18:33,784 - 127.0.0.1 - - [07/Nov/2025 22:18:33] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 22:18:33,826 - 127.0.0.1 - - [07/Nov/2025 22:18:33] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-07 22:18:33,849 - 127.0.0.1 - - [07/Nov/2025 22:18:33] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-07 22:18:33,959 - 127.0.0.1 - - [07/Nov/2025 22:18:33] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png&s=uI21SvQpi20icrrryf7O HTTP/1.1[0m" 304 -
+2025-11-07 22:18:41,607 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\third\\flask\\flask_lab2\\app\\posts\\views.py', reloading
+2025-11-07 22:18:41,790 -  * Restarting with stat
+2025-11-07 22:18:43,338 -  * Debugger is active!
+2025-11-07 22:18:43,343 -  * Debugger PIN: 143-009-978
+2025-11-07 22:18:46,457 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\third\\flask\\flask_lab2\\app\\posts\\views.py', reloading
+2025-11-07 22:18:46,714 -  * Restarting with stat
+2025-11-07 22:18:48,304 -  * Debugger is active!
+2025-11-07 22:18:48,309 -  * Debugger PIN: 143-009-978
+2025-11-07 22:18:48,359 - 127.0.0.1 - - [07/Nov/2025 22:18:48] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 22:18:48,361 - 127.0.0.1 - - [07/Nov/2025 22:18:48] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 22:18:48,510 - 127.0.0.1 - - [07/Nov/2025 22:18:48] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-07 22:18:48,545 - 127.0.0.1 - - [07/Nov/2025 22:18:48] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-07 22:18:48,573 - 127.0.0.1 - - [07/Nov/2025 22:18:48] "GET /post/create?__debugger__=yes&cmd=resource&f=console.png&s=gs9gq0WNcFV673EVDlFL HTTP/1.1" 200 -
+2025-11-07 22:18:48,609 - 127.0.0.1 - - [07/Nov/2025 22:18:48] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-11-07 22:19:03,660 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\third\\flask\\flask_lab2\\app\\posts\\views.py', reloading
+2025-11-07 22:19:03,932 -  * Restarting with stat
+2025-11-07 22:19:05,548 -  * Debugger is active!
+2025-11-07 22:19:05,553 -  * Debugger PIN: 143-009-978
+2025-11-07 22:19:05,597 - 127.0.0.1 - - [07/Nov/2025 22:19:05] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 22:19:05,749 - 127.0.0.1 - - [07/Nov/2025 22:19:05] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-07 22:19:05,785 - 127.0.0.1 - - [07/Nov/2025 22:19:05] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-07 22:19:05,807 - 127.0.0.1 - - [07/Nov/2025 22:19:05] "GET /post/create?__debugger__=yes&cmd=resource&f=console.png&s=z7a3tz4vID3jNdfTHXhy HTTP/1.1" 200 -
+2025-11-07 22:19:05,849 - 127.0.0.1 - - [07/Nov/2025 22:19:05] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-11-07 22:19:06,169 - 127.0.0.1 - - [07/Nov/2025 22:19:06] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 22:19:06,226 - 127.0.0.1 - - [07/Nov/2025 22:19:06] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-07 22:19:06,250 - 127.0.0.1 - - [07/Nov/2025 22:19:06] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-07 22:19:06,273 - 127.0.0.1 - - [07/Nov/2025 22:19:06] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png&s=z7a3tz4vID3jNdfTHXhy HTTP/1.1[0m" 304 -
+2025-11-07 22:19:06,306 - 127.0.0.1 - - [07/Nov/2025 22:19:06] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-11-07 22:19:11,733 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\third\\flask\\flask_lab2\\app\\posts\\views.py', reloading
+2025-11-07 22:19:11,952 -  * Restarting with stat
+2025-11-07 22:19:13,582 -  * Debugger is active!
+2025-11-07 22:19:13,587 -  * Debugger PIN: 143-009-978
+2025-11-07 22:19:13,715 - 127.0.0.1 - - [07/Nov/2025 22:19:13] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 22:19:13,716 - 127.0.0.1 - - [07/Nov/2025 22:19:13] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 22:19:13,719 - 127.0.0.1 - - [07/Nov/2025 22:19:13] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 22:19:13,848 - 127.0.0.1 - - [07/Nov/2025 22:19:13] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-07 22:19:13,882 - 127.0.0.1 - - [07/Nov/2025 22:19:13] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-07 22:19:13,916 - 127.0.0.1 - - [07/Nov/2025 22:19:13] "GET /post/create?__debugger__=yes&cmd=resource&f=console.png&s=ZA5EQnGx0cyMgU9itrcq HTTP/1.1" 200 -
+2025-11-07 22:19:13,948 - 127.0.0.1 - - [07/Nov/2025 22:19:13] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-11-07 22:19:14,135 - 127.0.0.1 - - [07/Nov/2025 22:19:14] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 22:19:14,171 - 127.0.0.1 - - [07/Nov/2025 22:19:14] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-07 22:19:14,192 - 127.0.0.1 - - [07/Nov/2025 22:19:14] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-07 22:19:14,243 - 127.0.0.1 - - [07/Nov/2025 22:19:14] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png&s=ZA5EQnGx0cyMgU9itrcq HTTP/1.1[0m" 304 -
+2025-11-07 22:19:14,274 - 127.0.0.1 - - [07/Nov/2025 22:19:14] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-11-07 22:19:22,893 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\third\\flask\\flask_lab2\\app\\posts\\views.py', reloading
+2025-11-07 22:19:23,097 -  * Restarting with stat
+2025-11-07 22:19:24,835 -  * Debugger is active!
+2025-11-07 22:19:24,840 -  * Debugger PIN: 143-009-978
+2025-11-07 22:19:41,597 - 127.0.0.1 - - [07/Nov/2025 22:19:41] "GET /post/ HTTP/1.1" 200 -
+2025-11-07 22:19:41,823 - 127.0.0.1 - - [07/Nov/2025 22:19:41] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-07 22:19:41,825 - 127.0.0.1 - - [07/Nov/2025 22:19:41] "[36mGET /static/images/img.jpg HTTP/1.1[0m" 304 -
+2025-11-07 22:19:44,201 - 127.0.0.1 - - [07/Nov/2025 22:19:44] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 22:19:44,290 - 127.0.0.1 - - [07/Nov/2025 22:19:44] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-07 22:19:44,309 - 127.0.0.1 - - [07/Nov/2025 22:19:44] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-07 22:19:44,343 - 127.0.0.1 - - [07/Nov/2025 22:19:44] "GET /post/create?__debugger__=yes&cmd=resource&f=console.png&s=xDY7Y7uS6kTHVFyxmM6b HTTP/1.1" 200 -
+2025-11-07 22:22:23,660 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\third\\flask\\flask_lab2\\app\\posts\\views.py', reloading
+2025-11-07 22:22:23,861 -  * Restarting with stat
+2025-11-07 22:22:25,428 -  * Debugger is active!
+2025-11-07 22:22:25,433 -  * Debugger PIN: 143-009-978
+2025-11-07 22:22:30,328 - 127.0.0.1 - - [07/Nov/2025 22:22:30] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 22:22:30,491 - 127.0.0.1 - - [07/Nov/2025 22:22:30] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-07 22:22:30,519 - 127.0.0.1 - - [07/Nov/2025 22:22:30] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-07 22:22:30,560 - 127.0.0.1 - - [07/Nov/2025 22:22:30] "GET /post/create?__debugger__=yes&cmd=resource&f=console.png&s=Ysn2ryKDxKP1MP8PPQKi HTTP/1.1" 200 -
+2025-11-07 22:22:30,651 - 127.0.0.1 - - [07/Nov/2025 22:22:30] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-11-07 22:22:30,705 - 127.0.0.1 - - [07/Nov/2025 22:22:30] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 22:22:30,747 - 127.0.0.1 - - [07/Nov/2025 22:22:30] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-07 22:22:30,771 - 127.0.0.1 - - [07/Nov/2025 22:22:30] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-07 22:22:30,875 - 127.0.0.1 - - [07/Nov/2025 22:22:30] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png&s=Ysn2ryKDxKP1MP8PPQKi HTTP/1.1[0m" 304 -
+2025-11-07 22:22:30,904 - 127.0.0.1 - - [07/Nov/2025 22:22:30] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-11-07 22:22:32,543 - 127.0.0.1 - - [07/Nov/2025 22:22:32] "[35m[1mGET /post/create HTTP/1.1[0m" 500 -
+2025-11-07 22:22:32,578 - 127.0.0.1 - - [07/Nov/2025 22:22:32] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-07 22:22:32,601 - 127.0.0.1 - - [07/Nov/2025 22:22:32] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-07 22:22:32,627 - 127.0.0.1 - - [07/Nov/2025 22:22:32] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png&s=Ysn2ryKDxKP1MP8PPQKi HTTP/1.1[0m" 304 -
+2025-11-07 22:22:32,664 - 127.0.0.1 - - [07/Nov/2025 22:22:32] "[36mGET /post/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-11-07 22:23:47,222 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\third\\flask\\flask_lab2\\app\\posts\\views.py', reloading
+2025-11-07 22:23:47,417 -  * Restarting with stat
+2025-11-07 22:23:49,034 -  * Debugger is active!
+2025-11-07 22:23:49,039 -  * Debugger PIN: 143-009-978
+2025-11-07 22:23:50,023 - 127.0.0.1 - - [07/Nov/2025 22:23:50] "GET /post/create HTTP/1.1" 200 -
+2025-11-07 22:23:50,192 - 127.0.0.1 - - [07/Nov/2025 22:23:50] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-07 22:24:20,689 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\third\\flask\\flask_lab2\\app\\posts\\views.py', reloading
+2025-11-07 22:24:20,936 -  * Restarting with stat
+2025-11-07 22:25:12,175 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-11-07 22:25:12,175 - [33mPress CTRL+C to quit[0m
+2025-11-07 22:25:13,034 - 127.0.0.1 - - [07/Nov/2025 22:25:13] "GET /post/create HTTP/1.1" 200 -
+2025-11-07 22:25:13,232 - 127.0.0.1 - - [07/Nov/2025 22:25:13] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-07 22:25:22,582 - 127.0.0.1 - - [07/Nov/2025 22:25:22] "GET /post/create HTTP/1.1" 200 -
+2025-11-07 22:25:22,650 - 127.0.0.1 - - [07/Nov/2025 22:25:22] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-07 22:25:23,792 - 127.0.0.1 - - [07/Nov/2025 22:25:23] "GET /post/create HTTP/1.1" 200 -
+2025-11-07 22:25:23,824 - 127.0.0.1 - - [07/Nov/2025 22:25:23] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-07 22:25:24,000 - 127.0.0.1 - - [07/Nov/2025 22:25:24] "GET /post/create HTTP/1.1" 200 -
+2025-11-07 22:25:24,035 - 127.0.0.1 - - [07/Nov/2025 22:25:24] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-07 22:25:24,177 - 127.0.0.1 - - [07/Nov/2025 22:25:24] "GET /post/create HTTP/1.1" 200 -
+2025-11-07 22:25:24,230 - 127.0.0.1 - - [07/Nov/2025 22:25:24] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-07 22:26:30,016 - 127.0.0.1 - - [07/Nov/2025 22:26:30] "GET /post/ HTTP/1.1" 200 -
+2025-11-07 22:26:30,136 - 127.0.0.1 - - [07/Nov/2025 22:26:30] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-07 22:26:30,139 - 127.0.0.1 - - [07/Nov/2025 22:26:30] "[36mGET /static/images/img.jpg HTTP/1.1[0m" 304 -
+2025-11-07 22:26:36,357 - 127.0.0.1 - - [07/Nov/2025 22:26:36] "GET /post/1 HTTP/1.1" 200 -
+2025-11-07 22:26:36,445 - 127.0.0.1 - - [07/Nov/2025 22:26:36] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-07 22:26:42,694 - 127.0.0.1 - - [07/Nov/2025 22:26:42] "GET /post/1/delete HTTP/1.1" 200 -
+2025-11-07 22:26:42,771 - 127.0.0.1 - - [07/Nov/2025 22:26:42] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-07 22:26:48,637 - 127.0.0.1 - - [07/Nov/2025 22:26:48] "GET /post/ HTTP/1.1" 200 -
+2025-11-07 22:26:48,742 - 127.0.0.1 - - [07/Nov/2025 22:26:48] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-07 22:26:48,765 - 127.0.0.1 - - [07/Nov/2025 22:26:48] "[36mGET /static/images/img.jpg HTTP/1.1[0m" 304 -
+2025-11-07 22:26:50,427 - 127.0.0.1 - - [07/Nov/2025 22:26:50] "GET /post/create HTTP/1.1" 200 -
+2025-11-07 22:26:50,483 - 127.0.0.1 - - [07/Nov/2025 22:26:50] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-07 22:27:08,605 - 127.0.0.1 - - [07/Nov/2025 22:27:08] "GET /post/create HTTP/1.1" 200 -
+2025-11-07 22:27:08,642 - 127.0.0.1 - - [07/Nov/2025 22:27:08] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-07 22:27:09,095 - 127.0.0.1 - - [07/Nov/2025 22:27:09] "GET /post/create HTTP/1.1" 200 -
+2025-11-07 22:27:09,128 - 127.0.0.1 - - [07/Nov/2025 22:27:09] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-07 22:27:09,403 - 127.0.0.1 - - [07/Nov/2025 22:27:09] "GET /post/create HTTP/1.1" 200 -
+2025-11-07 22:27:09,437 - 127.0.0.1 - - [07/Nov/2025 22:27:09] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-07 22:27:33,229 - 127.0.0.1 - - [07/Nov/2025 22:27:33] "GET /post/create HTTP/1.1" 200 -
+2025-11-07 22:27:33,264 - 127.0.0.1 - - [07/Nov/2025 22:27:33] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-07 22:27:33,433 - 127.0.0.1 - - [07/Nov/2025 22:27:33] "GET /post/create HTTP/1.1" 200 -
+2025-11-07 22:27:33,468 - 127.0.0.1 - - [07/Nov/2025 22:27:33] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-07 22:27:33,615 - 127.0.0.1 - - [07/Nov/2025 22:27:33] "GET /post/create HTTP/1.1" 200 -
+2025-11-07 22:27:33,645 - 127.0.0.1 - - [07/Nov/2025 22:27:33] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-07 22:27:34,201 - 127.0.0.1 - - [07/Nov/2025 22:27:34] "GET /post/create HTTP/1.1" 200 -
+2025-11-07 22:27:34,235 - 127.0.0.1 - - [07/Nov/2025 22:27:34] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-07 22:27:34,435 - 127.0.0.1 - - [07/Nov/2025 22:27:34] "GET /post/create HTTP/1.1" 200 -
+2025-11-07 22:27:34,471 - 127.0.0.1 - - [07/Nov/2025 22:27:34] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-07 22:27:34,628 - 127.0.0.1 - - [07/Nov/2025 22:27:34] "GET /post/create HTTP/1.1" 200 -
+2025-11-07 22:27:34,659 - 127.0.0.1 - - [07/Nov/2025 22:27:34] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-07 22:27:34,836 - 127.0.0.1 - - [07/Nov/2025 22:27:34] "GET /post/create HTTP/1.1" 200 -
+2025-11-07 22:27:34,865 - 127.0.0.1 - - [07/Nov/2025 22:27:34] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-07 22:27:35,056 - 127.0.0.1 - - [07/Nov/2025 22:27:35] "GET /post/create HTTP/1.1" 200 -
+2025-11-07 22:27:35,093 - 127.0.0.1 - - [07/Nov/2025 22:27:35] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-07 22:27:35,476 - 127.0.0.1 - - [07/Nov/2025 22:27:35] "GET /post/create HTTP/1.1" 200 -
+2025-11-07 22:27:35,507 - 127.0.0.1 - - [07/Nov/2025 22:27:35] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-07 22:27:35,738 - 127.0.0.1 - - [07/Nov/2025 22:27:35] "GET /post/create HTTP/1.1" 200 -
+2025-11-07 22:27:35,792 - 127.0.0.1 - - [07/Nov/2025 22:27:35] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-07 22:27:47,034 - 127.0.0.1 - - [07/Nov/2025 22:27:47] "GET /post/create HTTP/1.1" 200 -
+2025-11-07 22:27:47,072 - 127.0.0.1 - - [07/Nov/2025 22:27:47] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-07 22:27:47,206 - 127.0.0.1 - - [07/Nov/2025 22:27:47] "GET /post/create HTTP/1.1" 200 -
+2025-11-07 22:27:47,243 - 127.0.0.1 - - [07/Nov/2025 22:27:47] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-07 22:27:47,388 - 127.0.0.1 - - [07/Nov/2025 22:27:47] "GET /post/create HTTP/1.1" 200 -
+2025-11-07 22:27:47,427 - 127.0.0.1 - - [07/Nov/2025 22:27:47] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -

@@ -17,20 +17,19 @@ def detail_post(id):
 
 @post_bp.route("/create", methods=["GET", "POST"])
 def create_post():
+    form = PostForm()
     if request.method == "POST":
         title = request.form.get("title")
         content = request.form.get("content")
 
-        if not title or not content:
-            return jsonify({"error": "Missing title or content"}), 400
+   
 
         post = Post(title=title, content=content)
         db.session.add(post)
         db.session.commit()
+        return redirect(url_for('post_bp.all_posts'))
 
-        return jsonify({"message": "Post added successfully"}), 200
-
-    return render_template("posts/add_post.html", title="Create Post")
+    return render_template("posts/add_post.html", form=form, page_title="Create Post")
 
 @post_bp.route('/<int:id>/update', methods=['GET', 'POST'])
 def update_post(id):
