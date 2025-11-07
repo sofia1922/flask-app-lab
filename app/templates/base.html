@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 
-<body class="{% if request.cookies.get('theme') == 'dark' %}dark-mode{% else %}light-mode{% endif %}">
+<body >
 
   {% include 'nav.html' %}
 

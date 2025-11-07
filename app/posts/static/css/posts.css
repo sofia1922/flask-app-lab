@@ -1,0 +1,50 @@
+.post-card {
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 16px;
+  background: #fff;
+  margin-bottom: 20px;
+  transition: transform 0.2s;
+}
+.post-card:hover {
+  transform: translateY(-3px);
+}
+.btn {
+  border-radius: 8px;
+}
+body.light-mode {
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+body.dark-mode {
+  background-color: #212529;
+  color: #f8f9fa;
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, #7c4dff, #b47cff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn-gradient {
+  background: linear-gradient(90deg, #7c4dff, #b47cff);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.btn-gradient:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.card {
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+  

@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}Page Not Found{% endblock %}
+
+{% block content %}
+<div class="container text-center mt-5">
+    <h1 class="display-4 text-danger">404</h1>
+    <h3 class="mb-3">Сторінку не знайдено 😢</h3>
+    <p class="lead">Можливо, ви ввели неправильну адресу або сторінку було видалено.</p>
+    <a href="{{ url_for('main.home') }}" class="btn btn-primary mt-3">Повернутися на головну</a>
+</div>
+{% endblock %}

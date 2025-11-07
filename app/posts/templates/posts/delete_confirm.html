@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="container py-5 d-flex justify-content-center">
+  <div class="card shadow-lg border-0 rounded-4 p-4 text-center" style="max-width: 600px; background: #fff9ff;">
+    
+    <h2 class="fw-bold text-gradient mb-3">
+      <i class="bi bi-exclamation-triangle"></i> Підтвердження видалення
+    </h2>
+
+    <p class="fs-5 mb-4 text-secondary">
+      Ви впевнені, що хочете видалити пост 
+      <strong class="text-dark">"{{ post.title }}"</strong>?
+    </p>
+
+    <form method="POST" class="d-flex justify-content-center gap-3">
+      <button type="submit" class="btn btn-danger px-4 fw-semibold">
+        🗑️ Так, видалити
+      </button>
+      <a href="{{ url_for('post_bp.all_posts') }}" class="btn btn-gradient px-4 fw-semibold">
+        ❌ Скасувати
+      </a>
+    </form>
+
+  </div>
+</div>
+
+{% endblock %}

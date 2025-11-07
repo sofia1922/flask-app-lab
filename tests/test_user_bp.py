@@ -1,11 +1,23 @@
 import unittest
-from app import app  
+from app import create_app, db
 
 class FlaskAppTestCase(unittest.TestCase):
 
     def setUp(self):
-        app.config["TESTING"] = True
-        self.client = app.test_client()
+        self.app = create_app("testing")
+        self.app.config["TESTING"] = True
+        self.client = self.app.test_client()
+
+        self.app_context = self.app.app_context()
+        self.app_context.push()
+
+        # створюємо порожню базу для тестів
+        db.create_all()
+
+    def tearDown(self):
+        db.session.remove()
+        db.drop_all()
+        self.app_context.pop()
 
     def test_greetings_page(self):
         response = self.client.get("/users/hi/John?age=30")
