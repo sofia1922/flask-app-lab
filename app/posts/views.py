@@ -33,7 +33,9 @@ def create_post():
             is_active=form.is_active.data,
             user_id=form.author_id.data
         )
-        post.tags = Tag.query.filter(Tag.id.in_(form.tags.data)).all()
+        stmt = select(Tag).where(Tag.id.in_(form.tags.data))
+        tags = db.session.execute(stmt).scalars().all()
+        post.tags = tags
 
         db.session.add(post)
         db.session.commit()
@@ -62,7 +64,8 @@ def update_post(id):
         post.is_active = form.is_active.data
         post.user_id = form.author_id.data
 
-        post.tags = Tag.query.filter(Tag.id.in_(form.tags.data)).all()
+        stmt = select(Tag).where(Tag.id.in_(form.tags.data))
+        post.tags = db.session.execute(stmt).scalars().all()
 
         db.session.commit()
         flash("Пост оновлено успішно!", "success")
