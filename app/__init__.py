@@ -13,7 +13,7 @@ naming_convention = {
 }
 metadata = MetaData(naming_convention=naming_convention)
 
-db = SQLAlchemy()
+db = SQLAlchemy(metadata=metadata)
 migrate = Migrate()
 
 def create_app(config_name='development'):
@@ -33,6 +33,7 @@ def create_app(config_name='development'):
     
     from app.products import models as product_models
     from app.posts import models as post_models
+    from app.users import models as user_models
 
     migrate.init_app(app, db)
 

@@ -26,10 +26,20 @@
         {{ form.category(class="form-select form-select-lg") }}
       </div>
 
+      <div class="mb-3">
+        {{ form.author_id.label(class="form-label fw-semibold") }}
+        {{ form.author_id(class="form-select form-select-lg") }}
+      </div>
+
       <div class="form-check mb-4">
         {{ form.is_active(class="form-check-input") }}
         {{ form.is_active.label(class="form-check-label") }}
       </div>
+
+<div class="mb-3">
+    {{ form.tags.label(class="form-label fw-semibold") }}
+    {{ form.tags(class="form-select", multiple=True, size=3) }}
+</div>
 
       <button type="submit" class="btn btn-gradient px-4 py-2">
         💾 Зберегти
