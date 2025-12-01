@@ -1,7 +1,7 @@
 from flask import render_template, request, redirect, url_for, flash, abort
 from sqlalchemy import select
 from app import db
-from app.posts import post_bp
+from app.posts import post_bp  
 from app.posts.models import Post, Tag, CategoryEnum
 from app.posts.forms import PostForm
 
@@ -29,7 +29,7 @@ def create_post():
         post = Post(
             title=form.title.data,
             content=form.content.data,
-            category=CategoryEnum(form.category.data),  
+            category=form.category.data,  
             is_active=form.is_active.data,
             user_id=form.author_id.data
         )
@@ -60,7 +60,7 @@ def update_post(id):
     if form.validate_on_submit():
         post.title = form.title.data
         post.content = form.content.data
-        post.category = CategoryEnum(form.category.data)  
+        post.category = form.category.data 
         post.is_active = form.is_active.data
         post.user_id = form.author_id.data
 

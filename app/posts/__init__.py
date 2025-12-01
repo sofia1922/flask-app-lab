@@ -7,3 +7,4 @@ post_bp = Blueprint(
     static_folder='static'
 )
 
+from app.posts import views

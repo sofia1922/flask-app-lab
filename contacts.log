@@ -16025,3 +16025,1049 @@ jinja2.exceptions.UndefinedError: 'post' is undefined
 2025-11-20 22:59:13,188 - 127.0.0.1 - - [20/Nov/2025 22:59:13] "[36mGET /static/images/img.jpg HTTP/1.1[0m" 304 -
 2025-11-20 22:59:15,254 - 127.0.0.1 - - [20/Nov/2025 22:59:15] "GET /post/3 HTTP/1.1" 200 -
 2025-11-20 22:59:15,333 - 127.0.0.1 - - [20/Nov/2025 22:59:15] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-29 10:17:29,663 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-11-29 10:17:29,663 - [33mPress CTRL+C to quit[0m
+2025-11-29 10:17:42,501 - 127.0.0.1 - - [29/Nov/2025 10:17:42] "GET /post/3 HTTP/1.1" 200 -
+2025-11-29 10:17:42,503 - 127.0.0.1 - - [29/Nov/2025 10:17:42] "GET /post/3 HTTP/1.1" 200 -
+2025-11-29 10:17:42,678 - 127.0.0.1 - - [29/Nov/2025 10:17:42] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-29 10:17:42,864 - 127.0.0.1 - - [29/Nov/2025 10:17:42] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-11-29 10:17:48,675 - 127.0.0.1 - - [29/Nov/2025 10:17:48] "GET /post/ HTTP/1.1" 200 -
+2025-11-29 10:17:48,711 - 127.0.0.1 - - [29/Nov/2025 10:17:48] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-29 10:17:48,718 - 127.0.0.1 - - [29/Nov/2025 10:17:48] "GET /static/images/img.jpg HTTP/1.1" 200 -
+2025-11-29 10:17:50,865 - 127.0.0.1 - - [29/Nov/2025 10:17:50] "GET /post/3 HTTP/1.1" 200 -
+2025-11-29 10:17:50,911 - 127.0.0.1 - - [29/Nov/2025 10:17:50] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 14:19:46,920 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-01 14:19:46,920 - [33mPress CTRL+C to quit[0m
+2025-12-01 14:19:56,066 - 127.0.0.1 - - [01/Dec/2025 14:19:56] "GET /static/images/img.jpg HTTP/1.1" 200 -
+2025-12-01 14:20:02,373 - 127.0.0.1 - - [01/Dec/2025 14:20:02] "GET /users/login HTTP/1.1" 200 -
+2025-12-01 14:20:02,414 - 127.0.0.1 - - [01/Dec/2025 14:20:02] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 14:20:05,451 - 127.0.0.1 - - [01/Dec/2025 14:20:05] "POST /users/login HTTP/1.1" 200 -
+2025-12-01 14:20:05,498 - 127.0.0.1 - - [01/Dec/2025 14:20:05] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 14:20:17,176 - 127.0.0.1 - - [01/Dec/2025 14:20:17] "POST /users/login HTTP/1.1" 200 -
+2025-12-01 14:20:17,241 - 127.0.0.1 - - [01/Dec/2025 14:20:17] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 14:20:18,210 - 127.0.0.1 - - [01/Dec/2025 14:20:18] "POST /users/login HTTP/1.1" 200 -
+2025-12-01 14:20:18,255 - 127.0.0.1 - - [01/Dec/2025 14:20:18] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 14:20:20,662 - 127.0.0.1 - - [01/Dec/2025 14:20:20] "GET /users/register HTTP/1.1" 200 -
+2025-12-01 14:20:34,166 - 127.0.0.1 - - [01/Dec/2025 14:20:34] "POST /users/login HTTP/1.1" 200 -
+2025-12-01 14:20:34,209 - 127.0.0.1 - - [01/Dec/2025 14:20:34] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 14:20:36,253 - 127.0.0.1 - - [01/Dec/2025 14:20:36] "GET /users/login HTTP/1.1" 200 -
+2025-12-01 14:20:36,294 - 127.0.0.1 - - [01/Dec/2025 14:20:36] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 14:20:37,470 - 127.0.0.1 - - [01/Dec/2025 14:20:37] "POST /users/login HTTP/1.1" 200 -
+2025-12-01 14:20:37,515 - 127.0.0.1 - - [01/Dec/2025 14:20:37] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 14:20:38,690 - 127.0.0.1 - - [01/Dec/2025 14:20:38] "GET /users/register HTTP/1.1" 200 -
+2025-12-01 14:20:41,803 - 127.0.0.1 - - [01/Dec/2025 14:20:41] "GET /users/register HTTP/1.1" 200 -
+2025-12-01 14:20:42,499 - 127.0.0.1 - - [01/Dec/2025 14:20:42] "GET /users/register HTTP/1.1" 200 -
+2025-12-01 14:20:42,623 - 127.0.0.1 - - [01/Dec/2025 14:20:42] "GET /users/register HTTP/1.1" 200 -
+2025-12-01 14:20:42,791 - 127.0.0.1 - - [01/Dec/2025 14:20:42] "GET /users/register HTTP/1.1" 200 -
+2025-12-01 14:20:43,009 - 127.0.0.1 - - [01/Dec/2025 14:20:43] "GET /users/register HTTP/1.1" 200 -
+2025-12-01 14:20:46,762 - 127.0.0.1 - - [01/Dec/2025 14:20:46] "GET /users/login HTTP/1.1" 200 -
+2025-12-01 14:20:48,834 - 127.0.0.1 - - [01/Dec/2025 14:20:48] "GET /post/ HTTP/1.1" 200 -
+2025-12-01 14:20:48,932 - 127.0.0.1 - - [01/Dec/2025 14:20:48] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 14:20:48,936 - 127.0.0.1 - - [01/Dec/2025 14:20:48] "[36mGET /static/images/img.jpg HTTP/1.1[0m" 304 -
+2025-12-01 14:20:49,954 - 127.0.0.1 - - [01/Dec/2025 14:20:49] "GET /contacts HTTP/1.1" 200 -
+2025-12-01 14:20:49,990 - 127.0.0.1 - - [01/Dec/2025 14:20:49] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 14:20:50,907 - 127.0.0.1 - - [01/Dec/2025 14:20:50] "GET /resume HTTP/1.1" 200 -
+2025-12-01 14:20:50,989 - 127.0.0.1 - - [01/Dec/2025 14:20:50] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 14:20:50,989 - 127.0.0.1 - - [01/Dec/2025 14:20:50] "GET /static/images/photo.jpg HTTP/1.1" 200 -
+2025-12-01 14:20:51,879 - 127.0.0.1 - - [01/Dec/2025 14:20:51] "GET /users/login HTTP/1.1" 200 -
+2025-12-01 14:20:51,926 - 127.0.0.1 - - [01/Dec/2025 14:20:51] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 14:21:10,521 - Exception on /users/login [POST]
+Traceback (most recent call last):
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\users\views.py", line 47, in login
+    if user and user.check_password(password):
+                ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\users\models.py", line 22, in check_password
+    return bcrypt.check_password_hash(self.password, raw_password)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask_bcrypt.py", line 225, in check_password_hash
+    return hmac.compare_digest(bcrypt.hashpw(password, pw_hash), pw_hash)
+                               ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+ValueError: Invalid salt
+2025-12-01 14:21:10,525 - 127.0.0.1 - - [01/Dec/2025 14:21:10] "[35m[1mPOST /users/login HTTP/1.1[0m" 500 -
+2025-12-01 14:21:22,614 - 127.0.0.1 - - [01/Dec/2025 14:21:22] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-12-01 14:25:19,307 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-01 14:25:19,307 - [33mPress CTRL+C to quit[0m
+2025-12-01 14:25:19,309 -  * Restarting with stat
+2025-12-01 14:25:20,820 -  * Debugger is active!
+2025-12-01 14:25:20,825 -  * Debugger PIN: 190-365-460
+2025-12-01 14:26:30,784 - 127.0.0.1 - - [01/Dec/2025 14:26:30] "[35m[1mPOST /users/login HTTP/1.1[0m" 500 -
+2025-12-01 14:26:30,950 - 127.0.0.1 - - [01/Dec/2025 14:26:30] "GET /users/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-12-01 14:26:31,006 - 127.0.0.1 - - [01/Dec/2025 14:26:31] "GET /users/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-12-01 14:26:31,047 - 127.0.0.1 - - [01/Dec/2025 14:26:31] "GET /users/login?__debugger__=yes&cmd=resource&f=console.png&s=ovo17YzkBmKlGqB4D92v HTTP/1.1" 200 -
+2025-12-01 14:26:31,128 - 127.0.0.1 - - [01/Dec/2025 14:26:31] "GET /users/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-12-01 20:21:40,628 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-01 20:21:40,628 - [33mPress CTRL+C to quit[0m
+2025-12-01 20:21:49,133 - The CSRF token has expired.
+2025-12-01 20:21:49,168 - 127.0.0.1 - - [01/Dec/2025 20:21:49] "POST /users/login HTTP/1.1" 200 -
+2025-12-01 20:21:49,323 - 127.0.0.1 - - [01/Dec/2025 20:21:49] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 20:21:54,040 - Exception on /users/login [POST]
+Traceback (most recent call last):
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\users\views.py", line 48, in login
+    login_user(user, remember=form.remember.data)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask_login\utils.py", line 180, in login_user
+    if not force and not user.is_active:
+                         ^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'is_active'
+2025-12-01 20:21:54,046 - 127.0.0.1 - - [01/Dec/2025 20:21:54] "[35m[1mPOST /users/login HTTP/1.1[0m" 500 -
+2025-12-01 20:22:00,159 - 127.0.0.1 - - [01/Dec/2025 20:22:00] "GET /users/register HTTP/1.1" 200 -
+2025-12-01 20:22:07,461 - 127.0.0.1 - - [01/Dec/2025 20:22:07] "POST /users/login HTTP/1.1" 200 -
+2025-12-01 20:22:07,523 - 127.0.0.1 - - [01/Dec/2025 20:22:07] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 20:22:16,005 - Exception on /users/login [POST]
+Traceback (most recent call last):
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\users\views.py", line 48, in login
+    login_user(user, remember=form.remember.data)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask_login\utils.py", line 180, in login_user
+    if not force and not user.is_active:
+                         ^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'is_active'
+2025-12-01 20:22:16,007 - 127.0.0.1 - - [01/Dec/2025 20:22:16] "[35m[1mPOST /users/login HTTP/1.1[0m" 500 -
+2025-12-01 20:22:23,641 - The CSRF token has expired.
+2025-12-01 20:22:23,642 - 127.0.0.1 - - [01/Dec/2025 20:22:23] "POST /users/login HTTP/1.1" 200 -
+2025-12-01 20:22:23,727 - 127.0.0.1 - - [01/Dec/2025 20:22:23] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 20:22:25,961 - 127.0.0.1 - - [01/Dec/2025 20:22:25] "GET /post/ HTTP/1.1" 200 -
+2025-12-01 20:22:26,004 - 127.0.0.1 - - [01/Dec/2025 20:22:26] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 20:22:26,026 - 127.0.0.1 - - [01/Dec/2025 20:22:26] "[36mGET /static/images/img.jpg HTTP/1.1[0m" 304 -
+2025-12-01 20:22:26,799 - 127.0.0.1 - - [01/Dec/2025 20:22:26] "GET /contacts HTTP/1.1" 200 -
+2025-12-01 20:22:26,860 - 127.0.0.1 - - [01/Dec/2025 20:22:26] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 20:22:27,928 - 127.0.0.1 - - [01/Dec/2025 20:22:27] "GET /resume HTTP/1.1" 200 -
+2025-12-01 20:22:27,961 - 127.0.0.1 - - [01/Dec/2025 20:22:27] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 20:22:27,964 - 127.0.0.1 - - [01/Dec/2025 20:22:27] "[36mGET /static/images/photo.jpg HTTP/1.1[0m" 304 -
+2025-12-01 20:22:29,151 - 127.0.0.1 - - [01/Dec/2025 20:22:29] "GET /users/login HTTP/1.1" 200 -
+2025-12-01 20:22:29,197 - 127.0.0.1 - - [01/Dec/2025 20:22:29] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 20:22:29,998 - 127.0.0.1 - - [01/Dec/2025 20:22:29] "GET /users/register HTTP/1.1" 200 -
+2025-12-01 20:29:51,338 - 127.0.0.1 - - [01/Dec/2025 20:29:51] "GET /users/register HTTP/1.1" 200 -
+2025-12-01 20:29:51,726 - 127.0.0.1 - - [01/Dec/2025 20:29:51] "GET /users/register HTTP/1.1" 200 -
+2025-12-01 20:29:51,929 - 127.0.0.1 - - [01/Dec/2025 20:29:51] "GET /users/register HTTP/1.1" 200 -
+2025-12-01 20:29:54,643 - 127.0.0.1 - - [01/Dec/2025 20:29:54] "GET /users/register HTTP/1.1" 200 -
+2025-12-01 20:29:58,415 - 127.0.0.1 - - [01/Dec/2025 20:29:58] "GET /users/register HTTP/1.1" 200 -
+2025-12-01 20:30:04,132 - 127.0.0.1 - - [01/Dec/2025 20:30:04] "[33mGET /users/register/ HTTP/1.1[0m" 404 -
+2025-12-01 20:30:04,177 - 127.0.0.1 - - [01/Dec/2025 20:30:04] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 20:30:05,696 - 127.0.0.1 - - [01/Dec/2025 20:30:05] "[32mGET / HTTP/1.1[0m" 302 -
+2025-12-01 20:30:05,703 - 127.0.0.1 - - [01/Dec/2025 20:30:05] "GET /resume HTTP/1.1" 200 -
+2025-12-01 20:30:05,786 - 127.0.0.1 - - [01/Dec/2025 20:30:05] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 20:30:05,788 - 127.0.0.1 - - [01/Dec/2025 20:30:05] "[36mGET /static/images/photo.jpg HTTP/1.1[0m" 304 -
+2025-12-01 20:30:07,255 - 127.0.0.1 - - [01/Dec/2025 20:30:07] "GET /users/register HTTP/1.1" 200 -
+2025-12-01 20:30:10,916 - 127.0.0.1 - - [01/Dec/2025 20:30:10] "GET /users/login HTTP/1.1" 200 -
+2025-12-01 20:30:10,958 - 127.0.0.1 - - [01/Dec/2025 20:30:10] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 20:30:25,771 - Exception on /users/login [POST]
+Traceback (most recent call last):
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\users\views.py", line 48, in login
+    login_user(user, remember=form.remember.data)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask_login\utils.py", line 180, in login_user
+    if not force and not user.is_active:
+                         ^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'is_active'
+2025-12-01 20:30:25,773 - 127.0.0.1 - - [01/Dec/2025 20:30:25] "[35m[1mPOST /users/login HTTP/1.1[0m" 500 -
+2025-12-01 20:38:49,398 - 127.0.0.1 - - [01/Dec/2025 20:38:49] "[33mGET /users HTTP/1.1[0m" 404 -
+2025-12-01 20:38:49,466 - 127.0.0.1 - - [01/Dec/2025 20:38:49] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 20:38:50,886 - 127.0.0.1 - - [01/Dec/2025 20:38:50] "[32mGET / HTTP/1.1[0m" 302 -
+2025-12-01 20:38:50,893 - 127.0.0.1 - - [01/Dec/2025 20:38:50] "GET /resume HTTP/1.1" 200 -
+2025-12-01 20:38:50,999 - 127.0.0.1 - - [01/Dec/2025 20:38:50] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 20:38:51,021 - 127.0.0.1 - - [01/Dec/2025 20:38:51] "[36mGET /static/images/photo.jpg HTTP/1.1[0m" 304 -
+2025-12-01 20:38:53,994 - 127.0.0.1 - - [01/Dec/2025 20:38:53] "GET /contacts HTTP/1.1" 200 -
+2025-12-01 20:38:54,036 - 127.0.0.1 - - [01/Dec/2025 20:38:54] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 20:38:54,883 - 127.0.0.1 - - [01/Dec/2025 20:38:54] "GET /post/ HTTP/1.1" 200 -
+2025-12-01 20:38:54,941 - 127.0.0.1 - - [01/Dec/2025 20:38:54] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 20:38:54,962 - 127.0.0.1 - - [01/Dec/2025 20:38:54] "[36mGET /static/images/img.jpg HTTP/1.1[0m" 304 -
+2025-12-01 20:38:55,702 - 127.0.0.1 - - [01/Dec/2025 20:38:55] "GET /users/login HTTP/1.1" 200 -
+2025-12-01 20:38:55,740 - 127.0.0.1 - - [01/Dec/2025 20:38:55] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 20:38:57,237 - 127.0.0.1 - - [01/Dec/2025 20:38:57] "POST /users/login HTTP/1.1" 200 -
+2025-12-01 20:38:57,287 - 127.0.0.1 - - [01/Dec/2025 20:38:57] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 20:39:03,053 - 127.0.0.1 - - [01/Dec/2025 20:39:03] "POST /users/login HTTP/1.1" 200 -
+2025-12-01 20:39:03,099 - 127.0.0.1 - - [01/Dec/2025 20:39:03] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 20:39:05,436 - Exception on /users/login [POST]
+Traceback (most recent call last):
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\users\views.py", line 48, in login
+    login_user(user, remember=form.remember.data)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask_login\utils.py", line 180, in login_user
+    if not force and not user.is_active:
+                         ^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'is_active'
+2025-12-01 20:39:05,439 - 127.0.0.1 - - [01/Dec/2025 20:39:05] "[35m[1mPOST /users/login HTTP/1.1[0m" 500 -
+2025-12-01 20:39:23,201 - 127.0.0.1 - - [01/Dec/2025 20:39:23] "GET /users/login HTTP/1.1" 200 -
+2025-12-01 20:39:29,294 - Exception on /users/login [POST]
+Traceback (most recent call last):
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\users\views.py", line 48, in login
+    login_user(user, remember=form.remember.data)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask_login\utils.py", line 180, in login_user
+    if not force and not user.is_active:
+                         ^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'is_active'
+2025-12-01 20:39:29,298 - 127.0.0.1 - - [01/Dec/2025 20:39:29] "[35m[1mPOST /users/login HTTP/1.1[0m" 500 -
+2025-12-01 20:41:19,151 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-01 20:41:19,152 - [33mPress CTRL+C to quit[0m
+2025-12-01 20:41:19,154 -  * Restarting with stat
+2025-12-01 20:41:20,822 -  * Debugger is active!
+2025-12-01 20:41:20,830 -  * Debugger PIN: 190-365-460
+2025-12-01 20:41:27,539 - 127.0.0.1 - - [01/Dec/2025 20:41:27] "[35m[1mPOST /users/login HTTP/1.1[0m" 500 -
+2025-12-01 20:41:27,746 - 127.0.0.1 - - [01/Dec/2025 20:41:27] "[36mGET /users/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-12-01 20:41:27,762 - 127.0.0.1 - - [01/Dec/2025 20:41:27] "[36mGET /users/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-12-01 20:41:27,811 - 127.0.0.1 - - [01/Dec/2025 20:41:27] "GET /users/login?__debugger__=yes&cmd=resource&f=console.png&s=XaAxNYxMEavXRl64qY2q HTTP/1.1" 200 -
+2025-12-01 20:41:27,845 - 127.0.0.1 - - [01/Dec/2025 20:41:27] "[36mGET /users/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-12-01 20:42:58,169 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\third\\flask\\flask_lab2\\app\\users\\models.py', reloading
+2025-12-01 20:42:58,366 -  * Restarting with stat
+2025-12-01 20:43:00,180 -  * Debugger is active!
+2025-12-01 20:43:00,185 -  * Debugger PIN: 190-365-460
+2025-12-01 20:43:03,975 - 127.0.0.1 - - [01/Dec/2025 20:43:03] "[35m[1mPOST /users/login HTTP/1.1[0m" 500 -
+2025-12-01 20:43:04,141 - 127.0.0.1 - - [01/Dec/2025 20:43:04] "[36mGET /users/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-12-01 20:43:04,165 - 127.0.0.1 - - [01/Dec/2025 20:43:04] "[36mGET /users/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-12-01 20:43:04,180 - 127.0.0.1 - - [01/Dec/2025 20:43:04] "GET /users/login?__debugger__=yes&cmd=resource&f=console.png&s=fyLWWMaXPcQxdSj6QmKl HTTP/1.1" 200 -
+2025-12-01 20:43:04,209 - 127.0.0.1 - - [01/Dec/2025 20:43:04] "[36mGET /users/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-12-01 20:43:22,799 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\third\\flask\\flask_lab2\\app\\users\\models.py', reloading
+2025-12-01 20:43:23,037 -  * Restarting with stat
+2025-12-01 20:43:24,909 -  * Debugger is active!
+2025-12-01 20:43:24,915 -  * Debugger PIN: 190-365-460
+2025-12-01 20:43:27,600 - 127.0.0.1 - - [01/Dec/2025 20:43:27] "[32mPOST /users/login HTTP/1.1[0m" 302 -
+2025-12-01 20:43:27,637 - 127.0.0.1 - - [01/Dec/2025 20:43:27] "GET /users/account HTTP/1.1" 200 -
+2025-12-01 20:43:27,817 - 127.0.0.1 - - [01/Dec/2025 20:43:27] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 20:43:33,385 - 127.0.0.1 - - [01/Dec/2025 20:43:33] "GET /users/all_users HTTP/1.1" 200 -
+2025-12-01 20:43:33,431 - 127.0.0.1 - - [01/Dec/2025 20:43:33] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 20:43:40,314 - 127.0.0.1 - - [01/Dec/2025 20:43:40] "[32mGET /users/logout HTTP/1.1[0m" 302 -
+2025-12-01 20:43:40,336 - 127.0.0.1 - - [01/Dec/2025 20:43:40] "GET /users/login HTTP/1.1" 200 -
+2025-12-01 20:43:40,437 - 127.0.0.1 - - [01/Dec/2025 20:43:40] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 20:43:50,920 - 127.0.0.1 - - [01/Dec/2025 20:43:50] "[32mPOST /users/login HTTP/1.1[0m" 302 -
+2025-12-01 20:43:50,928 - 127.0.0.1 - - [01/Dec/2025 20:43:50] "GET /users/account HTTP/1.1" 200 -
+2025-12-01 20:43:51,060 - 127.0.0.1 - - [01/Dec/2025 20:43:51] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 20:43:57,462 - 127.0.0.1 - - [01/Dec/2025 20:43:57] "GET /users/account HTTP/1.1" 200 -
+2025-12-01 20:43:57,507 - 127.0.0.1 - - [01/Dec/2025 20:43:57] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 20:44:20,359 - 127.0.0.1 - - [01/Dec/2025 20:44:20] "GET /users/all_users HTTP/1.1" 200 -
+2025-12-01 20:44:20,430 - 127.0.0.1 - - [01/Dec/2025 20:44:20] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 20:44:24,953 - 127.0.0.1 - - [01/Dec/2025 20:44:24] "[32mGET /users/logout HTTP/1.1[0m" 302 -
+2025-12-01 20:44:24,960 - 127.0.0.1 - - [01/Dec/2025 20:44:24] "GET /users/login HTTP/1.1" 200 -
+2025-12-01 20:44:25,002 - 127.0.0.1 - - [01/Dec/2025 20:44:25] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 20:44:26,304 - 127.0.0.1 - - [01/Dec/2025 20:44:26] "GET /users/register HTTP/1.1" 200 -
+2025-12-01 20:44:26,342 - 127.0.0.1 - - [01/Dec/2025 20:44:26] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 20:44:34,128 - 127.0.0.1 - - [01/Dec/2025 20:44:34] "[32mPOST /users/register HTTP/1.1[0m" 302 -
+2025-12-01 20:44:34,135 - 127.0.0.1 - - [01/Dec/2025 20:44:34] "GET /users/login HTTP/1.1" 200 -
+2025-12-01 20:44:34,229 - 127.0.0.1 - - [01/Dec/2025 20:44:34] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 20:44:42,056 - 127.0.0.1 - - [01/Dec/2025 20:44:42] "[32mPOST /users/login HTTP/1.1[0m" 302 -
+2025-12-01 20:44:42,064 - 127.0.0.1 - - [01/Dec/2025 20:44:42] "GET /users/account HTTP/1.1" 200 -
+2025-12-01 20:44:42,186 - 127.0.0.1 - - [01/Dec/2025 20:44:42] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 20:44:49,170 - 127.0.0.1 - - [01/Dec/2025 20:44:49] "GET /users/all_users HTTP/1.1" 200 -
+2025-12-01 20:44:49,211 - 127.0.0.1 - - [01/Dec/2025 20:44:49] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 20:44:52,988 - 127.0.0.1 - - [01/Dec/2025 20:44:52] "GET /users/account HTTP/1.1" 200 -
+2025-12-01 20:44:53,031 - 127.0.0.1 - - [01/Dec/2025 20:44:53] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 21:19:30,879 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\third\\flask\\flask_lab2\\app\\__init__.py', reloading
+2025-12-01 21:19:31,120 -  * Restarting with stat
+2025-12-01 21:19:32,840 -  * Debugger is active!
+2025-12-01 21:19:32,845 -  * Debugger PIN: 190-365-460
+2025-12-01 21:21:50,034 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\third\\flask\\flask_lab2\\app\\__init__.py', reloading
+2025-12-01 21:21:50,224 -  * Restarting with stat
+2025-12-01 21:21:52,134 -  * Debugger is active!
+2025-12-01 21:21:52,143 -  * Debugger PIN: 190-365-460
+2025-12-01 21:22:52,590 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\third\\flask\\flask_lab2\\app\\__init__.py', reloading
+2025-12-01 21:22:52,783 -  * Restarting with stat
+2025-12-01 21:22:54,792 -  * Debugger is active!
+2025-12-01 21:22:54,798 -  * Debugger PIN: 190-365-460
+2025-12-01 21:22:56,612 - 127.0.0.1 - - [01/Dec/2025 21:22:56] "GET /users/account HTTP/1.1" 200 -
+2025-12-01 21:22:56,746 - 127.0.0.1 - - [01/Dec/2025 21:22:56] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 21:22:58,189 - 127.0.0.1 - - [01/Dec/2025 21:22:58] "[32mGET /users/logout HTTP/1.1[0m" 302 -
+2025-12-01 21:22:58,210 - 127.0.0.1 - - [01/Dec/2025 21:22:58] "GET /users/login HTTP/1.1" 200 -
+2025-12-01 21:22:58,282 - 127.0.0.1 - - [01/Dec/2025 21:22:58] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 21:23:05,331 - 127.0.0.1 - - [01/Dec/2025 21:23:05] "POST /users/login HTTP/1.1" 200 -
+2025-12-01 21:23:05,398 - 127.0.0.1 - - [01/Dec/2025 21:23:05] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 21:23:05,823 - 127.0.0.1 - - [01/Dec/2025 21:23:05] "POST /users/login HTTP/1.1" 200 -
+2025-12-01 21:23:05,879 - 127.0.0.1 - - [01/Dec/2025 21:23:05] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 21:23:08,360 - 127.0.0.1 - - [01/Dec/2025 21:23:08] "POST /users/login HTTP/1.1" 200 -
+2025-12-01 21:23:08,422 - 127.0.0.1 - - [01/Dec/2025 21:23:08] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 21:23:09,231 - 127.0.0.1 - - [01/Dec/2025 21:23:09] "POST /users/login HTTP/1.1" 200 -
+2025-12-01 21:23:09,271 - 127.0.0.1 - - [01/Dec/2025 21:23:09] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 21:23:14,305 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\third\\flask\\flask_lab2\\app\\__init__.py', reloading
+2025-12-01 21:23:14,509 -  * Restarting with stat
+2025-12-01 21:23:16,346 -  * Debugger is active!
+2025-12-01 21:23:16,351 -  * Debugger PIN: 190-365-460
+2025-12-01 21:23:18,723 - 127.0.0.1 - - [01/Dec/2025 21:23:18] "POST /users/login HTTP/1.1" 200 -
+2025-12-01 21:23:18,835 - 127.0.0.1 - - [01/Dec/2025 21:23:18] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 21:23:21,631 - 127.0.0.1 - - [01/Dec/2025 21:23:21] "POST /users/login HTTP/1.1" 200 -
+2025-12-01 21:23:21,677 - 127.0.0.1 - - [01/Dec/2025 21:23:21] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 21:23:26,627 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\third\\flask\\flask_lab2\\app\\__init__.py', reloading
+2025-12-01 21:23:26,904 -  * Restarting with stat
+2025-12-01 21:23:28,828 -  * Debugger is active!
+2025-12-01 21:23:28,833 -  * Debugger PIN: 190-365-460
+2025-12-01 21:25:38,992 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\third\\flask\\flask_lab2\\tests\\tests_9.py', reloading
+2025-12-01 21:25:39,283 -  * Restarting with stat
+2025-12-01 21:25:41,047 -  * Debugger is active!
+2025-12-01 21:25:41,052 -  * Debugger PIN: 190-365-460
+2025-12-01 21:27:22,209 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\third\\flask\\flask_lab2\\tests\\tests_9.py', reloading
+2025-12-01 21:27:22,444 -  * Restarting with stat
+2025-12-01 21:27:24,124 -  * Debugger is active!
+2025-12-01 21:27:24,130 -  * Debugger PIN: 190-365-460
+2025-12-01 21:27:51,866 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\third\\flask\\flask_lab2\\tests\\tests_9.py', reloading
+2025-12-01 21:27:52,087 -  * Restarting with stat
+2025-12-01 21:27:53,869 -  * Debugger is active!
+2025-12-01 21:27:53,875 -  * Debugger PIN: 190-365-460
+2025-12-01 22:00:25,242 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-01 22:00:25,242 - [33mPress CTRL+C to quit[0m
+2025-12-01 22:00:31,952 - Exception on /users/login [POST]
+Traceback (most recent call last):
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 951, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: users
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\users\views.py", line 45, in login
+    ).first()
+      ~~~~~^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 2759, in first
+    return self.limit(1)._iter().first()  # type: ignore
+           ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 2857, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+        params,
+        ^^^^^^^
+        execution_options={"_sa_orm_load_options": self.load_options},
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2351, in execute
+    return self._execute_internal(
+           ~~~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+    ...<4 lines>...
+        _add_event=_add_event,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2249, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self,
+        ^^^^^
+    ...<4 lines>...
+        conn,
+        ^^^^^
+    )
+    ^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\sqlalchemy\orm\context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+        statement, params or {}, execution_options=execution_options
+    )
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 951, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such table: users
+[SQL: SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.password AS users_password 
+FROM users 
+WHERE users.username = ? OR users.email = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('adminbb', 'adminbb', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-12-01 22:00:32,035 - 127.0.0.1 - - [01/Dec/2025 22:00:32] "[35m[1mPOST /users/login HTTP/1.1[0m" 500 -
+2025-12-01 22:00:36,150 - 127.0.0.1 - - [01/Dec/2025 22:00:36] "GET /users/login HTTP/1.1" 200 -
+2025-12-01 22:00:36,253 - 127.0.0.1 - - [01/Dec/2025 22:00:36] "[32mGET /users/account HTTP/1.1[0m" 302 -
+2025-12-01 22:00:36,261 - 127.0.0.1 - - [01/Dec/2025 22:00:36] "GET /users/login?next=/users/account HTTP/1.1" 200 -
+2025-12-01 22:00:36,422 - 127.0.0.1 - - [01/Dec/2025 22:00:36] "[32mGET /users/all_users HTTP/1.1[0m" 302 -
+2025-12-01 22:00:36,443 - 127.0.0.1 - - [01/Dec/2025 22:00:36] "GET /users/login?next=/users/all_users HTTP/1.1" 200 -
+2025-12-01 22:00:36,653 - 127.0.0.1 - - [01/Dec/2025 22:00:36] "[32mGET /users/account HTTP/1.1[0m" 302 -
+2025-12-01 22:00:38,023 - Exception on /post/ [GET]
+Traceback (most recent call last):
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 951, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: posts
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\posts\views.py", line 12, in all_posts
+    posts = db.session.scalars(stmt).all()
+            ~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\sqlalchemy\orm\scoping.py", line 1891, in scalars
+    return self._proxied.scalars(
+           ~~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+    ...<3 lines>...
+        **kw,
+        ^^^^^
+    )
+    ^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2459, in scalars
+    return self._execute_internal(
+           ~~~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+    ...<4 lines>...
+        **kw,
+        ^^^^^
+    ).scalars()
+    ^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2249, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self,
+        ^^^^^
+    ...<4 lines>...
+        conn,
+        ^^^^^
+    )
+    ^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\sqlalchemy\orm\context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+        statement, params or {}, execution_options=execution_options
+    )
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 951, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such table: posts
+[SQL: SELECT posts.id, posts.title, posts.content, posts.category, posts.is_active, posts.posted, posts.user_id 
+FROM posts ORDER BY posts.posted DESC]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-12-01 22:00:38,030 - 127.0.0.1 - - [01/Dec/2025 22:00:38] "[35m[1mGET /post/ HTTP/1.1[0m" 500 -
+2025-12-01 22:00:40,891 - 127.0.0.1 - - [01/Dec/2025 22:00:40] "GET /users/login HTTP/1.1" 200 -
+2025-12-01 22:00:41,028 - 127.0.0.1 - - [01/Dec/2025 22:00:41] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 22:00:42,262 - Exception on /post/ [GET]
+Traceback (most recent call last):
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 951, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: posts
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\posts\views.py", line 12, in all_posts
+    posts = db.session.scalars(stmt).all()
+            ~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\sqlalchemy\orm\scoping.py", line 1891, in scalars
+    return self._proxied.scalars(
+           ~~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+    ...<3 lines>...
+        **kw,
+        ^^^^^
+    )
+    ^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2459, in scalars
+    return self._execute_internal(
+           ~~~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+    ...<4 lines>...
+        **kw,
+        ^^^^^
+    ).scalars()
+    ^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2249, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self,
+        ^^^^^
+    ...<4 lines>...
+        conn,
+        ^^^^^
+    )
+    ^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\sqlalchemy\orm\context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+        statement, params or {}, execution_options=execution_options
+    )
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 951, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such table: posts
+[SQL: SELECT posts.id, posts.title, posts.content, posts.category, posts.is_active, posts.posted, posts.user_id 
+FROM posts ORDER BY posts.posted DESC]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-12-01 22:00:42,267 - 127.0.0.1 - - [01/Dec/2025 22:00:42] "[35m[1mGET /post/ HTTP/1.1[0m" 500 -
+2025-12-01 22:00:44,632 - 127.0.0.1 - - [01/Dec/2025 22:00:44] "GET /contacts HTTP/1.1" 200 -
+2025-12-01 22:00:44,673 - 127.0.0.1 - - [01/Dec/2025 22:00:44] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 22:00:46,356 - 127.0.0.1 - - [01/Dec/2025 22:00:46] "GET /resume HTTP/1.1" 200 -
+2025-12-01 22:00:46,424 - 127.0.0.1 - - [01/Dec/2025 22:00:46] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 22:00:46,447 - 127.0.0.1 - - [01/Dec/2025 22:00:46] "[36mGET /static/images/photo.jpg HTTP/1.1[0m" 304 -
+2025-12-01 22:00:47,305 - 127.0.0.1 - - [01/Dec/2025 22:00:47] "GET /users/login HTTP/1.1" 200 -
+2025-12-01 22:00:47,346 - 127.0.0.1 - - [01/Dec/2025 22:00:47] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 22:00:48,346 - 127.0.0.1 - - [01/Dec/2025 22:00:48] "GET /users/register HTTP/1.1" 200 -
+2025-12-01 22:00:48,406 - 127.0.0.1 - - [01/Dec/2025 22:00:48] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 22:00:49,633 - 127.0.0.1 - - [01/Dec/2025 22:00:49] "GET /users/login HTTP/1.1" 200 -
+2025-12-01 22:00:49,679 - 127.0.0.1 - - [01/Dec/2025 22:00:49] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 22:00:50,494 - 127.0.0.1 - - [01/Dec/2025 22:00:50] "GET /users/register HTTP/1.1" 200 -
+2025-12-01 22:00:50,556 - 127.0.0.1 - - [01/Dec/2025 22:00:50] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 22:01:27,350 - Exception on /users/register [POST]
+Traceback (most recent call last):
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 951, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: users
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\users\views.py", line 16, in register
+    if form.validate_on_submit():
+       ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask_wtf\form.py", line 86, in validate_on_submit
+    return self.is_submitted() and self.validate(extra_validators=extra_validators)
+                                   ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\wtforms\form.py", line 330, in validate
+    return super().validate(extra)
+           ~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\wtforms\form.py", line 147, in validate
+    if not field.validate(self, extra):
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\wtforms\fields\core.py", line 234, in validate
+    stop_validation = self._run_validation_chain(form, chain)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\wtforms\fields\core.py", line 254, in _run_validation_chain
+    validator(form, self)
+    ~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\forms.py", line 94, in validate_username
+    existing = User.query.filter_by(username=field.data).first()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 2759, in first
+    return self.limit(1)._iter().first()  # type: ignore
+           ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 2857, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+        params,
+        ^^^^^^^
+        execution_options={"_sa_orm_load_options": self.load_options},
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2351, in execute
+    return self._execute_internal(
+           ~~~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+    ...<4 lines>...
+        _add_event=_add_event,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2249, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self,
+        ^^^^^
+    ...<4 lines>...
+        conn,
+        ^^^^^
+    )
+    ^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\sqlalchemy\orm\context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+        statement, params or {}, execution_options=execution_options
+    )
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 951, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such table: users
+[SQL: SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.password AS users_password 
+FROM users 
+WHERE users.username = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('sofiia', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-12-01 22:01:27,395 - 127.0.0.1 - - [01/Dec/2025 22:01:27] "[35m[1mPOST /users/register HTTP/1.1[0m" 500 -
+2025-12-01 22:01:45,096 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-01 22:01:45,096 - [33mPress CTRL+C to quit[0m
+2025-12-01 22:01:45,098 -  * Restarting with stat
+2025-12-01 22:01:46,793 -  * Debugger is active!
+2025-12-01 22:01:46,799 -  * Debugger PIN: 190-365-460
+2025-12-01 22:01:50,206 - 127.0.0.1 - - [01/Dec/2025 22:01:50] "GET /users/register HTTP/1.1" 200 -
+2025-12-01 22:01:50,330 - 127.0.0.1 - - [01/Dec/2025 22:01:50] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 22:01:52,106 - 127.0.0.1 - - [01/Dec/2025 22:01:52] "GET /users/register HTTP/1.1" 200 -
+2025-12-01 22:01:52,147 - 127.0.0.1 - - [01/Dec/2025 22:01:52] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 22:01:52,334 - 127.0.0.1 - - [01/Dec/2025 22:01:52] "GET /users/register HTTP/1.1" 200 -
+2025-12-01 22:01:52,394 - 127.0.0.1 - - [01/Dec/2025 22:01:52] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 22:02:07,544 - 127.0.0.1 - - [01/Dec/2025 22:02:07] "[35m[1mPOST /users/register HTTP/1.1[0m" 500 -
+2025-12-01 22:02:07,622 - 127.0.0.1 - - [01/Dec/2025 22:02:07] "GET /users/register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-12-01 22:02:07,646 - 127.0.0.1 - - [01/Dec/2025 22:02:07] "GET /users/register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-12-01 22:02:07,711 - 127.0.0.1 - - [01/Dec/2025 22:02:07] "GET /users/register?__debugger__=yes&cmd=resource&f=console.png&s=JrY5VPkeRJPOkBpX3HhS HTTP/1.1" 200 -
+2025-12-01 22:02:07,744 - 127.0.0.1 - - [01/Dec/2025 22:02:07] "GET /users/register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-12-01 22:16:25,727 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-01 22:16:25,728 - [33mPress CTRL+C to quit[0m
+2025-12-01 22:16:25,729 -  * Restarting with stat
+2025-12-01 22:16:27,339 -  * Debugger is active!
+2025-12-01 22:16:27,345 -  * Debugger PIN: 190-365-460
+2025-12-01 22:16:29,551 - 127.0.0.1 - - [01/Dec/2025 22:16:29] "[32mPOST /users/register HTTP/1.1[0m" 302 -
+2025-12-01 22:16:29,653 - 127.0.0.1 - - [01/Dec/2025 22:16:29] "[35m[1mGET /users/login HTTP/1.1[0m" 500 -
+2025-12-01 22:16:29,863 - 127.0.0.1 - - [01/Dec/2025 22:16:29] "[36mGET /users/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-12-01 22:16:29,875 - 127.0.0.1 - - [01/Dec/2025 22:16:29] "[36mGET /users/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-12-01 22:16:29,943 - 127.0.0.1 - - [01/Dec/2025 22:16:29] "GET /users/login?__debugger__=yes&cmd=resource&f=console.png&s=keFdEpQ2qL4B9w2kiaqs HTTP/1.1" 200 -
+2025-12-01 22:16:30,063 - 127.0.0.1 - - [01/Dec/2025 22:16:30] "[36mGET /users/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-12-01 22:19:18,369 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\third\\flask\\flask_lab2\\app\\posts\\views.py', reloading
+2025-12-01 22:19:18,699 -  * Restarting with stat
+2025-12-01 22:19:20,485 -  * Debugger is active!
+2025-12-01 22:19:20,490 -  * Debugger PIN: 190-365-460
+2025-12-01 22:19:25,816 - 127.0.0.1 - - [01/Dec/2025 22:19:25] "[35m[1mGET /users/login HTTP/1.1[0m" 500 -
+2025-12-01 22:19:25,986 - 127.0.0.1 - - [01/Dec/2025 22:19:25] "[36mGET /users/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-12-01 22:19:26,004 - 127.0.0.1 - - [01/Dec/2025 22:19:26] "[35m[1mGET /users/login HTTP/1.1[0m" 500 -
+2025-12-01 22:19:26,009 - 127.0.0.1 - - [01/Dec/2025 22:19:26] "[36mGET /users/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-12-01 22:19:26,048 - 127.0.0.1 - - [01/Dec/2025 22:19:26] "[36mGET /users/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-12-01 22:19:26,066 - 127.0.0.1 - - [01/Dec/2025 22:19:26] "GET /users/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-12-01 22:19:26,124 - 127.0.0.1 - - [01/Dec/2025 22:19:26] "GET /users/login?__debugger__=yes&cmd=resource&f=console.png&s=npt1TH70BEBdOeskOJVh HTTP/1.1" 200 -
+2025-12-01 22:19:26,214 - 127.0.0.1 - - [01/Dec/2025 22:19:26] "[36mGET /users/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-12-01 22:19:28,373 - 127.0.0.1 - - [01/Dec/2025 22:19:28] "[35m[1mGET /users/login HTTP/1.1[0m" 500 -
+2025-12-01 22:19:28,414 - 127.0.0.1 - - [01/Dec/2025 22:19:28] "[36mGET /users/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-12-01 22:19:28,436 - 127.0.0.1 - - [01/Dec/2025 22:19:28] "[36mGET /users/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-12-01 22:19:28,473 - 127.0.0.1 - - [01/Dec/2025 22:19:28] "[36mGET /users/login?__debugger__=yes&cmd=resource&f=console.png&s=npt1TH70BEBdOeskOJVh HTTP/1.1[0m" 304 -
+2025-12-01 22:19:28,512 - 127.0.0.1 - - [01/Dec/2025 22:19:28] "[36mGET /users/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-12-01 22:19:28,625 - 127.0.0.1 - - [01/Dec/2025 22:19:28] "[35m[1mGET /users/login HTTP/1.1[0m" 500 -
+2025-12-01 22:19:28,668 - 127.0.0.1 - - [01/Dec/2025 22:19:28] "[36mGET /users/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-12-01 22:19:28,689 - 127.0.0.1 - - [01/Dec/2025 22:19:28] "[36mGET /users/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-12-01 22:19:28,749 - 127.0.0.1 - - [01/Dec/2025 22:19:28] "[36mGET /users/login?__debugger__=yes&cmd=resource&f=console.png&s=npt1TH70BEBdOeskOJVh HTTP/1.1[0m" 304 -
+2025-12-01 22:19:28,780 - 127.0.0.1 - - [01/Dec/2025 22:19:28] "[36mGET /users/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-12-01 22:19:28,820 - 127.0.0.1 - - [01/Dec/2025 22:19:28] "[35m[1mGET /users/login HTTP/1.1[0m" 500 -
+2025-12-01 22:19:28,862 - 127.0.0.1 - - [01/Dec/2025 22:19:28] "[36mGET /users/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-12-01 22:19:28,884 - 127.0.0.1 - - [01/Dec/2025 22:19:28] "[36mGET /users/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-12-01 22:19:28,916 - 127.0.0.1 - - [01/Dec/2025 22:19:28] "[36mGET /users/login?__debugger__=yes&cmd=resource&f=console.png&s=npt1TH70BEBdOeskOJVh HTTP/1.1[0m" 304 -
+2025-12-01 22:19:29,033 - 127.0.0.1 - - [01/Dec/2025 22:19:29] "[35m[1mGET /users/login HTTP/1.1[0m" 500 -
+2025-12-01 22:19:29,083 - 127.0.0.1 - - [01/Dec/2025 22:19:29] "[36mGET /users/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-12-01 22:19:29,092 - 127.0.0.1 - - [01/Dec/2025 22:19:29] "[36mGET /users/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-12-01 22:19:29,158 - 127.0.0.1 - - [01/Dec/2025 22:19:29] "[36mGET /users/login?__debugger__=yes&cmd=resource&f=console.png&s=npt1TH70BEBdOeskOJVh HTTP/1.1[0m" 304 -
+2025-12-01 22:19:29,205 - 127.0.0.1 - - [01/Dec/2025 22:19:29] "[36mGET /users/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-12-01 22:19:29,224 - 127.0.0.1 - - [01/Dec/2025 22:19:29] "[35m[1mGET /users/login HTTP/1.1[0m" 500 -
+2025-12-01 22:19:29,302 - 127.0.0.1 - - [01/Dec/2025 22:19:29] "[36mGET /users/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-12-01 22:19:29,324 - 127.0.0.1 - - [01/Dec/2025 22:19:29] "[36mGET /users/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-12-01 22:19:29,341 - 127.0.0.1 - - [01/Dec/2025 22:19:29] "[36mGET /users/login?__debugger__=yes&cmd=resource&f=console.png&s=npt1TH70BEBdOeskOJVh HTTP/1.1[0m" 304 -
+2025-12-01 22:19:29,402 - 127.0.0.1 - - [01/Dec/2025 22:19:29] "[35m[1mGET /users/login HTTP/1.1[0m" 500 -
+2025-12-01 22:19:29,447 - 127.0.0.1 - - [01/Dec/2025 22:19:29] "[36mGET /users/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-12-01 22:19:29,470 - 127.0.0.1 - - [01/Dec/2025 22:19:29] "[36mGET /users/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-12-01 22:19:29,504 - 127.0.0.1 - - [01/Dec/2025 22:19:29] "[36mGET /users/login?__debugger__=yes&cmd=resource&f=console.png&s=npt1TH70BEBdOeskOJVh HTTP/1.1[0m" 304 -
+2025-12-01 22:19:29,539 - 127.0.0.1 - - [01/Dec/2025 22:19:29] "[36mGET /users/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-12-01 22:19:32,811 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\third\\flask\\flask_lab2\\app\\posts\\views.py', reloading
+2025-12-01 22:19:33,014 -  * Restarting with stat
+2025-12-01 22:19:34,948 -  * Debugger is active!
+2025-12-01 22:19:34,953 -  * Debugger PIN: 190-365-460
+2025-12-01 22:19:35,195 - 127.0.0.1 - - [01/Dec/2025 22:19:35] "[35m[1mGET /users/login HTTP/1.1[0m" 500 -
+2025-12-01 22:19:35,201 - 127.0.0.1 - - [01/Dec/2025 22:19:35] "[35m[1mGET /users/login HTTP/1.1[0m" 500 -
+2025-12-01 22:19:35,203 - 127.0.0.1 - - [01/Dec/2025 22:19:35] "[35m[1mGET /users/login HTTP/1.1[0m" 500 -
+2025-12-01 22:19:35,209 - 127.0.0.1 - - [01/Dec/2025 22:19:35] "[35m[1mGET /users/login HTTP/1.1[0m" 500 -
+2025-12-01 22:19:35,364 - 127.0.0.1 - - [01/Dec/2025 22:19:35] "[36mGET /users/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-12-01 22:19:35,401 - 127.0.0.1 - - [01/Dec/2025 22:19:35] "[36mGET /users/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-12-01 22:19:35,422 - 127.0.0.1 - - [01/Dec/2025 22:19:35] "GET /users/login?__debugger__=yes&cmd=resource&f=console.png&s=BohZTM5wkvh63HpIkyiE HTTP/1.1" 200 -
+2025-12-01 22:19:35,452 - 127.0.0.1 - - [01/Dec/2025 22:19:35] "[36mGET /users/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-12-01 22:24:57,290 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-01 22:24:57,290 - [33mPress CTRL+C to quit[0m
+2025-12-01 22:24:57,292 -  * Restarting with stat
+2025-12-01 22:24:59,264 -  * Debugger is active!
+2025-12-01 22:24:59,273 -  * Debugger PIN: 190-365-460
+2025-12-01 22:24:59,369 - 127.0.0.1 - - [01/Dec/2025 22:24:59] "GET /users/login HTTP/1.1" 200 -
+2025-12-01 22:24:59,589 - 127.0.0.1 - - [01/Dec/2025 22:24:59] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 22:24:59,644 - 127.0.0.1 - - [01/Dec/2025 22:24:59] "GET /users/login HTTP/1.1" 200 -
+2025-12-01 22:24:59,703 - 127.0.0.1 - - [01/Dec/2025 22:24:59] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 22:25:02,737 - 127.0.0.1 - - [01/Dec/2025 22:25:02] "POST /users/login HTTP/1.1" 200 -
+2025-12-01 22:25:02,804 - 127.0.0.1 - - [01/Dec/2025 22:25:02] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 22:25:03,954 - 127.0.0.1 - - [01/Dec/2025 22:25:03] "GET /users/register HTTP/1.1" 200 -
+2025-12-01 22:25:04,018 - 127.0.0.1 - - [01/Dec/2025 22:25:04] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 22:25:12,847 - 127.0.0.1 - - [01/Dec/2025 22:25:12] "[32mPOST /users/register HTTP/1.1[0m" 302 -
+2025-12-01 22:25:12,855 - 127.0.0.1 - - [01/Dec/2025 22:25:12] "GET /users/login HTTP/1.1" 200 -
+2025-12-01 22:25:12,985 - 127.0.0.1 - - [01/Dec/2025 22:25:12] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 22:25:16,067 - 127.0.0.1 - - [01/Dec/2025 22:25:16] "GET /users/login HTTP/1.1" 200 -
+2025-12-01 22:25:16,126 - 127.0.0.1 - - [01/Dec/2025 22:25:16] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 22:25:20,820 - 127.0.0.1 - - [01/Dec/2025 22:25:20] "[32mPOST /users/login HTTP/1.1[0m" 302 -
+2025-12-01 22:25:20,836 - 127.0.0.1 - - [01/Dec/2025 22:25:20] "GET /users/account HTTP/1.1" 200 -
+2025-12-01 22:25:20,928 - 127.0.0.1 - - [01/Dec/2025 22:25:20] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 22:25:25,503 - 127.0.0.1 - - [01/Dec/2025 22:25:25] "GET /users/all_users HTTP/1.1" 200 -
+2025-12-01 22:25:25,542 - 127.0.0.1 - - [01/Dec/2025 22:25:25] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 22:25:53,712 - 127.0.0.1 - - [01/Dec/2025 22:25:53] "[32mGET /users/logout HTTP/1.1[0m" 302 -
+2025-12-01 22:25:53,721 - 127.0.0.1 - - [01/Dec/2025 22:25:53] "GET /users/login HTTP/1.1" 200 -
+2025-12-01 22:25:53,858 - 127.0.0.1 - - [01/Dec/2025 22:25:53] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 22:25:57,846 - 127.0.0.1 - - [01/Dec/2025 22:25:57] "POST /users/login HTTP/1.1" 200 -
+2025-12-01 22:25:57,891 - 127.0.0.1 - - [01/Dec/2025 22:25:57] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 22:26:04,775 - 127.0.0.1 - - [01/Dec/2025 22:26:04] "GET /users/login HTTP/1.1" 200 -
+2025-12-01 22:26:04,818 - 127.0.0.1 - - [01/Dec/2025 22:26:04] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 22:26:08,731 - 127.0.0.1 - - [01/Dec/2025 22:26:08] "GET /users/register HTTP/1.1" 200 -
+2025-12-01 22:26:08,777 - 127.0.0.1 - - [01/Dec/2025 22:26:08] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 22:26:18,665 - 127.0.0.1 - - [01/Dec/2025 22:26:18] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 22:26:18,702 - 127.0.0.1 - - [01/Dec/2025 22:26:18] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-12-01 22:26:27,553 - 127.0.0.1 - - [01/Dec/2025 22:26:27] "POST /users/register HTTP/1.1" 200 -
+2025-12-01 22:26:27,611 - 127.0.0.1 - - [01/Dec/2025 22:26:27] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 22:27:25,901 - 127.0.0.1 - - [01/Dec/2025 22:27:25] "GET /contacts HTTP/1.1" 200 -
+2025-12-01 22:27:25,978 - 127.0.0.1 - - [01/Dec/2025 22:27:25] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 22:27:26,755 - 127.0.0.1 - - [01/Dec/2025 22:27:26] "GET /post/ HTTP/1.1" 200 -
+2025-12-01 22:27:26,796 - 127.0.0.1 - - [01/Dec/2025 22:27:26] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 22:27:28,772 - 127.0.0.1 - - [01/Dec/2025 22:27:28] "GET /post/create HTTP/1.1" 200 -
+2025-12-01 22:27:28,833 - 127.0.0.1 - - [01/Dec/2025 22:27:28] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 22:27:30,018 - 127.0.0.1 - - [01/Dec/2025 22:27:30] "GET /post/ HTTP/1.1" 200 -
+2025-12-01 22:27:30,056 - 127.0.0.1 - - [01/Dec/2025 22:27:30] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 22:27:30,908 - 127.0.0.1 - - [01/Dec/2025 22:27:30] "GET /resume HTTP/1.1" 200 -
+2025-12-01 22:27:30,969 - 127.0.0.1 - - [01/Dec/2025 22:27:30] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 22:27:30,989 - 127.0.0.1 - - [01/Dec/2025 22:27:30] "[36mGET /static/images/photo.jpg HTTP/1.1[0m" 304 -
+2025-12-01 22:27:32,122 - 127.0.0.1 - - [01/Dec/2025 22:27:32] "GET /post/ HTTP/1.1" 200 -
+2025-12-01 22:27:32,187 - 127.0.0.1 - - [01/Dec/2025 22:27:32] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 22:27:35,143 - 127.0.0.1 - - [01/Dec/2025 22:27:35] "GET /users/login HTTP/1.1" 200 -
+2025-12-01 22:27:35,193 - 127.0.0.1 - - [01/Dec/2025 22:27:35] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 22:27:36,268 - 127.0.0.1 - - [01/Dec/2025 22:27:36] "GET /users/register HTTP/1.1" 200 -
+2025-12-01 22:27:36,308 - 127.0.0.1 - - [01/Dec/2025 22:27:36] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 22:27:38,192 - 127.0.0.1 - - [01/Dec/2025 22:27:38] "GET /users/login HTTP/1.1" 200 -
+2025-12-01 22:27:38,255 - 127.0.0.1 - - [01/Dec/2025 22:27:38] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 22:27:41,420 - 127.0.0.1 - - [01/Dec/2025 22:27:41] "POST /users/login HTTP/1.1" 200 -
+2025-12-01 22:27:41,471 - 127.0.0.1 - - [01/Dec/2025 22:27:41] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 22:27:44,735 - 127.0.0.1 - - [01/Dec/2025 22:27:44] "POST /users/login HTTP/1.1" 200 -
+2025-12-01 22:27:44,782 - 127.0.0.1 - - [01/Dec/2025 22:27:44] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 22:27:46,852 - 127.0.0.1 - - [01/Dec/2025 22:27:46] "POST /users/login HTTP/1.1" 200 -
+2025-12-01 22:27:46,893 - 127.0.0.1 - - [01/Dec/2025 22:27:46] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 22:27:49,200 - 127.0.0.1 - - [01/Dec/2025 22:27:49] "POST /users/login HTTP/1.1" 200 -
+2025-12-01 22:27:49,267 - 127.0.0.1 - - [01/Dec/2025 22:27:49] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 22:27:57,494 - 127.0.0.1 - - [01/Dec/2025 22:27:57] "POST /users/login HTTP/1.1" 200 -
+2025-12-01 22:27:57,544 - 127.0.0.1 - - [01/Dec/2025 22:27:57] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 22:27:58,209 - 127.0.0.1 - - [01/Dec/2025 22:27:58] "POST /users/login HTTP/1.1" 200 -
+2025-12-01 22:27:58,271 - 127.0.0.1 - - [01/Dec/2025 22:27:58] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 22:28:47,282 - 127.0.0.1 - - [01/Dec/2025 22:28:47] "POST /users/login HTTP/1.1" 200 -
+2025-12-01 22:28:47,345 - 127.0.0.1 - - [01/Dec/2025 22:28:47] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 22:28:50,994 - 127.0.0.1 - - [01/Dec/2025 22:28:50] "POST /users/login HTTP/1.1" 200 -
+2025-12-01 22:28:51,060 - 127.0.0.1 - - [01/Dec/2025 22:28:51] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 22:28:53,666 - 127.0.0.1 - - [01/Dec/2025 22:28:53] "POST /users/login HTTP/1.1" 200 -
+2025-12-01 22:28:53,726 - 127.0.0.1 - - [01/Dec/2025 22:28:53] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 22:29:00,502 - 127.0.0.1 - - [01/Dec/2025 22:29:00] "POST /users/login HTTP/1.1" 200 -
+2025-12-01 22:29:00,566 - 127.0.0.1 - - [01/Dec/2025 22:29:00] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 22:29:04,203 - 127.0.0.1 - - [01/Dec/2025 22:29:04] "[32mPOST /users/login HTTP/1.1[0m" 302 -
+2025-12-01 22:29:04,211 - 127.0.0.1 - - [01/Dec/2025 22:29:04] "GET /users/account HTTP/1.1" 200 -
+2025-12-01 22:29:04,314 - 127.0.0.1 - - [01/Dec/2025 22:29:04] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 22:43:06,469 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\third\\flask\\flask_lab2\\app\\posts\\models.py', reloading
+2025-12-01 22:43:06,777 -  * Restarting with stat
+2025-12-01 22:43:10,641 -  * Debugger is active!
+2025-12-01 22:43:10,649 -  * Debugger PIN: 190-365-460
+2025-12-01 22:43:10,821 - 127.0.0.1 - - [01/Dec/2025 22:43:10] "GET /post/ HTTP/1.1" 200 -
+2025-12-01 22:43:11,028 - 127.0.0.1 - - [01/Dec/2025 22:43:11] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 22:43:13,702 - 127.0.0.1 - - [01/Dec/2025 22:43:13] "GET /users/account HTTP/1.1" 200 -
+2025-12-01 22:43:13,741 - 127.0.0.1 - - [01/Dec/2025 22:43:13] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 22:44:17,289 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\third\\flask\\flask_lab2\\app\\users\\models.py', reloading
+2025-12-01 22:44:17,569 -  * Restarting with stat
+2025-12-01 22:44:19,421 -  * Debugger is active!
+2025-12-01 22:44:19,426 -  * Debugger PIN: 190-365-460
+2025-12-01 22:44:19,511 - 127.0.0.1 - - [01/Dec/2025 22:44:19] "GET /users/account HTTP/1.1" 200 -
+2025-12-01 22:44:19,626 - 127.0.0.1 - - [01/Dec/2025 22:44:19] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 22:44:21,100 - 127.0.0.1 - - [01/Dec/2025 22:44:21] "GET /users/account HTTP/1.1" 200 -
+2025-12-01 22:44:21,140 - 127.0.0.1 - - [01/Dec/2025 22:44:21] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 22:44:21,928 - 127.0.0.1 - - [01/Dec/2025 22:44:21] "GET /post/ HTTP/1.1" 200 -
+2025-12-01 22:44:21,974 - 127.0.0.1 - - [01/Dec/2025 22:44:21] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 22:44:23,978 - 127.0.0.1 - - [01/Dec/2025 22:44:23] "GET /post/create HTTP/1.1" 200 -
+2025-12-01 22:44:24,019 - 127.0.0.1 - - [01/Dec/2025 22:44:24] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 22:44:35,186 - 127.0.0.1 - - [01/Dec/2025 22:44:35] "[32mPOST /post/create HTTP/1.1[0m" 302 -
+2025-12-01 22:44:35,232 - 127.0.0.1 - - [01/Dec/2025 22:44:35] "GET /post/ HTTP/1.1" 200 -
+2025-12-01 22:44:35,294 - 127.0.0.1 - - [01/Dec/2025 22:44:35] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 22:44:35,301 - 127.0.0.1 - - [01/Dec/2025 22:44:35] "[36mGET /static/images/img.jpg HTTP/1.1[0m" 304 -
+2025-12-01 22:44:37,027 - 127.0.0.1 - - [01/Dec/2025 22:44:37] "GET /post/1 HTTP/1.1" 200 -
+2025-12-01 22:44:37,081 - 127.0.0.1 - - [01/Dec/2025 22:44:37] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 22:44:41,576 - 127.0.0.1 - - [01/Dec/2025 22:44:41] "GET /users/all_users HTTP/1.1" 200 -
+2025-12-01 22:44:41,625 - 127.0.0.1 - - [01/Dec/2025 22:44:41] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 22:44:43,031 - 127.0.0.1 - - [01/Dec/2025 22:44:43] "GET /users/account HTTP/1.1" 200 -
+2025-12-01 22:44:43,072 - 127.0.0.1 - - [01/Dec/2025 22:44:43] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 22:44:44,075 - 127.0.0.1 - - [01/Dec/2025 22:44:44] "GET /users/all_users HTTP/1.1" 200 -
+2025-12-01 22:44:44,144 - 127.0.0.1 - - [01/Dec/2025 22:44:44] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 23:00:31,121 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\third\\flask\\flask_lab2\\app\\users\\views.py', reloading
+2025-12-01 23:00:31,323 -  * Restarting with stat
+2025-12-01 23:00:33,452 -  * Debugger is active!
+2025-12-01 23:00:33,458 -  * Debugger PIN: 190-365-460
+2025-12-01 23:00:35,206 - 127.0.0.1 - - [01/Dec/2025 23:00:35] "GET /users/all_users HTTP/1.1" 200 -
+2025-12-01 23:00:35,333 - 127.0.0.1 - - [01/Dec/2025 23:00:35] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-01 23:07:27,132 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\third\\flask\\flask_lab2\\app\\posts\\views.py', reloading
+2025-12-01 23:07:27,344 -  * Restarting with stat
+2025-12-01 23:07:29,678 -  * Debugger is active!
+2025-12-01 23:07:29,683 -  * Debugger PIN: 190-365-460
+2025-12-01 23:07:29,830 - 127.0.0.1 - - [01/Dec/2025 23:07:29] "GET /users/all_users HTTP/1.1" 200 -
+2025-12-01 23:07:29,832 - 127.0.0.1 - - [01/Dec/2025 23:07:29] "GET /users/all_users HTTP/1.1" 200 -
+2025-12-01 23:07:29,980 - 127.0.0.1 - - [01/Dec/2025 23:07:29] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -

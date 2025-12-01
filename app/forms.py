@@ -1,6 +1,11 @@
 from flask_wtf import FlaskForm
-from wtforms import StringField, TextAreaField, SubmitField, SelectField, PasswordField, BooleanField
-from wtforms.validators import DataRequired, Email, Length, Regexp
+from wtforms import (
+    StringField, TextAreaField, SubmitField,
+    SelectField, PasswordField, BooleanField
+)
+from wtforms.validators import DataRequired, Email, Length, Regexp, ValidationError
+
+from app.users.models import User
 
 class ContactForm(FlaskForm):
     name = StringField(
@@ -48,9 +53,49 @@ class LoginForm(FlaskForm):
 
     password = PasswordField(
         "Пароль",
-        validators=[DataRequired(message="Поле обов’язкове!"),
-                    Length(min=4, max=10, message="Пароль 4–10 символів")]
+        validators=[
+            DataRequired(message="Поле обов’язкове!"),
+            Length(min=4, max=10, message="Пароль 4–10 символів")
+        ]
     )
 
     remember = BooleanField("Запам’ятати мене")
     submit = SubmitField("Увійти")
+
+
+class RegisterForm(FlaskForm):
+    username = StringField(
+        "Ім’я користувача",
+        validators=[
+            DataRequired(message="Поле обов’язкове!"),
+            Length(min=3, max=50, message="Від 3 до 50 символів")
+        ]
+    )
+
+    email = StringField(
+        "Email",
+        validators=[
+            DataRequired(message="Поле обов’язкове!"),
+            Email(message="Введіть правильний email!")
+        ]
+    )
+
+    password = PasswordField(
+        "Пароль",
+        validators=[
+            DataRequired(message="Поле обов’язкове!"),
+            Length(min=4, max=20, message="Пароль 4–20 символів")
+        ]
+    )
+
+    submit = SubmitField("Зареєструватися")
+
+    def validate_username(self, field):
+        existing = User.query.filter_by(username=field.data).first()
+        if existing:
+            raise ValidationError("Такий username вже існує!")
+
+    def validate_email(self, field):
+        existing = User.query.filter_by(email=field.data).first()
+        if existing:
+            raise ValidationError("Цей email вже використовується!")
