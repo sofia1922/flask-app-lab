@@ -3,8 +3,9 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 import os
 from flask_bcrypt import Bcrypt
-from flask_login import LoginManager
+from flask_login import LoginManager, current_user
 from sqlalchemy import MetaData
+from datetime import datetime
 
 naming_convention = {
     "ix": "ix_%(column_0_label)s",
@@ -21,11 +22,11 @@ migrate = Migrate()
 bcrypt = Bcrypt()
 login_manager = LoginManager()
 
-
 def create_app(config_name='development'):
     app = Flask(__name__, static_folder='static', template_folder='templates')
 
     from app.config import DevelopmentConfig, TestingConfig, ProductionConfig
+
     configs = {
         'development': DevelopmentConfig,
         'testing': TestingConfig,
@@ -35,20 +36,28 @@ def create_app(config_name='development'):
     app.config.from_object(configs.get(config_name, DevelopmentConfig))
 
     if not app.config.get("TESTING"):
-        app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(app.instance_path, 'data.sqlite')
+        app.config['SQLALCHEMY_DATABASE_URI'] = \
+            'sqlite:///' + os.path.join(app.instance_path, 'data.sqlite')
 
     db.init_app(app)
     bcrypt.init_app(app)
+    migrate.init_app(app, db)
 
     login_manager.init_app(app)
     login_manager.login_view = 'users.login'
     login_manager.login_message_category = 'info'
 
-    from app.products import models as product_models
-    from app.posts import models as post_models
-    from app.users import models as user_models
+    from app.users.models import User
 
-    migrate.init_app(app, db)
+    @login_manager.user_loader
+    def load_user(user_id):
+        return db.session.get(User, int(user_id))
+
+    @app.before_request
+    def update_last_seen():
+        if current_user.is_authenticated:
+            current_user.last_seen = datetime.utcnow()
+            db.session.commit()
 
     from .main_views import main_bp
     from .users.views import users_bp
@@ -59,12 +68,6 @@ def create_app(config_name='development'):
     app.register_blueprint(users_bp, url_prefix='/users')
     app.register_blueprint(products_bp, url_prefix='/products')
     app.register_blueprint(post_bp, url_prefix='/post')
-
-    from app.users.models import User
-
-    @login_manager.user_loader
-    def load_user(user_id):
-        return db.session.get(User, int(user_id))  
 
     @app.errorhandler(404)
     def not_found_error(error):

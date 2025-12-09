@@ -17071,3 +17071,162 @@ WHERE users.username = ?
 2025-12-01 23:07:29,830 - 127.0.0.1 - - [01/Dec/2025 23:07:29] "GET /users/all_users HTTP/1.1" 200 -
 2025-12-01 23:07:29,832 - 127.0.0.1 - - [01/Dec/2025 23:07:29] "GET /users/all_users HTTP/1.1" 200 -
 2025-12-01 23:07:29,980 - 127.0.0.1 - - [01/Dec/2025 23:07:29] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-10 00:28:30,963 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-10 00:28:30,964 - [33mPress CTRL+C to quit[0m
+2025-12-10 00:28:40,551 - 127.0.0.1 - - [10/Dec/2025 00:28:40] "[32mGET /users/all_users HTTP/1.1[0m" 302 -
+2025-12-10 00:28:40,772 - 127.0.0.1 - - [10/Dec/2025 00:28:40] "GET /users/login?next=/users/all_users HTTP/1.1" 200 -
+2025-12-10 00:28:43,346 - 127.0.0.1 - - [10/Dec/2025 00:28:43] "GET /users/login?next=/users/all_users HTTP/1.1" 200 -
+2025-12-10 00:28:43,550 - 127.0.0.1 - - [10/Dec/2025 00:28:43] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-10 00:28:43,775 - 127.0.0.1 - - [10/Dec/2025 00:28:43] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-12-10 00:28:47,325 - 127.0.0.1 - - [10/Dec/2025 00:28:47] "POST /users/login?next=/users/all_users HTTP/1.1" 200 -
+2025-12-10 00:28:47,372 - 127.0.0.1 - - [10/Dec/2025 00:28:47] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-10 00:28:58,173 - 127.0.0.1 - - [10/Dec/2025 00:28:58] "POST /users/login?next=/users/all_users HTTP/1.1" 200 -
+2025-12-10 00:28:58,223 - 127.0.0.1 - - [10/Dec/2025 00:28:58] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-10 00:29:00,924 - 127.0.0.1 - - [10/Dec/2025 00:29:00] "GET /users/register HTTP/1.1" 200 -
+2025-12-10 00:29:00,967 - 127.0.0.1 - - [10/Dec/2025 00:29:00] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-10 00:29:10,812 - 127.0.0.1 - - [10/Dec/2025 00:29:10] "POST /users/register HTTP/1.1" 200 -
+2025-12-10 00:29:10,872 - 127.0.0.1 - - [10/Dec/2025 00:29:10] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-10 00:29:18,167 - 127.0.0.1 - - [10/Dec/2025 00:29:18] "POST /users/register HTTP/1.1" 200 -
+2025-12-10 00:29:18,231 - 127.0.0.1 - - [10/Dec/2025 00:29:18] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-10 00:29:26,431 - 127.0.0.1 - - [10/Dec/2025 00:29:26] "[32mPOST /users/register HTTP/1.1[0m" 302 -
+2025-12-10 00:29:26,439 - 127.0.0.1 - - [10/Dec/2025 00:29:26] "GET /users/login HTTP/1.1" 200 -
+2025-12-10 00:29:26,553 - 127.0.0.1 - - [10/Dec/2025 00:29:26] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-10 00:29:33,860 - 127.0.0.1 - - [10/Dec/2025 00:29:33] "POST /users/login HTTP/1.1" 200 -
+2025-12-10 00:29:33,905 - 127.0.0.1 - - [10/Dec/2025 00:29:33] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-10 00:29:41,535 - 127.0.0.1 - - [10/Dec/2025 00:29:41] "POST /users/login HTTP/1.1" 200 -
+2025-12-10 00:29:41,585 - 127.0.0.1 - - [10/Dec/2025 00:29:41] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-10 00:29:42,725 - 127.0.0.1 - - [10/Dec/2025 00:29:42] "[32mPOST /users/login HTTP/1.1[0m" 302 -
+2025-12-10 00:29:42,963 - 127.0.0.1 - - [10/Dec/2025 00:29:42] "[32mPOST /users/login HTTP/1.1[0m" 302 -
+2025-12-10 00:29:43,000 - 127.0.0.1 - - [10/Dec/2025 00:29:43] "GET /users/account HTTP/1.1" 200 -
+2025-12-10 00:29:43,144 - 127.0.0.1 - - [10/Dec/2025 00:29:43] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-10 00:29:43,171 - 127.0.0.1 - - [10/Dec/2025 00:29:43] "GET /static/images/profile_default.jpg HTTP/1.1" 200 -
+2025-12-10 00:30:49,913 - 127.0.0.1 - - [10/Dec/2025 00:30:49] "[32mPOST /users/account HTTP/1.1[0m" 302 -
+2025-12-10 00:30:49,940 - 127.0.0.1 - - [10/Dec/2025 00:30:49] "GET /users/account HTTP/1.1" 200 -
+2025-12-10 00:30:50,084 - 127.0.0.1 - - [10/Dec/2025 00:30:50] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-10 00:30:50,103 - 127.0.0.1 - - [10/Dec/2025 00:30:50] "[36mGET /static/images/profile_default.jpg HTTP/1.1[0m" 304 -
+2025-12-10 00:31:00,365 - 127.0.0.1 - - [10/Dec/2025 00:31:00] "[32mPOST /users/account HTTP/1.1[0m" 302 -
+2025-12-10 00:31:00,387 - 127.0.0.1 - - [10/Dec/2025 00:31:00] "GET /users/account HTTP/1.1" 200 -
+2025-12-10 00:31:00,507 - 127.0.0.1 - - [10/Dec/2025 00:31:00] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-10 00:31:00,544 - 127.0.0.1 - - [10/Dec/2025 00:31:00] "GET /static/images/2341b51f403b1619.jpg HTTP/1.1" 200 -
+2025-12-10 00:31:40,212 - 127.0.0.1 - - [10/Dec/2025 00:31:40] "[32mPOST /users/account HTTP/1.1[0m" 302 -
+2025-12-10 00:31:40,233 - 127.0.0.1 - - [10/Dec/2025 00:31:40] "GET /users/account HTTP/1.1" 200 -
+2025-12-10 00:31:40,377 - 127.0.0.1 - - [10/Dec/2025 00:31:40] "[36mGET /static/images/2341b51f403b1619.jpg HTTP/1.1[0m" 304 -
+2025-12-10 00:31:40,392 - 127.0.0.1 - - [10/Dec/2025 00:31:40] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-10 00:31:42,584 - 127.0.0.1 - - [10/Dec/2025 00:31:42] "GET /users/change_password HTTP/1.1" 200 -
+2025-12-10 00:31:42,646 - 127.0.0.1 - - [10/Dec/2025 00:31:42] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-10 00:33:51,561 - Exception on /users/change_password [POST]
+Traceback (most recent call last):
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\users\views.py", line 98, in change_password
+    if form.validate_on_submit():
+       ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask_wtf\form.py", line 86, in validate_on_submit
+    return self.is_submitted() and self.validate(extra_validators=extra_validators)
+                                   ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ChangePasswordForm.validate() got an unexpected keyword argument 'extra_validators'
+2025-12-10 00:33:51,567 - 127.0.0.1 - - [10/Dec/2025 00:33:51] "[35m[1mPOST /users/change_password HTTP/1.1[0m" 500 -
+2025-12-10 00:33:57,565 - Exception on /users/change_password [POST]
+Traceback (most recent call last):
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\users\views.py", line 98, in change_password
+    if form.validate_on_submit():
+       ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask_wtf\form.py", line 86, in validate_on_submit
+    return self.is_submitted() and self.validate(extra_validators=extra_validators)
+                                   ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ChangePasswordForm.validate() got an unexpected keyword argument 'extra_validators'
+2025-12-10 00:33:57,568 - 127.0.0.1 - - [10/Dec/2025 00:33:57] "[35m[1mPOST /users/change_password HTTP/1.1[0m" 500 -
+2025-12-10 00:34:16,586 - Exception on /users/change_password [POST]
+Traceback (most recent call last):
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\users\views.py", line 98, in change_password
+    if form.validate_on_submit():
+       ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask_wtf\form.py", line 86, in validate_on_submit
+    return self.is_submitted() and self.validate(extra_validators=extra_validators)
+                                   ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ChangePasswordForm.validate() got an unexpected keyword argument 'extra_validators'
+2025-12-10 00:34:16,589 - 127.0.0.1 - - [10/Dec/2025 00:34:16] "[35m[1mPOST /users/change_password HTTP/1.1[0m" 500 -
+2025-12-10 00:36:17,643 - 127.0.0.1 - - [10/Dec/2025 00:36:17] "GET /users/account HTTP/1.1" 200 -
+2025-12-10 00:36:17,713 - 127.0.0.1 - - [10/Dec/2025 00:36:17] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-10 00:36:17,735 - 127.0.0.1 - - [10/Dec/2025 00:36:17] "[36mGET /static/images/2341b51f403b1619.jpg HTTP/1.1[0m" 304 -
+2025-12-10 00:36:20,563 - 127.0.0.1 - - [10/Dec/2025 00:36:20] "GET /resume HTTP/1.1" 200 -
+2025-12-10 00:36:20,626 - 127.0.0.1 - - [10/Dec/2025 00:36:20] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-10 00:36:20,647 - 127.0.0.1 - - [10/Dec/2025 00:36:20] "GET /static/images/photo.jpg HTTP/1.1" 200 -
+2025-12-10 00:36:21,447 - 127.0.0.1 - - [10/Dec/2025 00:36:21] "GET /contacts HTTP/1.1" 200 -
+2025-12-10 00:36:21,500 - 127.0.0.1 - - [10/Dec/2025 00:36:21] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-10 00:36:22,163 - 127.0.0.1 - - [10/Dec/2025 00:36:22] "GET /post/ HTTP/1.1" 200 -
+2025-12-10 00:36:22,217 - 127.0.0.1 - - [10/Dec/2025 00:36:22] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-10 00:36:22,857 - 127.0.0.1 - - [10/Dec/2025 00:36:22] "GET /users/account HTTP/1.1" 200 -
+2025-12-10 00:36:22,910 - 127.0.0.1 - - [10/Dec/2025 00:36:22] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-10 00:36:22,936 - 127.0.0.1 - - [10/Dec/2025 00:36:22] "[36mGET /static/images/2341b51f403b1619.jpg HTTP/1.1[0m" 304 -
+2025-12-10 00:36:24,082 - 127.0.0.1 - - [10/Dec/2025 00:36:24] "GET /post/ HTTP/1.1" 200 -
+2025-12-10 00:36:24,161 - 127.0.0.1 - - [10/Dec/2025 00:36:24] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-10 00:36:24,991 - 127.0.0.1 - - [10/Dec/2025 00:36:24] "GET /users/account HTTP/1.1" 200 -
+2025-12-10 00:36:25,053 - 127.0.0.1 - - [10/Dec/2025 00:36:25] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-10 00:36:25,078 - 127.0.0.1 - - [10/Dec/2025 00:36:25] "[36mGET /static/images/2341b51f403b1619.jpg HTTP/1.1[0m" 304 -
+2025-12-10 00:36:25,998 - 127.0.0.1 - - [10/Dec/2025 00:36:25] "GET /users/all_users HTTP/1.1" 200 -
+2025-12-10 00:36:26,063 - 127.0.0.1 - - [10/Dec/2025 00:36:26] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-10 00:36:26,102 - 127.0.0.1 - - [10/Dec/2025 00:36:26] "GET /static/images/thumb_2341b51f403b1619.jpg HTTP/1.1" 200 -
+2025-12-10 00:36:29,836 - 127.0.0.1 - - [10/Dec/2025 00:36:29] "GET /users/all_users HTTP/1.1" 200 -
+2025-12-10 00:36:29,912 - 127.0.0.1 - - [10/Dec/2025 00:36:29] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-10 00:36:29,933 - 127.0.0.1 - - [10/Dec/2025 00:36:29] "[36mGET /static/images/thumb_2341b51f403b1619.jpg HTTP/1.1[0m" 304 -
+2025-12-10 00:36:30,788 - 127.0.0.1 - - [10/Dec/2025 00:36:30] "GET /users/account HTTP/1.1" 200 -
+2025-12-10 00:36:30,841 - 127.0.0.1 - - [10/Dec/2025 00:36:30] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-10 00:36:30,863 - 127.0.0.1 - - [10/Dec/2025 00:36:30] "[36mGET /static/images/2341b51f403b1619.jpg HTTP/1.1[0m" 304 -
+2025-12-10 00:36:34,459 - 127.0.0.1 - - [10/Dec/2025 00:36:34] "GET /users/all_users HTTP/1.1" 200 -
+2025-12-10 00:36:34,541 - 127.0.0.1 - - [10/Dec/2025 00:36:34] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-10 00:36:34,562 - 127.0.0.1 - - [10/Dec/2025 00:36:34] "[36mGET /static/images/thumb_2341b51f403b1619.jpg HTTP/1.1[0m" 304 -
+2025-12-10 00:37:55,864 - 127.0.0.1 - - [10/Dec/2025 00:37:55] "GET /users/account HTTP/1.1" 200 -
+2025-12-10 00:37:55,917 - 127.0.0.1 - - [10/Dec/2025 00:37:55] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-10 00:37:55,939 - 127.0.0.1 - - [10/Dec/2025 00:37:55] "[36mGET /static/images/2341b51f403b1619.jpg HTTP/1.1[0m" 304 -
+2025-12-10 00:38:00,432 - 127.0.0.1 - - [10/Dec/2025 00:38:00] "[32mPOST /users/account HTTP/1.1[0m" 302 -
+2025-12-10 00:38:00,455 - 127.0.0.1 - - [10/Dec/2025 00:38:00] "GET /users/account HTTP/1.1" 200 -
+2025-12-10 00:38:00,583 - 127.0.0.1 - - [10/Dec/2025 00:38:00] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-10 00:38:00,604 - 127.0.0.1 - - [10/Dec/2025 00:38:00] "[36mGET /static/images/2341b51f403b1619.jpg HTTP/1.1[0m" 304 -
+2025-12-10 00:38:03,684 - 127.0.0.1 - - [10/Dec/2025 00:38:03] "GET /users/all_users HTTP/1.1" 200 -
+2025-12-10 00:38:03,737 - 127.0.0.1 - - [10/Dec/2025 00:38:03] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-10 00:38:03,747 - 127.0.0.1 - - [10/Dec/2025 00:38:03] "[36mGET /static/images/thumb_2341b51f403b1619.jpg HTTP/1.1[0m" 304 -
+2025-12-10 00:38:06,951 - 127.0.0.1 - - [10/Dec/2025 00:38:06] "GET /users/all_users HTTP/1.1" 200 -
+2025-12-10 00:38:07,011 - 127.0.0.1 - - [10/Dec/2025 00:38:07] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-10 00:38:07,019 - 127.0.0.1 - - [10/Dec/2025 00:38:07] "[36mGET /static/images/thumb_2341b51f403b1619.jpg HTTP/1.1[0m" 304 -
+2025-12-10 00:38:08,821 - 127.0.0.1 - - [10/Dec/2025 00:38:08] "GET /users/all_users HTTP/1.1" 200 -
+2025-12-10 00:38:08,896 - 127.0.0.1 - - [10/Dec/2025 00:38:08] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-10 00:38:08,917 - 127.0.0.1 - - [10/Dec/2025 00:38:08] "[36mGET /static/images/thumb_2341b51f403b1619.jpg HTTP/1.1[0m" 304 -
+2025-12-10 00:38:10,483 - 127.0.0.1 - - [10/Dec/2025 00:38:10] "GET /users/account HTTP/1.1" 200 -
+2025-12-10 00:38:10,558 - 127.0.0.1 - - [10/Dec/2025 00:38:10] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-10 00:38:10,579 - 127.0.0.1 - - [10/Dec/2025 00:38:10] "[36mGET /static/images/2341b51f403b1619.jpg HTTP/1.1[0m" 304 -

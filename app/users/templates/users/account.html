@@ -1,20 +1,53 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<div class="container mt-4 p-4 bg-white rounded-4 shadow-sm" style="max-width: 500px;">
-    <h2 class="mb-3 text-center text-primary">👤 Профіль користувача</h2>
+<div class="container mt-4 p-4 bg-white rounded-4 shadow-sm" style="max-width: 650px;">
 
-    <div class="card shadow-sm rounded-3">
-        <div class="card-body">
-            <h5 class="card-title">Вітаємо, {{ user.username }}!</h5>
+    <h2 class="text-center text-primary mb-4">👤 Профіль користувача</h2>
 
-            <p class="mb-1"><strong>Email:</strong> {{ user.email }}</p>
-            <p class="mb-3"><strong>ID:</strong> {{ user.id }}</p>
-
-            <a href="{{ url_for('users.logout') }}" class="btn btn-outline-danger w-100 mt-3">
-                Вийти
-            </a>
-        </div>
+    <div class="text-center mb-4">
+        <img src="{{ image_url }}"
+             class="rounded-circle shadow"
+             alt="Avatar"
+             width="150"
+             height="150"
+             style="object-fit: cover;">
     </div>
+
+    <form method="POST" enctype="multipart/form-data" class="card p-4 rounded-4 shadow-sm">
+        {{ form.hidden_tag() }}
+
+        <div class="mb-3">
+            {{ form.username.label(class="form-label fw-bold") }}
+            {{ form.username(class="form-control rounded-3") }}
+        </div>
+
+        <div class="mb-3">
+            {{ form.email.label(class="form-label fw-bold") }}
+            {{ form.email(class="form-control rounded-3") }}
+        </div>
+
+        <div class="mb-3">
+            {{ form.about_me.label(class="form-label fw-bold") }}
+            {{ form.about_me(class="form-control rounded-3", rows="3") }}
+        </div>
+
+        <div class="mb-3">
+            {{ form.image.label(class="form-label fw-bold") }}
+            {{ form.image(class="form-control rounded-3") }}
+        </div>
+
+        <button class="btn btn-primary w-100 rounded-3">Оновити профіль</button>
+    </form>
+
+    <a href="{{ url_for('users.change_password') }}"
+       class="btn btn-outline-primary w-100 mt-3 rounded-3">
+        🔐 Змінити пароль
+    </a>
+
+    <a href="{{ url_for('users.logout') }}"
+       class="btn btn-outline-danger w-100 mt-3 rounded-3">
+        Вийти
+    </a>
 </div>
 {% endblock %}
