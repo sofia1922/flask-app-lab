@@ -9,7 +9,6 @@ from flask_login import current_user
 
 from app.users.models import User
 
-
 class ContactForm(FlaskForm):
     name = StringField(
         "Ім’я",
@@ -47,7 +46,6 @@ class ContactForm(FlaskForm):
 
     submit = SubmitField("Відправити")
 
-
 class LoginForm(FlaskForm):
     username = StringField(
         "Ім’я користувача або Email",
@@ -58,36 +56,35 @@ class LoginForm(FlaskForm):
         "Пароль",
         validators=[
             DataRequired(message="Поле обов’язкове!"),
-            Length(min=4, max=10, message="Пароль 4–10 символів")
+            Length(min=4, max=10)
         ]
     )
 
     remember = BooleanField("Запам’ятати мене")
     submit = SubmitField("Увійти")
 
-
 class RegisterForm(FlaskForm):
     username = StringField(
         "Ім’я користувача",
         validators=[
-            DataRequired(message="Поле обов’язкове!"),
-            Length(min=3, max=50, message="Від 3 до 50 символів")
+            DataRequired(),
+            Length(min=3, max=50)
         ]
     )
 
     email = StringField(
         "Email",
         validators=[
-            DataRequired(message="Поле обов’язкове!"),
-            Email(message="Введіть правильний email!")
+            DataRequired(),
+            Email()
         ]
     )
 
     password = PasswordField(
         "Пароль",
         validators=[
-            DataRequired(message="Поле обов’язкове!"),
-            Length(min=4, max=20, message="Пароль 4–20 символів")
+            DataRequired(),
+            Length(min=4, max=20)
         ]
     )
 
@@ -134,14 +131,8 @@ class UpdateAccountForm(FlaskForm):
 
 class ChangePasswordForm(FlaskForm):
     old_password = PasswordField("Старий пароль", validators=[DataRequired()])
-    new_password = PasswordField(
-        "Новий пароль",
-        validators=[DataRequired(), Length(min=4, max=20)]
-    )
-    confirm_password = PasswordField(
-        "Підтвердження пароля",
-        validators=[DataRequired()]
-    )
+    new_password = PasswordField("Новий пароль", validators=[DataRequired(), Length(min=4, max=20)])
+    confirm_password = PasswordField("Підтвердження пароля", validators=[DataRequired()])
 
     submit = SubmitField("Змінити пароль")
 
@@ -155,3 +146,20 @@ class ChangePasswordForm(FlaskForm):
             return False
 
         return True
+
+class RecipeForm(FlaskForm):
+    title = StringField("Назва", validators=[DataRequired(), Length(min=2, max=100)])
+
+    category_id = SelectField(
+        "Категорія",
+        coerce=int,
+        validators=[DataRequired()]
+    )
+
+    cook_time = StringField("Час приготування", validators=[DataRequired()])
+    ingredients = TextAreaField("Інгредієнти", validators=[DataRequired()])
+    instructions = TextAreaField("Інструкції", validators=[DataRequired()])
+
+    image = FileField("Фото", validators=[FileAllowed(['jpg', 'jpeg', 'png'])])
+
+    submit = SubmitField("Зберегти")

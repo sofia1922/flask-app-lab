@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="container mt-4">
+    <div class="card shadow-sm rounded-4 p-4">
+
+        <img src="{{ url_for('static', filename='recipes/' ~ recipe.image) }}"
+             class="rounded mx-auto d-block mb-4"
+             style="max-height:350px; object-fit:cover;">
+
+        <h2 class="text-center text-primary">{{ recipe.title }}</h2>
+        <p class="text-center text-muted">{{ recipe.category }} • {{ recipe.cook_time }} хв</p>
+
+        <hr>
+
+        <h4>Інгредієнти</h4>
+        <p>{{ recipe.ingredients|safe }}</p>
+
+        <h4>Приготування</h4>
+        <p>{{ recipe.instructions|safe }}</p>
+
+        <hr>
+
+        <div class="d-flex gap-2">
+            <a href="{{ url_for('recipes.edit', recipe_id=recipe.id) }}"
+               class="btn btn-warning w-50">Редагувати</a>
+
+            <form method="POST" action="{{ url_for('recipes.delete', recipe_id=recipe.id) }}"
+                  onsubmit="return confirm('Видалити рецепт?');"
+                  class="w-50">
+                <button class="btn btn-danger w-100">Видалити</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

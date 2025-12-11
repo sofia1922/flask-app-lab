@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="container mt-4">
+
+    <h2 class="text-primary mb-4 text-center">📚 Усі рецепти</h2>
+
+    <div class="d-flex mb-4">
+
+        <a href="{{ url_for('recipes.create') }}" class="btn btn-success me-auto">
+            ➕ Додати рецепт
+        </a>
+
+        <form method="GET" class="d-flex">
+            <input name="q" class="form-control me-2" placeholder="Пошук за назвою..."
+                   value="{{ request.args.get('q', '') }}">
+
+            <select name="sort" class="form-select me-2">
+                <option value="title" {% if order == 'title' %}selected{% endif %}>По назві</option>
+                <option value="time" {% if order == 'time' %}selected{% endif %}>По часу</option>
+            </select>
+
+            <button class="btn btn-primary">Пошук</button>
+        </form>
+
+    </div>
+
+    <div class="row">
+        {% for r in recipes %}
+        <div class="col-md-4 mb-4">
+
+            <div class="card shadow-sm rounded-4">
+
+                <img src="{{ url_for('static', filename='recipes/' ~ r.image) }}"
+                     class="card-img-top rounded-top-4"
+                     style="height:220px; object-fit:cover;">
+
+                <div class="card-body">
+                    <h5 class="card-title">{{ r.title }}</h5>
+                    <p class="text-muted">
+                        {{ r.category_rel.name }} • {{ r.cook_time }} хв
+                    </p>
+
+                    <a href="{{ url_for('recipes.detail', recipe_id=r.id) }}"
+                       class="btn btn-primary w-100">Детальніше</a>
+                </div>
+            </div>
+
+        </div>
+        {% endfor %}
+    </div>
+
+</div>
+
+{% endblock %}

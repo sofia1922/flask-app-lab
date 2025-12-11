@@ -4,7 +4,7 @@ from sqlalchemy import String, Text, DateTime
 from flask_login import UserMixin
 from datetime import datetime
 from app import db, bcrypt
-
+from sqlalchemy.orm import relationship
 
 class User(db.Model, UserMixin):
     __tablename__ = "users"
@@ -36,6 +36,8 @@ class User(db.Model, UserMixin):
         cascade="all, delete-orphan",
         lazy="selectin"
     )
+
+    recipes = relationship("Recipe", back_populates="user", cascade="all, delete")
 
     def set_password(self, raw_password: str) -> None:
         self.password = (

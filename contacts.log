@@ -17230,3 +17230,1080 @@ TypeError: ChangePasswordForm.validate() got an unexpected keyword argument 'ext
 2025-12-10 00:38:10,483 - 127.0.0.1 - - [10/Dec/2025 00:38:10] "GET /users/account HTTP/1.1" 200 -
 2025-12-10 00:38:10,558 - 127.0.0.1 - - [10/Dec/2025 00:38:10] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
 2025-12-10 00:38:10,579 - 127.0.0.1 - - [10/Dec/2025 00:38:10] "[36mGET /static/images/2341b51f403b1619.jpg HTTP/1.1[0m" 304 -
+2025-12-11 01:21:05,575 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-11 01:21:05,575 - [33mPress CTRL+C to quit[0m
+2025-12-11 01:21:12,568 - 127.0.0.1 - - [11/Dec/2025 01:21:12] "GET /users/account HTTP/1.1" 200 -
+2025-12-11 01:21:12,797 - 127.0.0.1 - - [11/Dec/2025 01:21:12] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-11 01:21:12,802 - 127.0.0.1 - - [11/Dec/2025 01:21:12] "[36mGET /static/images/2341b51f403b1619.jpg HTTP/1.1[0m" 304 -
+2025-12-11 01:21:18,438 - 127.0.0.1 - - [11/Dec/2025 01:21:18] "[33mGET /resipes HTTP/1.1[0m" 404 -
+2025-12-11 01:21:18,481 - 127.0.0.1 - - [11/Dec/2025 01:21:18] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-11 01:21:28,659 - 127.0.0.1 - - [11/Dec/2025 01:21:28] "[33mGET /reсipes/ HTTP/1.1[0m" 404 -
+2025-12-11 01:21:28,739 - 127.0.0.1 - - [11/Dec/2025 01:21:28] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-11 01:21:31,844 - 127.0.0.1 - - [11/Dec/2025 01:21:31] "[33mGET /reсipes/ HTTP/1.1[0m" 404 -
+2025-12-11 01:21:31,899 - 127.0.0.1 - - [11/Dec/2025 01:21:31] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-11 01:21:59,994 - 127.0.0.1 - - [11/Dec/2025 01:21:59] "[33mGET /reсipes/create HTTP/1.1[0m" 404 -
+2025-12-11 01:22:00,084 - 127.0.0.1 - - [11/Dec/2025 01:22:00] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-11 01:22:02,141 - 127.0.0.1 - - [11/Dec/2025 01:22:02] "[32mGET / HTTP/1.1[0m" 302 -
+2025-12-11 01:22:02,179 - 127.0.0.1 - - [11/Dec/2025 01:22:02] "GET /resume HTTP/1.1" 200 -
+2025-12-11 01:22:02,279 - 127.0.0.1 - - [11/Dec/2025 01:22:02] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-11 01:22:02,299 - 127.0.0.1 - - [11/Dec/2025 01:22:02] "GET /static/images/photo.jpg HTTP/1.1" 200 -
+2025-12-11 01:22:13,266 - 127.0.0.1 - - [11/Dec/2025 01:22:13] "[32mGET /recipes HTTP/1.1[0m" 308 -
+2025-12-11 01:22:13,290 - Exception on /recipes/ [GET]
+Traceback (most recent call last):
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\recipes\views.py", line 22, in index
+    return render_template(
+        "recipes/index.html",
+    ...<2 lines>...
+        title="Рецепти"
+    )
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: recipes/index.html
+2025-12-11 01:22:13,325 - 127.0.0.1 - - [11/Dec/2025 01:22:13] "[35m[1mGET /recipes/ HTTP/1.1[0m" 500 -
+2025-12-11 01:22:17,939 - Exception on /recipes/create [GET]
+Traceback (most recent call last):
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\recipes\views.py", line 35, in create
+    form.category.choices = [(c.id, c.name) for c in categories]
+    ^^^^^^^^^^^^^
+AttributeError: 'RecipeForm' object has no attribute 'category'. Did you mean: 'category_id'?
+2025-12-11 01:22:17,942 - 127.0.0.1 - - [11/Dec/2025 01:22:17] "[35m[1mGET /recipes/create HTTP/1.1[0m" 500 -
+2025-12-11 01:22:23,686 - Exception on /recipes/ [GET]
+Traceback (most recent call last):
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\recipes\views.py", line 22, in index
+    return render_template(
+        "recipes/index.html",
+    ...<2 lines>...
+        title="Рецепти"
+    )
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: recipes/index.html
+2025-12-11 01:22:23,689 - 127.0.0.1 - - [11/Dec/2025 01:22:23] "[35m[1mGET /recipes/ HTTP/1.1[0m" 500 -
+2025-12-11 01:22:24,380 - Exception on /recipes/ [GET]
+Traceback (most recent call last):
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\recipes\views.py", line 22, in index
+    return render_template(
+        "recipes/index.html",
+    ...<2 lines>...
+        title="Рецепти"
+    )
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: recipes/index.html
+2025-12-11 01:22:24,384 - 127.0.0.1 - - [11/Dec/2025 01:22:24] "[35m[1mGET /recipes/ HTTP/1.1[0m" 500 -
+2025-12-11 01:22:24,593 - Exception on /recipes/ [GET]
+Traceback (most recent call last):
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\recipes\views.py", line 22, in index
+    return render_template(
+        "recipes/index.html",
+    ...<2 lines>...
+        title="Рецепти"
+    )
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: recipes/index.html
+2025-12-11 01:22:24,596 - 127.0.0.1 - - [11/Dec/2025 01:22:24] "[35m[1mGET /recipes/ HTTP/1.1[0m" 500 -
+2025-12-11 01:24:53,441 - Exception on /recipes/ [GET]
+Traceback (most recent call last):
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\recipes\views.py", line 22, in index
+    return render_template(
+        "recipes/index.html",
+    ...<2 lines>...
+        title="Рецепти"
+    )
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: recipes/index.html
+2025-12-11 01:24:53,445 - 127.0.0.1 - - [11/Dec/2025 01:24:53] "[35m[1mGET /recipes/ HTTP/1.1[0m" 500 -
+2025-12-11 01:24:53,749 - Exception on /recipes/ [GET]
+Traceback (most recent call last):
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\recipes\views.py", line 22, in index
+    return render_template(
+        "recipes/index.html",
+    ...<2 lines>...
+        title="Рецепти"
+    )
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: recipes/index.html
+2025-12-11 01:24:53,752 - 127.0.0.1 - - [11/Dec/2025 01:24:53] "[35m[1mGET /recipes/ HTTP/1.1[0m" 500 -
+2025-12-11 01:24:53,940 - Exception on /recipes/ [GET]
+Traceback (most recent call last):
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\recipes\views.py", line 22, in index
+    return render_template(
+        "recipes/index.html",
+    ...<2 lines>...
+        title="Рецепти"
+    )
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: recipes/index.html
+2025-12-11 01:24:53,944 - 127.0.0.1 - - [11/Dec/2025 01:24:53] "[35m[1mGET /recipes/ HTTP/1.1[0m" 500 -
+2025-12-11 01:24:54,168 - Exception on /recipes/ [GET]
+Traceback (most recent call last):
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\recipes\views.py", line 22, in index
+    return render_template(
+        "recipes/index.html",
+    ...<2 lines>...
+        title="Рецепти"
+    )
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: recipes/index.html
+2025-12-11 01:24:54,171 - 127.0.0.1 - - [11/Dec/2025 01:24:54] "[35m[1mGET /recipes/ HTTP/1.1[0m" 500 -
+2025-12-11 01:24:54,342 - Exception on /recipes/ [GET]
+Traceback (most recent call last):
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\recipes\views.py", line 22, in index
+    return render_template(
+        "recipes/index.html",
+    ...<2 lines>...
+        title="Рецепти"
+    )
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: recipes/index.html
+2025-12-11 01:24:54,347 - 127.0.0.1 - - [11/Dec/2025 01:24:54] "[35m[1mGET /recipes/ HTTP/1.1[0m" 500 -
+2025-12-11 01:24:54,533 - Exception on /recipes/ [GET]
+Traceback (most recent call last):
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\recipes\views.py", line 22, in index
+    return render_template(
+        "recipes/index.html",
+    ...<2 lines>...
+        title="Рецепти"
+    )
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: recipes/index.html
+2025-12-11 01:24:54,537 - 127.0.0.1 - - [11/Dec/2025 01:24:54] "[35m[1mGET /recipes/ HTTP/1.1[0m" 500 -
+2025-12-11 01:24:54,705 - Exception on /recipes/ [GET]
+Traceback (most recent call last):
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\recipes\views.py", line 22, in index
+    return render_template(
+        "recipes/index.html",
+    ...<2 lines>...
+        title="Рецепти"
+    )
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: recipes/index.html
+2025-12-11 01:24:54,708 - 127.0.0.1 - - [11/Dec/2025 01:24:54] "[35m[1mGET /recipes/ HTTP/1.1[0m" 500 -
+2025-12-11 01:24:54,921 - Exception on /recipes/ [GET]
+Traceback (most recent call last):
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\recipes\views.py", line 22, in index
+    return render_template(
+        "recipes/index.html",
+    ...<2 lines>...
+        title="Рецепти"
+    )
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: recipes/index.html
+2025-12-11 01:24:54,924 - 127.0.0.1 - - [11/Dec/2025 01:24:54] "[35m[1mGET /recipes/ HTTP/1.1[0m" 500 -
+2025-12-11 01:27:02,210 - 127.0.0.1 - - [11/Dec/2025 01:27:02] "[33mGET /recipe HTTP/1.1[0m" 404 -
+2025-12-11 01:27:02,276 - 127.0.0.1 - - [11/Dec/2025 01:27:02] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-11 01:27:07,440 - Exception on /recipes/ [GET]
+Traceback (most recent call last):
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\recipes\views.py", line 22, in index
+    return render_template(
+        "recipes/index.html",
+    ...<2 lines>...
+        title="Рецепти"
+    )
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: recipes/index.html
+2025-12-11 01:27:07,443 - 127.0.0.1 - - [11/Dec/2025 01:27:07] "[35m[1mGET /recipes/ HTTP/1.1[0m" 500 -
+2025-12-11 01:29:08,136 - Exception on /recipes/ [GET]
+Traceback (most recent call last):
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\recipes\views.py", line 22, in index
+        stmt = stmt.order_by(Recipe.cook_time)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    
+    
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: recipes/index.html
+2025-12-11 01:29:08,177 - 127.0.0.1 - - [11/Dec/2025 01:29:08] "[35m[1mGET /recipes/ HTTP/1.1[0m" 500 -
+2025-12-11 01:29:08,346 - Exception on /recipes/ [GET]
+Traceback (most recent call last):
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\recipes\views.py", line 22, in index
+        stmt = stmt.order_by(Recipe.cook_time)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    
+    
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: recipes/index.html
+2025-12-11 01:29:08,349 - 127.0.0.1 - - [11/Dec/2025 01:29:08] "[35m[1mGET /recipes/ HTTP/1.1[0m" 500 -
+2025-12-11 01:29:08,503 - Exception on /recipes/ [GET]
+Traceback (most recent call last):
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\recipes\views.py", line 22, in index
+        stmt = stmt.order_by(Recipe.cook_time)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    
+    
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: recipes/index.html
+2025-12-11 01:29:08,506 - 127.0.0.1 - - [11/Dec/2025 01:29:08] "[35m[1mGET /recipes/ HTTP/1.1[0m" 500 -
+2025-12-11 01:29:08,717 - Exception on /recipes/ [GET]
+Traceback (most recent call last):
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\app\recipes\views.py", line 22, in index
+        stmt = stmt.order_by(Recipe.cook_time)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    
+    
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sofia\Desktop\third\flask\flask_lab2\venv\Lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: recipes/index.html
+2025-12-11 01:29:08,720 - 127.0.0.1 - - [11/Dec/2025 01:29:08] "[35m[1mGET /recipes/ HTTP/1.1[0m" 500 -
+2025-12-11 01:29:27,078 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-11 01:29:27,078 - [33mPress CTRL+C to quit[0m
+2025-12-11 01:29:27,081 -  * Restarting with stat
+2025-12-11 01:29:29,229 -  * Debugger is active!
+2025-12-11 01:29:29,242 -  * Debugger PIN: 190-365-460
+2025-12-11 01:29:30,123 - 127.0.0.1 - - [11/Dec/2025 01:29:30] "[35m[1mGET /recipes/ HTTP/1.1[0m" 500 -
+2025-12-11 01:29:30,375 - 127.0.0.1 - - [11/Dec/2025 01:29:30] "GET /recipes/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-12-11 01:29:30,410 - 127.0.0.1 - - [11/Dec/2025 01:29:30] "GET /recipes/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-12-11 01:29:30,479 - 127.0.0.1 - - [11/Dec/2025 01:29:30] "GET /recipes/?__debugger__=yes&cmd=resource&f=console.png&s=EfBQW4OTKhwxzGNSXRsl HTTP/1.1" 200 -
+2025-12-11 01:29:30,518 - 127.0.0.1 - - [11/Dec/2025 01:29:30] "GET /recipes/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-12-11 01:31:04,001 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\third\\flask\\flask_lab2\\app\\users\\models.py', reloading
+2025-12-11 01:31:04,232 -  * Restarting with stat
+2025-12-11 01:31:06,546 -  * Debugger is active!
+2025-12-11 01:31:06,555 -  * Debugger PIN: 190-365-460
+2025-12-11 01:31:19,339 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\third\\flask\\flask_lab2\\app\\users\\models.py', reloading
+2025-12-11 01:31:19,567 -  * Restarting with stat
+2025-12-11 01:31:21,729 -  * Debugger is active!
+2025-12-11 01:31:21,735 -  * Debugger PIN: 190-365-460
+2025-12-11 01:31:22,279 - 127.0.0.1 - - [11/Dec/2025 01:31:22] "[35m[1mGET /recipes/ HTTP/1.1[0m" 500 -
+2025-12-11 01:31:22,536 - 127.0.0.1 - - [11/Dec/2025 01:31:22] "[36mGET /recipes/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-12-11 01:31:22,537 - 127.0.0.1 - - [11/Dec/2025 01:31:22] "[36mGET /recipes/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-12-11 01:31:22,578 - 127.0.0.1 - - [11/Dec/2025 01:31:22] "GET /recipes/?__debugger__=yes&cmd=resource&f=console.png&s=61Q4a3shD11aqbObAl9j HTTP/1.1" 200 -
+2025-12-11 01:31:22,619 - 127.0.0.1 - - [11/Dec/2025 01:31:22] "[36mGET /recipes/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-12-11 01:31:23,048 - 127.0.0.1 - - [11/Dec/2025 01:31:23] "[35m[1mGET /recipes/ HTTP/1.1[0m" 500 -
+2025-12-11 01:31:23,098 - 127.0.0.1 - - [11/Dec/2025 01:31:23] "[36mGET /recipes/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-12-11 01:31:23,125 - 127.0.0.1 - - [11/Dec/2025 01:31:23] "[36mGET /recipes/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-12-11 01:31:23,164 - 127.0.0.1 - - [11/Dec/2025 01:31:23] "[36mGET /recipes/?__debugger__=yes&cmd=resource&f=console.png&s=61Q4a3shD11aqbObAl9j HTTP/1.1[0m" 304 -
+2025-12-11 01:31:23,222 - 127.0.0.1 - - [11/Dec/2025 01:31:23] "[36mGET /recipes/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-12-11 01:31:23,265 - 127.0.0.1 - - [11/Dec/2025 01:31:23] "[35m[1mGET /recipes/ HTTP/1.1[0m" 500 -
+2025-12-11 01:31:23,308 - 127.0.0.1 - - [11/Dec/2025 01:31:23] "[36mGET /recipes/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-12-11 01:31:23,332 - 127.0.0.1 - - [11/Dec/2025 01:31:23] "[36mGET /recipes/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-12-11 01:31:23,371 - 127.0.0.1 - - [11/Dec/2025 01:31:23] "[36mGET /recipes/?__debugger__=yes&cmd=resource&f=console.png&s=61Q4a3shD11aqbObAl9j HTTP/1.1[0m" 304 -
+2025-12-11 01:32:41,957 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\third\\flask\\flask_lab2\\app\\users\\models.py', reloading
+2025-12-11 01:32:42,182 -  * Restarting with stat
+2025-12-11 01:32:44,381 -  * Debugger is active!
+2025-12-11 01:32:44,390 -  * Debugger PIN: 190-365-460
+2025-12-11 01:33:33,926 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\third\\flask\\flask_lab2\\app\\recipes\\models.py', reloading
+2025-12-11 01:33:34,138 -  * Restarting with stat
+2025-12-11 01:33:36,282 -  * Debugger is active!
+2025-12-11 01:33:36,291 -  * Debugger PIN: 190-365-460
+2025-12-11 01:33:36,452 - 127.0.0.1 - - [11/Dec/2025 01:33:36] "[35m[1mGET /recipes/ HTTP/1.1[0m" 500 -
+2025-12-11 01:33:36,652 - 127.0.0.1 - - [11/Dec/2025 01:33:36] "[36mGET /recipes/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-12-11 01:33:36,657 - 127.0.0.1 - - [11/Dec/2025 01:33:36] "[36mGET /recipes/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-12-11 01:33:36,677 - 127.0.0.1 - - [11/Dec/2025 01:33:36] "GET /recipes/?__debugger__=yes&cmd=resource&f=console.png&s=HfGBiXq81B6jqr7KvHkH HTTP/1.1" 200 -
+2025-12-11 01:33:36,708 - 127.0.0.1 - - [11/Dec/2025 01:33:36] "[36mGET /recipes/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-12-11 01:34:06,332 - 127.0.0.1 - - [11/Dec/2025 01:34:06] "GET /recipes/ HTTP/1.1" 200 -
+2025-12-11 01:34:06,400 - 127.0.0.1 - - [11/Dec/2025 01:34:06] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-11 01:34:10,467 - 127.0.0.1 - - [11/Dec/2025 01:34:10] "[35m[1mGET /recipes/create HTTP/1.1[0m" 500 -
+2025-12-11 01:34:10,509 - 127.0.0.1 - - [11/Dec/2025 01:34:10] "GET /recipes/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-12-11 01:34:10,513 - 127.0.0.1 - - [11/Dec/2025 01:34:10] "GET /recipes/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-12-11 01:34:10,569 - 127.0.0.1 - - [11/Dec/2025 01:34:10] "GET /recipes/create?__debugger__=yes&cmd=resource&f=console.png&s=HfGBiXq81B6jqr7KvHkH HTTP/1.1" 200 -
+2025-12-11 01:34:10,606 - 127.0.0.1 - - [11/Dec/2025 01:34:10] "GET /recipes/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-12-11 01:34:25,283 - 127.0.0.1 - - [11/Dec/2025 01:34:25] "GET /recipes/?search=&sort=created_at HTTP/1.1" 200 -
+2025-12-11 01:34:25,338 - 127.0.0.1 - - [11/Dec/2025 01:34:25] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-11 01:35:51,282 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\third\\flask\\flask_lab2\\app\\forms.py', reloading
+2025-12-11 01:35:51,475 -  * Restarting with stat
+2025-12-11 01:35:53,204 -  * Debugger is active!
+2025-12-11 01:35:53,210 -  * Debugger PIN: 190-365-460
+2025-12-11 01:35:58,790 - 127.0.0.1 - - [11/Dec/2025 01:35:58] "GET /recipes/?search=&sort=created_at HTTP/1.1" 200 -
+2025-12-11 01:35:58,947 - 127.0.0.1 - - [11/Dec/2025 01:35:58] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-11 01:35:59,812 - 127.0.0.1 - - [11/Dec/2025 01:35:59] "[35m[1mGET /recipes/create HTTP/1.1[0m" 500 -
+2025-12-11 01:35:59,853 - 127.0.0.1 - - [11/Dec/2025 01:35:59] "[36mGET /recipes/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-12-11 01:35:59,878 - 127.0.0.1 - - [11/Dec/2025 01:35:59] "[36mGET /recipes/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-12-11 01:35:59,915 - 127.0.0.1 - - [11/Dec/2025 01:35:59] "GET /recipes/create?__debugger__=yes&cmd=resource&f=console.png&s=EWbAXbFnapdkPEDmZ4RV HTTP/1.1" 200 -
+2025-12-11 01:36:57,517 - 127.0.0.1 - - [11/Dec/2025 01:36:57] "[35m[1mGET /recipes/create HTTP/1.1[0m" 500 -
+2025-12-11 01:36:57,565 - 127.0.0.1 - - [11/Dec/2025 01:36:57] "[36mGET /recipes/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-12-11 01:36:57,567 - 127.0.0.1 - - [11/Dec/2025 01:36:57] "[36mGET /recipes/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-12-11 01:36:57,624 - 127.0.0.1 - - [11/Dec/2025 01:36:57] "[36mGET /recipes/create?__debugger__=yes&cmd=resource&f=console.png&s=EWbAXbFnapdkPEDmZ4RV HTTP/1.1[0m" 304 -
+2025-12-11 01:36:57,659 - 127.0.0.1 - - [11/Dec/2025 01:36:57] "[36mGET /recipes/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-12-11 01:36:57,794 - 127.0.0.1 - - [11/Dec/2025 01:36:57] "[35m[1mGET /recipes/create HTTP/1.1[0m" 500 -
+2025-12-11 01:36:57,835 - 127.0.0.1 - - [11/Dec/2025 01:36:57] "[36mGET /recipes/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-12-11 01:36:57,875 - 127.0.0.1 - - [11/Dec/2025 01:36:57] "[36mGET /recipes/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-12-11 01:36:57,934 - 127.0.0.1 - - [11/Dec/2025 01:36:57] "[36mGET /recipes/create?__debugger__=yes&cmd=resource&f=console.png&s=EWbAXbFnapdkPEDmZ4RV HTTP/1.1[0m" 304 -
+2025-12-11 01:36:57,966 - 127.0.0.1 - - [11/Dec/2025 01:36:57] "[36mGET /recipes/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-12-11 01:36:58,004 - 127.0.0.1 - - [11/Dec/2025 01:36:58] "[35m[1mGET /recipes/create HTTP/1.1[0m" 500 -
+2025-12-11 01:36:58,044 - 127.0.0.1 - - [11/Dec/2025 01:36:58] "[36mGET /recipes/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-12-11 01:36:58,066 - 127.0.0.1 - - [11/Dec/2025 01:36:58] "[36mGET /recipes/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-12-11 01:36:58,125 - 127.0.0.1 - - [11/Dec/2025 01:36:58] "[36mGET /recipes/create?__debugger__=yes&cmd=resource&f=console.png&s=EWbAXbFnapdkPEDmZ4RV HTTP/1.1[0m" 304 -
+2025-12-11 01:36:58,161 - 127.0.0.1 - - [11/Dec/2025 01:36:58] "[36mGET /recipes/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-12-11 01:36:58,171 - 127.0.0.1 - - [11/Dec/2025 01:36:58] "[35m[1mGET /recipes/create HTTP/1.1[0m" 500 -
+2025-12-11 01:36:58,215 - 127.0.0.1 - - [11/Dec/2025 01:36:58] "[36mGET /recipes/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-12-11 01:36:58,236 - 127.0.0.1 - - [11/Dec/2025 01:36:58] "[36mGET /recipes/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-12-11 01:36:58,299 - 127.0.0.1 - - [11/Dec/2025 01:36:58] "[36mGET /recipes/create?__debugger__=yes&cmd=resource&f=console.png&s=EWbAXbFnapdkPEDmZ4RV HTTP/1.1[0m" 304 -
+2025-12-11 01:37:04,591 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\third\\flask\\flask_lab2\\app\\recipes\\models.py', reloading
+2025-12-11 01:37:04,868 -  * Restarting with stat
+2025-12-11 01:37:06,769 -  * Debugger is active!
+2025-12-11 01:37:06,774 -  * Debugger PIN: 190-365-460
+2025-12-11 01:37:07,916 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\third\\flask\\flask_lab2\\app\\forms.py', reloading
+2025-12-11 01:37:08,137 -  * Restarting with stat
+2025-12-11 01:37:10,293 -  * Debugger is active!
+2025-12-11 01:37:10,302 -  * Debugger PIN: 190-365-460
+2025-12-11 01:37:18,953 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\third\\flask\\flask_lab2\\app\\forms.py', reloading
+2025-12-11 01:37:19,159 -  * Restarting with stat
+2025-12-11 01:37:21,408 -  * Debugger is active!
+2025-12-11 01:37:21,416 -  * Debugger PIN: 190-365-460
+2025-12-11 01:37:21,601 - 127.0.0.1 - - [11/Dec/2025 01:37:21] "[35m[1mGET /recipes/create HTTP/1.1[0m" 500 -
+2025-12-11 01:37:21,613 - 127.0.0.1 - - [11/Dec/2025 01:37:21] "[35m[1mGET /recipes/create HTTP/1.1[0m" 500 -
+2025-12-11 01:37:21,631 - 127.0.0.1 - - [11/Dec/2025 01:37:21] "[35m[1mGET /recipes/create HTTP/1.1[0m" 500 -
+2025-12-11 01:37:21,866 - 127.0.0.1 - - [11/Dec/2025 01:37:21] "[36mGET /recipes/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-12-11 01:37:21,868 - 127.0.0.1 - - [11/Dec/2025 01:37:21] "[36mGET /recipes/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-12-11 01:37:21,882 - 127.0.0.1 - - [11/Dec/2025 01:37:21] "GET /recipes/create?__debugger__=yes&cmd=resource&f=console.png&s=W2X9pb0pWKiHeL5hInQ7 HTTP/1.1" 200 -
+2025-12-11 01:37:21,911 - 127.0.0.1 - - [11/Dec/2025 01:37:21] "[36mGET /recipes/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-12-11 01:37:23,632 - 127.0.0.1 - - [11/Dec/2025 01:37:23] "[35m[1mGET /recipes/create HTTP/1.1[0m" 500 -
+2025-12-11 01:37:23,678 - 127.0.0.1 - - [11/Dec/2025 01:37:23] "[36mGET /recipes/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-12-11 01:37:23,684 - 127.0.0.1 - - [11/Dec/2025 01:37:23] "[36mGET /recipes/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-12-11 01:37:23,770 - 127.0.0.1 - - [11/Dec/2025 01:37:23] "[36mGET /recipes/create?__debugger__=yes&cmd=resource&f=console.png&s=W2X9pb0pWKiHeL5hInQ7 HTTP/1.1[0m" 304 -
+2025-12-11 01:37:23,808 - 127.0.0.1 - - [11/Dec/2025 01:37:23] "[36mGET /recipes/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-12-11 01:37:23,870 - 127.0.0.1 - - [11/Dec/2025 01:37:23] "[35m[1mGET /recipes/create HTTP/1.1[0m" 500 -
+2025-12-11 01:37:23,910 - 127.0.0.1 - - [11/Dec/2025 01:37:23] "[36mGET /recipes/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-12-11 01:37:23,932 - 127.0.0.1 - - [11/Dec/2025 01:37:23] "[36mGET /recipes/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-12-11 01:37:23,963 - 127.0.0.1 - - [11/Dec/2025 01:37:23] "[36mGET /recipes/create?__debugger__=yes&cmd=resource&f=console.png&s=W2X9pb0pWKiHeL5hInQ7 HTTP/1.1[0m" 304 -
+2025-12-11 01:37:23,995 - 127.0.0.1 - - [11/Dec/2025 01:37:23] "[36mGET /recipes/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-12-11 01:38:27,993 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\third\\flask\\flask_lab2\\app\\recipes\\views.py', reloading
+2025-12-11 01:38:28,281 -  * Restarting with stat
+2025-12-11 01:38:30,419 -  * Debugger is active!
+2025-12-11 01:38:30,425 -  * Debugger PIN: 190-365-460
+2025-12-11 01:38:30,609 - 127.0.0.1 - - [11/Dec/2025 01:38:30] "[35m[1mGET /recipes/create HTTP/1.1[0m" 500 -
+2025-12-11 01:38:30,819 - 127.0.0.1 - - [11/Dec/2025 01:38:30] "[36mGET /recipes/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-12-11 01:38:30,824 - 127.0.0.1 - - [11/Dec/2025 01:38:30] "[36mGET /recipes/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-12-11 01:38:30,844 - 127.0.0.1 - - [11/Dec/2025 01:38:30] "GET /recipes/create?__debugger__=yes&cmd=resource&f=console.png&s=TMX2YjgTt6iSaZleDM9U HTTP/1.1" 200 -
+2025-12-11 01:38:30,875 - 127.0.0.1 - - [11/Dec/2025 01:38:30] "[36mGET /recipes/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-12-11 01:38:31,730 - 127.0.0.1 - - [11/Dec/2025 01:38:31] "[35m[1mGET /recipes/create HTTP/1.1[0m" 500 -
+2025-12-11 01:38:31,772 - 127.0.0.1 - - [11/Dec/2025 01:38:31] "[36mGET /recipes/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-12-11 01:38:31,794 - 127.0.0.1 - - [11/Dec/2025 01:38:31] "[36mGET /recipes/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-12-11 01:38:31,827 - 127.0.0.1 - - [11/Dec/2025 01:38:31] "[36mGET /recipes/create?__debugger__=yes&cmd=resource&f=console.png&s=TMX2YjgTt6iSaZleDM9U HTTP/1.1[0m" 304 -
+2025-12-11 01:38:31,862 - 127.0.0.1 - - [11/Dec/2025 01:38:31] "[36mGET /recipes/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-12-11 01:40:42,578 - 127.0.0.1 - - [11/Dec/2025 01:40:42] "GET /recipes/create HTTP/1.1" 200 -
+2025-12-11 01:40:42,661 - 127.0.0.1 - - [11/Dec/2025 01:40:42] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-11 01:40:42,787 - 127.0.0.1 - - [11/Dec/2025 01:40:42] "GET /recipes/create HTTP/1.1" 200 -
+2025-12-11 01:40:42,837 - 127.0.0.1 - - [11/Dec/2025 01:40:42] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-11 01:41:51,607 - 127.0.0.1 - - [11/Dec/2025 01:41:51] "[32mPOST /recipes/create HTTP/1.1[0m" 302 -
+2025-12-11 01:41:51,643 - 127.0.0.1 - - [11/Dec/2025 01:41:51] "GET /recipes/ HTTP/1.1" 200 -
+2025-12-11 01:41:51,741 - 127.0.0.1 - - [11/Dec/2025 01:41:51] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-11 01:41:51,764 - 127.0.0.1 - - [11/Dec/2025 01:41:51] "[33mGET /static/recipes/thumb_00ccabbc2a0f2d09.jpg HTTP/1.1[0m" 404 -
+2025-12-11 01:41:57,994 - 127.0.0.1 - - [11/Dec/2025 01:41:57] "GET /recipes/1 HTTP/1.1" 200 -
+2025-12-11 01:41:58,040 - 127.0.0.1 - - [11/Dec/2025 01:41:58] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-11 01:41:58,076 - 127.0.0.1 - - [11/Dec/2025 01:41:58] "GET /static/recipes/00ccabbc2a0f2d09.jpg HTTP/1.1" 200 -
+2025-12-11 01:42:04,019 - 127.0.0.1 - - [11/Dec/2025 01:42:04] "GET /recipes/1/edit HTTP/1.1" 200 -
+2025-12-11 01:42:04,073 - 127.0.0.1 - - [11/Dec/2025 01:42:04] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-11 01:42:04,099 - 127.0.0.1 - - [11/Dec/2025 01:42:04] "[33mGET /static/recipes/thumb_00ccabbc2a0f2d09.jpg HTTP/1.1[0m" 404 -
+2025-12-11 01:46:11,249 - 127.0.0.1 - - [11/Dec/2025 01:46:11] "[35m[1mGET /recipes/ HTTP/1.1[0m" 500 -
+2025-12-11 01:46:11,281 - 127.0.0.1 - - [11/Dec/2025 01:46:11] "[36mGET /recipes/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-12-11 01:46:11,284 - 127.0.0.1 - - [11/Dec/2025 01:46:11] "[36mGET /recipes/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-12-11 01:46:11,309 - 127.0.0.1 - - [11/Dec/2025 01:46:11] "GET /recipes/?__debugger__=yes&cmd=resource&f=console.png&s=TMX2YjgTt6iSaZleDM9U HTTP/1.1" 200 -
+2025-12-11 01:46:11,416 - 127.0.0.1 - - [11/Dec/2025 01:46:11] "[36mGET /recipes/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-12-11 01:46:12,282 - 127.0.0.1 - - [11/Dec/2025 01:46:12] "[35m[1mGET /recipes/ HTTP/1.1[0m" 500 -
+2025-12-11 01:46:12,320 - 127.0.0.1 - - [11/Dec/2025 01:46:12] "[36mGET /recipes/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-12-11 01:46:12,323 - 127.0.0.1 - - [11/Dec/2025 01:46:12] "[36mGET /recipes/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-12-11 01:46:12,345 - 127.0.0.1 - - [11/Dec/2025 01:46:12] "[36mGET /recipes/?__debugger__=yes&cmd=resource&f=console.png&s=TMX2YjgTt6iSaZleDM9U HTTP/1.1[0m" 304 -
+2025-12-11 01:46:12,378 - 127.0.0.1 - - [11/Dec/2025 01:46:12] "[36mGET /recipes/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-12-11 01:46:12,614 - 127.0.0.1 - - [11/Dec/2025 01:46:12] "[35m[1mGET /recipes/ HTTP/1.1[0m" 500 -
+2025-12-11 01:46:12,647 - 127.0.0.1 - - [11/Dec/2025 01:46:12] "[36mGET /recipes/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-12-11 01:46:12,649 - 127.0.0.1 - - [11/Dec/2025 01:46:12] "[36mGET /recipes/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-12-11 01:46:12,666 - 127.0.0.1 - - [11/Dec/2025 01:46:12] "[36mGET /recipes/?__debugger__=yes&cmd=resource&f=console.png&s=TMX2YjgTt6iSaZleDM9U HTTP/1.1[0m" 304 -
+2025-12-11 01:46:12,703 - 127.0.0.1 - - [11/Dec/2025 01:46:12] "[36mGET /recipes/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-12-11 01:46:12,793 - 127.0.0.1 - - [11/Dec/2025 01:46:12] "[35m[1mGET /recipes/ HTTP/1.1[0m" 500 -
+2025-12-11 01:46:12,826 - 127.0.0.1 - - [11/Dec/2025 01:46:12] "[36mGET /recipes/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-12-11 01:46:12,829 - 127.0.0.1 - - [11/Dec/2025 01:46:12] "[36mGET /recipes/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-12-11 01:46:12,851 - 127.0.0.1 - - [11/Dec/2025 01:46:12] "[36mGET /recipes/?__debugger__=yes&cmd=resource&f=console.png&s=TMX2YjgTt6iSaZleDM9U HTTP/1.1[0m" 304 -
+2025-12-11 01:46:12,883 - 127.0.0.1 - - [11/Dec/2025 01:46:12] "[36mGET /recipes/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-12-11 01:47:35,416 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\third\\flask\\flask_lab2\\app\\recipes\\models.py', reloading
+2025-12-11 01:47:35,790 -  * Restarting with stat
+2025-12-11 01:47:38,247 -  * Debugger is active!
+2025-12-11 01:47:38,256 -  * Debugger PIN: 190-365-460
+2025-12-11 01:47:38,484 - 127.0.0.1 - - [11/Dec/2025 01:47:38] "GET /recipes/ HTTP/1.1" 200 -
+2025-12-11 01:47:38,817 - 127.0.0.1 - - [11/Dec/2025 01:47:38] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-11 01:47:38,827 - 127.0.0.1 - - [11/Dec/2025 01:47:38] "[36mGET /static/recipes/00ccabbc2a0f2d09.jpg HTTP/1.1[0m" 304 -
+2025-12-11 01:49:14,816 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\third\\flask\\flask_lab2\\app\\utils.py', reloading
+2025-12-11 01:49:15,060 -  * Restarting with stat
+2025-12-11 01:49:17,223 -  * Debugger is active!
+2025-12-11 01:49:17,229 -  * Debugger PIN: 190-365-460
+2025-12-11 01:49:17,413 - 127.0.0.1 - - [11/Dec/2025 01:49:17] "GET /recipes/ HTTP/1.1" 200 -
+2025-12-11 01:49:18,034 - 127.0.0.1 - - [11/Dec/2025 01:49:18] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-11 01:49:18,049 - 127.0.0.1 - - [11/Dec/2025 01:49:18] "[36mGET /static/recipes/00ccabbc2a0f2d09.jpg HTTP/1.1[0m" 304 -
+2025-12-11 01:49:18,895 - 127.0.0.1 - - [11/Dec/2025 01:49:18] "GET /recipes/ HTTP/1.1" 200 -
+2025-12-11 01:49:18,952 - 127.0.0.1 - - [11/Dec/2025 01:49:18] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-11 01:49:18,972 - 127.0.0.1 - - [11/Dec/2025 01:49:18] "[36mGET /static/recipes/00ccabbc2a0f2d09.jpg HTTP/1.1[0m" 304 -
+2025-12-11 01:49:19,657 - 127.0.0.1 - - [11/Dec/2025 01:49:19] "GET /recipes/ HTTP/1.1" 200 -
+2025-12-11 01:49:19,709 - 127.0.0.1 - - [11/Dec/2025 01:49:19] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-11 01:49:19,730 - 127.0.0.1 - - [11/Dec/2025 01:49:19] "[36mGET /static/recipes/00ccabbc2a0f2d09.jpg HTTP/1.1[0m" 304 -
+2025-12-11 01:49:34,347 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\third\\flask\\flask_lab2\\app\\utils.py', reloading
+2025-12-11 01:49:34,677 -  * Restarting with stat
+2025-12-11 01:49:40,071 -  * Debugger is active!
+2025-12-11 01:49:40,077 -  * Debugger PIN: 190-365-460
+2025-12-11 01:49:40,457 - 127.0.0.1 - - [11/Dec/2025 01:49:40] "GET /recipes/ HTTP/1.1" 200 -
+2025-12-11 01:49:40,459 - 127.0.0.1 - - [11/Dec/2025 01:49:40] "GET /recipes/ HTTP/1.1" 200 -
+2025-12-11 01:49:40,664 - 127.0.0.1 - - [11/Dec/2025 01:49:40] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-11 01:49:40,675 - 127.0.0.1 - - [11/Dec/2025 01:49:40] "[36mGET /static/recipes/00ccabbc2a0f2d09.jpg HTTP/1.1[0m" 304 -
+2025-12-11 01:49:48,751 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\third\\flask\\flask_lab2\\app\\utils.py', reloading
+2025-12-11 01:49:49,058 -  * Restarting with stat
+2025-12-11 01:49:52,603 -  * Debugger is active!
+2025-12-11 01:49:52,608 -  * Debugger PIN: 190-365-460
+2025-12-11 01:49:52,787 - 127.0.0.1 - - [11/Dec/2025 01:49:52] "GET /recipes/ HTTP/1.1" 200 -
+2025-12-11 01:49:52,788 - 127.0.0.1 - - [11/Dec/2025 01:49:52] "GET /recipes/ HTTP/1.1" 200 -
+2025-12-11 01:49:52,972 - 127.0.0.1 - - [11/Dec/2025 01:49:52] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-11 01:49:53,009 - 127.0.0.1 - - [11/Dec/2025 01:49:53] "[36mGET /static/recipes/00ccabbc2a0f2d09.jpg HTTP/1.1[0m" 304 -
+2025-12-11 01:50:02,340 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\third\\flask\\flask_lab2\\app\\utils.py', reloading
+2025-12-11 01:50:02,591 -  * Restarting with stat
+2025-12-11 01:50:04,841 -  * Debugger is active!
+2025-12-11 01:50:04,846 -  * Debugger PIN: 190-365-460
+2025-12-11 01:50:05,042 - 127.0.0.1 - - [11/Dec/2025 01:50:05] "GET /recipes/ HTTP/1.1" 200 -
+2025-12-11 01:50:05,243 - 127.0.0.1 - - [11/Dec/2025 01:50:05] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-11 01:50:05,277 - 127.0.0.1 - - [11/Dec/2025 01:50:05] "[36mGET /static/recipes/00ccabbc2a0f2d09.jpg HTTP/1.1[0m" 304 -
+2025-12-11 01:50:20,840 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\third\\flask\\flask_lab2\\app\\utils.py', reloading
+2025-12-11 01:50:21,150 -  * Restarting with stat
+2025-12-11 01:50:24,679 -  * Debugger is active!
+2025-12-11 01:50:24,685 -  * Debugger PIN: 190-365-460
+2025-12-11 01:50:24,857 - 127.0.0.1 - - [11/Dec/2025 01:50:24] "GET /recipes/ HTTP/1.1" 200 -
+2025-12-11 01:50:25,107 - 127.0.0.1 - - [11/Dec/2025 01:50:25] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-11 01:50:25,112 - 127.0.0.1 - - [11/Dec/2025 01:50:25] "[36mGET /static/recipes/00ccabbc2a0f2d09.jpg HTTP/1.1[0m" 304 -
+2025-12-11 01:50:31,195 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\third\\flask\\flask_lab2\\app\\utils.py', reloading
+2025-12-11 01:50:31,415 -  * Restarting with stat
+2025-12-11 01:50:34,072 -  * Debugger is active!
+2025-12-11 01:50:34,077 -  * Debugger PIN: 190-365-460
+2025-12-11 01:50:34,232 - 127.0.0.1 - - [11/Dec/2025 01:50:34] "GET /recipes/ HTTP/1.1" 200 -
+2025-12-11 01:50:34,469 - 127.0.0.1 - - [11/Dec/2025 01:50:34] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-11 01:50:34,476 - 127.0.0.1 - - [11/Dec/2025 01:50:34] "[36mGET /static/recipes/00ccabbc2a0f2d09.jpg HTTP/1.1[0m" 304 -
+2025-12-11 01:50:40,605 - 127.0.0.1 - - [11/Dec/2025 01:50:40] "GET /recipes/ HTTP/1.1" 200 -
+2025-12-11 01:50:40,622 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\third\\flask\\flask_lab2\\app\\utils.py', reloading
+2025-12-11 01:50:40,933 -  * Restarting with stat
+2025-12-11 01:50:42,949 -  * Debugger is active!
+2025-12-11 01:50:42,954 -  * Debugger PIN: 190-365-460
+2025-12-11 01:50:43,196 - 127.0.0.1 - - [11/Dec/2025 01:50:43] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-11 01:50:43,222 - 127.0.0.1 - - [11/Dec/2025 01:50:43] "[36mGET /static/recipes/00ccabbc2a0f2d09.jpg HTTP/1.1[0m" 304 -
+2025-12-11 01:50:46,298 - 127.0.0.1 - - [11/Dec/2025 01:50:46] "GET /recipes/1 HTTP/1.1" 200 -
+2025-12-11 01:50:46,352 - 127.0.0.1 - - [11/Dec/2025 01:50:46] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-11 01:50:46,361 - 127.0.0.1 - - [11/Dec/2025 01:50:46] "[36mGET /static/recipes/00ccabbc2a0f2d09.jpg HTTP/1.1[0m" 304 -
+2025-12-11 01:50:51,355 - 127.0.0.1 - - [11/Dec/2025 01:50:51] "GET /recipes/create HTTP/1.1" 200 -
+2025-12-11 01:50:51,429 - 127.0.0.1 - - [11/Dec/2025 01:50:51] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-11 01:51:02,085 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\third\\flask\\flask_lab2\\app\\utils.py', reloading
+2025-12-11 01:51:02,299 -  * Restarting with stat
+2025-12-11 01:51:04,035 -  * Debugger is active!
+2025-12-11 01:51:04,041 -  * Debugger PIN: 190-365-460
+2025-12-11 01:51:07,263 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\third\\flask\\flask_lab2\\app\\utils.py', reloading
+2025-12-11 01:51:07,472 -  * Restarting with stat
+2025-12-11 01:51:09,230 -  * Debugger is active!
+2025-12-11 01:51:09,236 -  * Debugger PIN: 190-365-460
+2025-12-11 01:51:12,475 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\third\\flask\\flask_lab2\\app\\utils.py', reloading
+2025-12-11 01:51:12,686 -  * Restarting with stat
+2025-12-11 01:51:14,871 -  * Debugger is active!
+2025-12-11 01:51:14,878 -  * Debugger PIN: 190-365-460
+2025-12-11 01:51:15,045 - 127.0.0.1 - - [11/Dec/2025 01:51:15] "GET /recipes/ HTTP/1.1" 200 -
+2025-12-11 01:51:15,234 - 127.0.0.1 - - [11/Dec/2025 01:51:15] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-11 01:51:15,264 - 127.0.0.1 - - [11/Dec/2025 01:51:15] "[36mGET /static/recipes/00ccabbc2a0f2d09.jpg HTTP/1.1[0m" 304 -
+2025-12-11 01:51:22,436 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\third\\flask\\flask_lab2\\app\\utils.py', reloading
+2025-12-11 01:51:22,667 -  * Restarting with stat
+2025-12-11 01:52:24,418 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-11 01:52:24,418 - [33mPress CTRL+C to quit[0m
+2025-12-11 01:52:24,420 -  * Restarting with stat
+2025-12-11 01:52:26,510 -  * Debugger is active!
+2025-12-11 01:52:26,517 -  * Debugger PIN: 190-365-460
+2025-12-11 01:52:26,738 - 127.0.0.1 - - [11/Dec/2025 01:52:26] "GET /recipes/ HTTP/1.1" 200 -
+2025-12-11 01:52:26,740 - 127.0.0.1 - - [11/Dec/2025 01:52:26] "GET /recipes/ HTTP/1.1" 200 -
+2025-12-11 01:52:26,964 - 127.0.0.1 - - [11/Dec/2025 01:52:26] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-11 01:52:26,982 - 127.0.0.1 - - [11/Dec/2025 01:52:26] "[36mGET /static/recipes/00ccabbc2a0f2d09.jpg HTTP/1.1[0m" 304 -
+2025-12-11 01:52:28,739 - 127.0.0.1 - - [11/Dec/2025 01:52:28] "GET /recipes/ HTTP/1.1" 200 -
+2025-12-11 01:52:28,799 - 127.0.0.1 - - [11/Dec/2025 01:52:28] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-11 01:52:28,817 - 127.0.0.1 - - [11/Dec/2025 01:52:28] "[36mGET /static/recipes/00ccabbc2a0f2d09.jpg HTTP/1.1[0m" 304 -
+2025-12-11 01:52:30,771 - 127.0.0.1 - - [11/Dec/2025 01:52:30] "GET /recipes/1 HTTP/1.1" 200 -
+2025-12-11 01:52:30,840 - 127.0.0.1 - - [11/Dec/2025 01:52:30] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-11 01:52:30,859 - 127.0.0.1 - - [11/Dec/2025 01:52:30] "[36mGET /static/recipes/00ccabbc2a0f2d09.jpg HTTP/1.1[0m" 304 -
+2025-12-11 01:52:53,136 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\third\\flask\\flask_lab2\\app\\utils.py', reloading
+2025-12-11 01:52:53,412 -  * Restarting with stat
+2025-12-11 01:57:11,557 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-11 01:57:11,557 - [33mPress CTRL+C to quit[0m
+2025-12-11 01:57:11,560 -  * Restarting with stat
+2025-12-11 01:57:13,887 -  * Debugger is active!
+2025-12-11 01:57:13,895 -  * Debugger PIN: 190-365-460
+2025-12-11 01:57:15,599 - 127.0.0.1 - - [11/Dec/2025 01:57:15] "GET /recipes/ HTTP/1.1" 200 -
+2025-12-11 01:57:15,775 - 127.0.0.1 - - [11/Dec/2025 01:57:15] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-11 01:57:15,805 - 127.0.0.1 - - [11/Dec/2025 01:57:15] "[36mGET /static/recipes/00ccabbc2a0f2d09.jpg HTTP/1.1[0m" 304 -
+2025-12-11 01:57:16,309 - 127.0.0.1 - - [11/Dec/2025 01:57:16] "GET /recipes/ HTTP/1.1" 200 -
+2025-12-11 01:57:16,360 - 127.0.0.1 - - [11/Dec/2025 01:57:16] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-11 01:57:16,379 - 127.0.0.1 - - [11/Dec/2025 01:57:16] "[36mGET /static/recipes/00ccabbc2a0f2d09.jpg HTTP/1.1[0m" 304 -
+2025-12-11 01:57:16,624 - 127.0.0.1 - - [11/Dec/2025 01:57:16] "GET /recipes/ HTTP/1.1" 200 -
+2025-12-11 01:57:16,683 - 127.0.0.1 - - [11/Dec/2025 01:57:16] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-11 01:57:16,694 - 127.0.0.1 - - [11/Dec/2025 01:57:16] "[36mGET /static/recipes/00ccabbc2a0f2d09.jpg HTTP/1.1[0m" 304 -
+2025-12-11 01:57:16,779 - 127.0.0.1 - - [11/Dec/2025 01:57:16] "GET /recipes/ HTTP/1.1" 200 -
+2025-12-11 01:57:16,824 - 127.0.0.1 - - [11/Dec/2025 01:57:16] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-11 01:57:16,834 - 127.0.0.1 - - [11/Dec/2025 01:57:16] "[36mGET /static/recipes/00ccabbc2a0f2d09.jpg HTTP/1.1[0m" 304 -
+2025-12-11 01:57:18,553 - 127.0.0.1 - - [11/Dec/2025 01:57:18] "GET /recipes/ HTTP/1.1" 200 -
+2025-12-11 01:57:18,603 - 127.0.0.1 - - [11/Dec/2025 01:57:18] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-11 01:57:18,627 - 127.0.0.1 - - [11/Dec/2025 01:57:18] "[36mGET /static/recipes/00ccabbc2a0f2d09.jpg HTTP/1.1[0m" 304 -
+2025-12-11 01:57:19,044 - 127.0.0.1 - - [11/Dec/2025 01:57:19] "GET /recipes/ HTTP/1.1" 200 -
+2025-12-11 01:57:19,097 - 127.0.0.1 - - [11/Dec/2025 01:57:19] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-11 01:57:19,115 - 127.0.0.1 - - [11/Dec/2025 01:57:19] "[36mGET /static/recipes/00ccabbc2a0f2d09.jpg HTTP/1.1[0m" 304 -
+2025-12-11 01:57:19,245 - 127.0.0.1 - - [11/Dec/2025 01:57:19] "GET /recipes/ HTTP/1.1" 200 -
+2025-12-11 01:57:19,307 - 127.0.0.1 - - [11/Dec/2025 01:57:19] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-11 01:57:19,321 - 127.0.0.1 - - [11/Dec/2025 01:57:19] "[36mGET /static/recipes/00ccabbc2a0f2d09.jpg HTTP/1.1[0m" 304 -
+2025-12-11 01:57:19,910 - 127.0.0.1 - - [11/Dec/2025 01:57:19] "GET /recipes/1 HTTP/1.1" 200 -
+2025-12-11 01:57:19,986 - 127.0.0.1 - - [11/Dec/2025 01:57:19] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-11 01:57:20,009 - 127.0.0.1 - - [11/Dec/2025 01:57:20] "[36mGET /static/recipes/00ccabbc2a0f2d09.jpg HTTP/1.1[0m" 304 -
+2025-12-11 01:57:30,878 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\third\\flask\\flask_lab2\\app\\utils.py', reloading
+2025-12-11 01:57:31,074 -  * Restarting with stat
+2025-12-11 01:57:33,409 -  * Debugger is active!
+2025-12-11 01:57:33,415 -  * Debugger PIN: 190-365-460
+2025-12-11 01:57:34,821 - 127.0.0.1 - - [11/Dec/2025 01:57:34] "GET /recipes/ HTTP/1.1" 200 -
+2025-12-11 01:57:35,013 - 127.0.0.1 - - [11/Dec/2025 01:57:35] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-11 01:57:35,020 - 127.0.0.1 - - [11/Dec/2025 01:57:35] "GET /recipes/ HTTP/1.1" 200 -
+2025-12-11 01:57:35,035 - 127.0.0.1 - - [11/Dec/2025 01:57:35] "[36mGET /static/recipes/00ccabbc2a0f2d09.jpg HTTP/1.1[0m" 304 -
+2025-12-11 01:57:35,087 - 127.0.0.1 - - [11/Dec/2025 01:57:35] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-11 01:57:35,102 - 127.0.0.1 - - [11/Dec/2025 01:57:35] "GET /static/recipes/00ccabbc2a0f2d09.jpg HTTP/1.1" 200 -
+2025-12-11 01:57:35,204 - 127.0.0.1 - - [11/Dec/2025 01:57:35] "GET /recipes/ HTTP/1.1" 200 -
+2025-12-11 01:57:35,262 - 127.0.0.1 - - [11/Dec/2025 01:57:35] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-11 01:57:35,294 - 127.0.0.1 - - [11/Dec/2025 01:57:35] "[36mGET /static/recipes/00ccabbc2a0f2d09.jpg HTTP/1.1[0m" 304 -
+2025-12-11 01:57:35,404 - 127.0.0.1 - - [11/Dec/2025 01:57:35] "GET /recipes/ HTTP/1.1" 200 -
+2025-12-11 01:57:35,512 - 127.0.0.1 - - [11/Dec/2025 01:57:35] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-11 01:57:35,544 - 127.0.0.1 - - [11/Dec/2025 01:57:35] "[36mGET /static/recipes/00ccabbc2a0f2d09.jpg HTTP/1.1[0m" 304 -
+2025-12-11 01:57:50,400 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\third\\flask\\flask_lab2\\app\\utils.py', reloading
+2025-12-11 01:57:50,605 -  * Restarting with stat
+2025-12-11 01:57:52,701 -  * Debugger is active!
+2025-12-11 01:57:52,709 -  * Debugger PIN: 190-365-460
+2025-12-11 01:57:53,188 - 127.0.0.1 - - [11/Dec/2025 01:57:53] "GET /recipes/ HTTP/1.1" 200 -
+2025-12-11 01:57:53,289 - 127.0.0.1 - - [11/Dec/2025 01:57:53] "GET /recipes/ HTTP/1.1" 200 -
+2025-12-11 01:57:53,373 - 127.0.0.1 - - [11/Dec/2025 01:57:53] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-11 01:57:53,425 - 127.0.0.1 - - [11/Dec/2025 01:57:53] "GET /recipes/ HTTP/1.1" 200 -
+2025-12-11 01:57:53,434 - 127.0.0.1 - - [11/Dec/2025 01:57:53] "[36mGET /static/recipes/00ccabbc2a0f2d09.jpg HTTP/1.1[0m" 304 -
+2025-12-11 01:57:53,477 - 127.0.0.1 - - [11/Dec/2025 01:57:53] "GET /static/css/styles.css HTTP/1.1" 200 -
+2025-12-11 01:57:53,491 - 127.0.0.1 - - [11/Dec/2025 01:57:53] "GET /static/recipes/00ccabbc2a0f2d09.jpg HTTP/1.1" 200 -
+2025-12-11 01:57:53,530 - 127.0.0.1 - - [11/Dec/2025 01:57:53] "GET /static/css/styles.css HTTP/1.1" 200 -
+2025-12-11 01:57:53,544 - 127.0.0.1 - - [11/Dec/2025 01:57:53] "GET /static/recipes/00ccabbc2a0f2d09.jpg HTTP/1.1" 200 -
+2025-12-11 01:57:55,092 - 127.0.0.1 - - [11/Dec/2025 01:57:55] "GET /recipes/1 HTTP/1.1" 200 -
+2025-12-11 01:57:55,143 - 127.0.0.1 - - [11/Dec/2025 01:57:55] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-11 01:57:55,166 - 127.0.0.1 - - [11/Dec/2025 01:57:55] "[36mGET /static/recipes/00ccabbc2a0f2d09.jpg HTTP/1.1[0m" 304 -
+2025-12-11 01:58:01,244 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\third\\flask\\flask_lab2\\app\\utils.py', reloading
+2025-12-11 01:58:01,529 -  * Restarting with stat
+2025-12-11 01:58:03,647 -  * Debugger is active!
+2025-12-11 01:58:03,655 -  * Debugger PIN: 190-365-460
+2025-12-11 01:58:03,856 - 127.0.0.1 - - [11/Dec/2025 01:58:03] "GET /recipes/1 HTTP/1.1" 200 -
+2025-12-11 01:58:03,869 - 127.0.0.1 - - [11/Dec/2025 01:58:03] "GET /recipes/1 HTTP/1.1" 200 -
+2025-12-11 01:58:03,878 - 127.0.0.1 - - [11/Dec/2025 01:58:03] "GET /recipes/1 HTTP/1.1" 200 -
+2025-12-11 01:58:04,019 - 127.0.0.1 - - [11/Dec/2025 01:58:04] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-11 01:58:04,047 - 127.0.0.1 - - [11/Dec/2025 01:58:04] "[36mGET /static/recipes/00ccabbc2a0f2d09.jpg HTTP/1.1[0m" 304 -
+2025-12-11 01:58:08,106 -  * Detected change in 'C:\\Users\\Sofia\\Desktop\\third\\flask\\flask_lab2\\app\\utils.py', reloading
+2025-12-11 01:58:08,410 -  * Restarting with stat
+2025-12-11 01:58:10,526 -  * Debugger is active!
+2025-12-11 01:58:10,533 -  * Debugger PIN: 190-365-460
+2025-12-11 01:58:10,719 - 127.0.0.1 - - [11/Dec/2025 01:58:10] "GET /recipes/1 HTTP/1.1" 200 -
+2025-12-11 01:58:10,907 - 127.0.0.1 - - [11/Dec/2025 01:58:10] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-11 01:58:10,916 - 127.0.0.1 - - [11/Dec/2025 01:58:10] "[36mGET /static/recipes/00ccabbc2a0f2d09.jpg HTTP/1.1[0m" 304 -
+2025-12-11 01:58:28,863 - 127.0.0.1 - - [11/Dec/2025 01:58:28] "GET /recipes/1 HTTP/1.1" 200 -
+2025-12-11 01:58:28,935 - 127.0.0.1 - - [11/Dec/2025 01:58:28] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-11 01:58:28,957 - 127.0.0.1 - - [11/Dec/2025 01:58:28] "[36mGET /static/recipes/00ccabbc2a0f2d09.jpg HTTP/1.1[0m" 304 -
+2025-12-11 01:58:38,361 - 127.0.0.1 - - [11/Dec/2025 01:58:38] "GET /recipes/1/edit HTTP/1.1" 200 -
+2025-12-11 01:58:38,433 - 127.0.0.1 - - [11/Dec/2025 01:58:38] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-11 01:58:38,473 - 127.0.0.1 - - [11/Dec/2025 01:58:38] "[33mGET /static/recipes/thumb_00ccabbc2a0f2d09.jpg HTTP/1.1[0m" 404 -
+2025-12-11 02:01:14,120 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-11 02:01:14,121 - [33mPress CTRL+C to quit[0m
+2025-12-11 02:01:14,123 -  * Restarting with stat
+2025-12-11 02:01:16,408 -  * Debugger is active!
+2025-12-11 02:01:16,417 -  * Debugger PIN: 190-365-460
+2025-12-11 02:01:22,764 - 127.0.0.1 - - [11/Dec/2025 02:01:22] "[32mPOST /recipes/1/delete HTTP/1.1[0m" 302 -
+2025-12-11 02:01:22,817 - 127.0.0.1 - - [11/Dec/2025 02:01:22] "GET /recipes/ HTTP/1.1" 200 -
+2025-12-11 02:01:23,009 - 127.0.0.1 - - [11/Dec/2025 02:01:23] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-11 02:01:32,578 - 127.0.0.1 - - [11/Dec/2025 02:01:32] "GET /recipes/?q=qa+engineer+intern&sort=title HTTP/1.1" 200 -
+2025-12-11 02:01:32,652 - 127.0.0.1 - - [11/Dec/2025 02:01:32] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-11 02:01:36,957 - 127.0.0.1 - - [11/Dec/2025 02:01:36] "GET /recipes/create HTTP/1.1" 200 -
+2025-12-11 02:01:37,035 - 127.0.0.1 - - [11/Dec/2025 02:01:37] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-11 02:02:14,172 - 127.0.0.1 - - [11/Dec/2025 02:02:14] "[32mPOST /recipes/create HTTP/1.1[0m" 302 -
+2025-12-11 02:02:14,192 - 127.0.0.1 - - [11/Dec/2025 02:02:14] "GET /recipes/ HTTP/1.1" 200 -
+2025-12-11 02:02:14,326 - 127.0.0.1 - - [11/Dec/2025 02:02:14] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-11 02:02:14,356 - 127.0.0.1 - - [11/Dec/2025 02:02:14] "GET /static/recipes/7224da3533536418.jpg HTTP/1.1" 200 -
+2025-12-11 02:02:17,709 - 127.0.0.1 - - [11/Dec/2025 02:02:17] "GET /recipes/?q=салат&sort=title HTTP/1.1" 200 -
+2025-12-11 02:02:17,783 - 127.0.0.1 - - [11/Dec/2025 02:02:17] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-11 02:02:22,283 - 127.0.0.1 - - [11/Dec/2025 02:02:22] "GET /recipes/?q=салат&sort=title HTTP/1.1" 200 -
+2025-12-11 02:02:22,332 - 127.0.0.1 - - [11/Dec/2025 02:02:22] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-11 02:02:28,455 - 127.0.0.1 - - [11/Dec/2025 02:02:28] "GET /recipes/?q=салат&sort=title HTTP/1.1" 200 -
+2025-12-11 02:02:28,502 - 127.0.0.1 - - [11/Dec/2025 02:02:28] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-11 02:02:29,270 - 127.0.0.1 - - [11/Dec/2025 02:02:29] "GET /recipes/?q=салат&sort=title HTTP/1.1" 200 -
+2025-12-11 02:02:29,317 - 127.0.0.1 - - [11/Dec/2025 02:02:29] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-11 02:02:29,487 - 127.0.0.1 - - [11/Dec/2025 02:02:29] "GET /recipes/?q=салат&sort=title HTTP/1.1" 200 -
+2025-12-11 02:02:29,534 - 127.0.0.1 - - [11/Dec/2025 02:02:29] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-11 02:02:33,505 - 127.0.0.1 - - [11/Dec/2025 02:02:33] "GET /recipes/ HTTP/1.1" 200 -
+2025-12-11 02:02:33,556 - 127.0.0.1 - - [11/Dec/2025 02:02:33] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-11 02:02:33,577 - 127.0.0.1 - - [11/Dec/2025 02:02:33] "[36mGET /static/recipes/7224da3533536418.jpg HTTP/1.1[0m" 304 -
+2025-12-11 02:02:37,251 - 127.0.0.1 - - [11/Dec/2025 02:02:37] "GET /recipes/?q=салат&sort=title HTTP/1.1" 200 -
+2025-12-11 02:02:37,311 - 127.0.0.1 - - [11/Dec/2025 02:02:37] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-11 02:02:46,443 - 127.0.0.1 - - [11/Dec/2025 02:02:46] "GET /recipes/?q=30\\&sort=time HTTP/1.1" 200 -
+2025-12-11 02:02:46,545 - 127.0.0.1 - - [11/Dec/2025 02:02:46] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-11 02:02:49,034 - 127.0.0.1 - - [11/Dec/2025 02:02:49] "GET /recipes/?q=30&sort=time HTTP/1.1" 200 -
+2025-12-11 02:02:49,091 - 127.0.0.1 - - [11/Dec/2025 02:02:49] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-11 02:02:50,433 - 127.0.0.1 - - [11/Dec/2025 02:02:50] "GET /recipes/?q=30&sort=time HTTP/1.1" 200 -
+2025-12-11 02:02:50,482 - 127.0.0.1 - - [11/Dec/2025 02:02:50] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-11 02:02:55,355 - 127.0.0.1 - - [11/Dec/2025 02:02:55] "GET /recipes/?q=салат&sort=title HTTP/1.1" 200 -
+2025-12-11 02:02:55,407 - 127.0.0.1 - - [11/Dec/2025 02:02:55] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-11 02:02:56,050 - 127.0.0.1 - - [11/Dec/2025 02:02:56] "GET /recipes/?q=салат&sort=title HTTP/1.1" 200 -
+2025-12-11 02:02:56,105 - 127.0.0.1 - - [11/Dec/2025 02:02:56] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-11 02:02:56,477 - 127.0.0.1 - - [11/Dec/2025 02:02:56] "GET /recipes/?q=салат&sort=title HTTP/1.1" 200 -
+2025-12-11 02:02:56,551 - 127.0.0.1 - - [11/Dec/2025 02:02:56] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-11 02:02:57,438 - 127.0.0.1 - - [11/Dec/2025 02:02:57] "GET /recipes/create HTTP/1.1" 200 -
+2025-12-11 02:02:57,488 - 127.0.0.1 - - [11/Dec/2025 02:02:57] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-11 02:03:08,626 - 127.0.0.1 - - [11/Dec/2025 02:03:08] "[32mPOST /recipes/create HTTP/1.1[0m" 302 -
+2025-12-11 02:03:08,646 - 127.0.0.1 - - [11/Dec/2025 02:03:08] "GET /recipes/ HTTP/1.1" 200 -
+2025-12-11 02:03:08,753 - 127.0.0.1 - - [11/Dec/2025 02:03:08] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-11 02:03:08,758 - 127.0.0.1 - - [11/Dec/2025 02:03:08] "[36mGET /static/recipes/7224da3533536418.jpg HTTP/1.1[0m" 304 -
+2025-12-11 02:03:08,779 - 127.0.0.1 - - [11/Dec/2025 02:03:08] "[33mGET /static/recipes/default_recipe.jpg HTTP/1.1[0m" 404 -
+2025-12-11 02:03:13,337 - 127.0.0.1 - - [11/Dec/2025 02:03:13] "GET /recipes/?q=суп&sort=title HTTP/1.1" 200 -
+2025-12-11 02:03:13,384 - 127.0.0.1 - - [11/Dec/2025 02:03:13] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-11 02:03:13,408 - 127.0.0.1 - - [11/Dec/2025 02:03:13] "[33mGET /static/recipes/default_recipe.jpg HTTP/1.1[0m" 404 -
+2025-12-11 02:03:18,090 - 127.0.0.1 - - [11/Dec/2025 02:03:18] "GET /recipes/?q=салат&sort=title HTTP/1.1" 200 -
+2025-12-11 02:03:18,146 - 127.0.0.1 - - [11/Dec/2025 02:03:18] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-11 02:03:22,118 - 127.0.0.1 - - [11/Dec/2025 02:03:22] "GET /recipes/?q=суп&sort=title HTTP/1.1" 200 -
+2025-12-11 02:03:22,171 - 127.0.0.1 - - [11/Dec/2025 02:03:22] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-11 02:03:22,192 - 127.0.0.1 - - [11/Dec/2025 02:03:22] "[33mGET /static/recipes/default_recipe.jpg HTTP/1.1[0m" 404 -

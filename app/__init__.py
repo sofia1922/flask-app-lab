@@ -63,11 +63,13 @@ def create_app(config_name='development'):
     from .users.views import users_bp
     from .products.views import products_bp
     from .posts import post_bp
+    from app.recipes.views import recipes_bp
 
     app.register_blueprint(main_bp)
     app.register_blueprint(users_bp, url_prefix='/users')
     app.register_blueprint(products_bp, url_prefix='/products')
     app.register_blueprint(post_bp, url_prefix='/post')
+    app.register_blueprint(recipes_bp, url_prefix='/recipes')
 
     @app.errorhandler(404)
     def not_found_error(error):
